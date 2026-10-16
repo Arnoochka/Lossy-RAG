@@ -1,0 +1,16 @@
+data/*.csv
+!data/questions_paraphrased.csv
+
+__pycache__/
+*.py[cod]
+*.egg-info/
+
+.venv/
+venv/
+env/
+.env
+
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
