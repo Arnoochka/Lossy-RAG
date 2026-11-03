@@ -6,7 +6,7 @@ import shutil
 import torch
 from functools import wraps
 
-def timer(layer, additional_path: str, base_dir: str = "model/time_spend") -> Callable:
+def timer(layer, additional_path: str, base_dir: str = "models/time_spend") -> Callable:
     def decorator(func):
         file_handles = {}
         layer_getter = layer if callable(layer) else lambda *args, **kwargs: layer
@@ -48,14 +48,14 @@ def timer(layer, additional_path: str, base_dir: str = "model/time_spend") -> Ca
         return wrapper
     return decorator
 
-def timer_restart(base_dir:str = "model/time_spend") -> None:
+def timer_restart(base_dir:str = "models/time_spend") -> None:
     try:
         shutil.rmtree(f"{base_dir}")
     except:
         pass
     return
 
-def timer_summary(base_dir: str = "model/time_spend") -> None:
+def timer_summary(base_dir: str = "models/time_spend") -> None:
     os.makedirs(base_dir, exist_ok=True)
 
     all_dirs = [d for d in os.listdir(base_dir) if os.path.isdir(f"{base_dir}/{d}")]

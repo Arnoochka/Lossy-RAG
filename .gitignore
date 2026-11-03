@@ -1,10 +1,15 @@
 data/*.csv
 !data/questions_paraphrased.csv
 
+**__pycache__**
 __pycache__/
 *.py[cod]
 *.egg-info/
 
+basalt/
+llama.cpp/
+
+models/
 .venv/
 venv/
 env/
