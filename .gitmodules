@@ -1,0 +1,6 @@
+[submodule "basalt"]
+	path = basalt
+	url = https://github.com/jesdga95/basalt
+[submodule "llama.cpp"]
+	path = llama.cpp
+	url = https://github.com/ggml-org/llama.cpp

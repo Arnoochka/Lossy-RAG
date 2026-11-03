@@ -6,10 +6,10 @@ __pycache__/
 *.py[cod]
 *.egg-info/
 
-basalt/
-llama.cpp/
+basalt/*
+llama.cpp/*
 
-models/
+models/*
 .venv/
 venv/
 env/
