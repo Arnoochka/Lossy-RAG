@@ -10,6 +10,8 @@ basalt/*
 llama.cpp/*
 
 models/*
+!models/basalt_config.json
+!models/time_spend
 .venv/
 venv/
 env/
