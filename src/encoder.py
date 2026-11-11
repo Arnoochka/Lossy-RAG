@@ -20,7 +20,6 @@ class BaseEncoder:
         self.query_instruction = query_instruction
 
     def encode(self, texts: list[str], is_query: bool = False) -> np.ndarray:
-        """Возвращает float32-эмбеддинги; префикс добавляется только к вопросам."""
         device = next(self.model.parameters()).device
         prefix = self.query_instruction if is_query else ""
         embeddings = []
