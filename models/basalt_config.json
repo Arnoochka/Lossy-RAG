@@ -1,4 +1,0 @@
-{
-  "server": { "model": "Qwen3.8-FN-GSQ-RCO-Q2_0.basalt", "gpu": "0", "port": 8081},
-  "engine": { "expert-cache": "auto", "prefill": "auto", "kv": "int8", "resident-experts": true }
-}
