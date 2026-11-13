@@ -16,7 +16,7 @@ from utils import model_generate
 #llama.cpp
 #Qwen3.8-27B-UD-Q3_K_XL.gguf
 
-model_name = "Swift-1.5-Qwen3.8-Flash-Next-GSQ-RCO-IQ2_XS"
+model_name = "Qwen3.8-27B-UD-Q3_K_XL"
 
 ifbench_json_path = f"src/bench/log/ifbench_{model_name}.jsonl"
 diamond_json_path = f"src/bench/log/gpqa_diamond_{model_name}.jsonl"
@@ -33,8 +33,10 @@ generate = partial(
 )
 
 if __name__ == "__main__":    
-    #score, elapsed = bench.run_ifbench(opeanai_model_generate_single_answer, responses_path = ifbench_json_path)
-    #score, elapsed = bench.run_gpqa_diamond(opeanai_model_generate_single_answer, responses_path = diamond_json_path)
-    score, elapsed = bench.run_aime(generate, responses_path = aime_json_path)
+    #score, elapsed = bench.run_ifbench(generate, responses_path = ifbench_json_path, workers = 1)
+    #print(f"[INFO] | {model_name} | {score:.1f} | {elapsed:.0f} sec")
+    #score, elapsed = bench.run_gpqa_diamond(generate, responses_path = diamond_json_path, workers = 1)
+    #print(f"[INFO] | {model_name} | {score:.1f} | {elapsed:.0f} sec")
+    score, elapsed = bench.run_aime(generate, responses_path = aime_json_path, workers = 1)
     print(f"[INFO] | {model_name} | {score:.1f} | {elapsed:.0f} sec")
     

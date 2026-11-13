@@ -49,13 +49,13 @@ def hf_transformers_model_generate_single_answer(
 # $strata launch --family swift --model IQ2_XS --port 8081 --parallel 8 --context 5k
 # $strata launch --family qwen --model IQ2_XS --port 8081 --parallel 8 --context 5k
 
-# $llama.cpp/build/bin/llama-server -m models/Qwen3.8-27B-UD-Q3_K_XL.gguf --port 8081 -np 4 -c 20480 --reasoning-budget 3072
+# $llama.cpp/build/bin/llama-server -m models/Qwen3.8-27B-UD-Q3_K_XL.gguf --port 8081 -np 1 -c 5120 -ngl all -fa on --reasoning-budget 3072
 
 # reasoning_budget_tokens = 3072 (in llama.cpp or incide the function opeanai_model_generate_single_answer)
 # max_new_tokens = reasoning_budget_tokens + 1024 = 4096
 # prompt_tokens = 1024
 # max_context_window = max_new_tokens + prompt_tokens = 4096 + 1024 = 5120
-# -c for llama.cpp = workers * max_context_window = 4 * 5120 = 20480
+# -c for llama.cpp = workers * max_context_window = 1 * 5120 = 5120
 # strata context is for each worker only => 5120 = 5k
 
 def opeanai_model_generate_single_answer(
