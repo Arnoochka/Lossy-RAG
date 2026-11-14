@@ -35,8 +35,8 @@ generate = partial(
 if __name__ == "__main__":    
     #score, elapsed = bench.run_ifbench(generate, responses_path = ifbench_json_path, workers = 1)
     #print(f"[INFO] | {model_name} | {score:.1f} | {elapsed:.0f} sec")
-    #score, elapsed = bench.run_gpqa_diamond(generate, responses_path = diamond_json_path, workers = 1)
-    #print(f"[INFO] | {model_name} | {score:.1f} | {elapsed:.0f} sec")
+    score, elapsed = bench.run_gpqa_diamond(generate, responses_path = diamond_json_path, workers = 1)
+    print(f"[INFO] | {model_name} | {score:.1f} | {elapsed:.0f} sec")
     score, elapsed = bench.run_aime(generate, responses_path = aime_json_path, workers = 1)
     print(f"[INFO] | {model_name} | {score:.1f} | {elapsed:.0f} sec")
     
