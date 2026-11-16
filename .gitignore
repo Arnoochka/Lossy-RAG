@@ -2,10 +2,18 @@ data/*.csv
 !data/questions_paraphrased.csv
 data/embeddings_*
 
+**__pycache__**
 __pycache__/
 *.py[cod]
 *.egg-info/
 
+basalt/*
+llama.cpp/*
+build/
+
+models/*
+!models/basalt_config.json
+!models/time_spend
 .venv/
 venv/
 env/
