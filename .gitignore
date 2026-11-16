@@ -1,5 +1,6 @@
 data/*.csv
 !data/questions_paraphrased.csv
+data/embeddings_*
 
 **__pycache__**
 __pycache__/
@@ -22,3 +23,5 @@ env/
 .vscode/
 .DS_Store
 Thumbs.db
+
+AGENTS.md
