@@ -1,0 +1,21 @@
+test_bad_window (test_regressions.BuilderTests.test_bad_window) ... ok
+test_paraphrase_identity_checks (test_regressions.BuilderTests.test_paraphrase_identity_checks) ... ok
+test_span_windows (test_regressions.BuilderTests.test_span_windows) ... ok
+test_blocks_match_full_sort (test_regressions.SearchTests.test_blocks_match_full_sort) ... ok
+test_notebook_rejects_corrupt_vectors (test_regressions.SearchTests.test_notebook_rejects_corrupt_vectors) ... ok
+test_notebook_resume_and_changed_vectors (test_regressions.SearchTests.test_notebook_resume_and_changed_vectors) ... ok
+test_pca_cache_uses_actual_source_vectors (test_regressions.SearchTests.test_pca_cache_uses_actual_source_vectors) ... ok
+test_reject_nonfinite_duplicate_and_large_k (test_regressions.SearchTests.test_reject_nonfinite_duplicate_and_large_k) ... ok
+test_ties_across_partition_boundary (test_regressions.SearchTests.test_ties_across_partition_boundary) ... ok
+test_stage2_without_model_libraries (test_regressions.UpstreamIntegration.test_stage2_without_model_libraries) ... /opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/joblib/externals/loky/backend/context.py:131: UserWarning: Could not find the number of physical cores for the following reason:
+found 0 physical cores < 1
+Returning the number of logical cores instead. You can silence this warning by setting LOKY_MAX_CPU_COUNT to the number of cores you want to use.
+  warnings.warn(
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/joblib/externals/loky/backend/context.py", line 255, in _count_physical_cores
+    raise ValueError(f"found {cpu_count_physical} physical cores < 1")
+ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 1.883s
+
+OK

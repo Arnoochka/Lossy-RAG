@@ -22,6 +22,8 @@ class SquadDatasetBuilder:
 
         Предложения выделяются моделью spaCy en_core_web_sm, её нужно установить заранее.
         """
+        if window < 1 or step < 1 or batch_size < 1:
+            raise ValueError('window, step, and batch_size must be positive')
         self.window = window
         self.step = step
         self.batch_size = batch_size
@@ -66,10 +68,11 @@ class SquadDatasetBuilder:
         self._report()
         return self.tables
 
-    def save(self) -> None:
+    def save(self, output_dir: str | Path | None = None) -> None:
         if not self.tables:
             raise RuntimeError("Сначала вызовите build()")
-        out = Path.cwd()
+        out = Path(output_dir) if output_dir is not None else Path(__file__).resolve().parent
+        out.mkdir(parents=True, exist_ok=True)
         for name, df in self.tables.items():
             df.to_csv(out / f"{name}.csv", index=False)
         print(f"Сохранено в {out}")
@@ -192,6 +195,13 @@ class SquadDatasetBuilder:
     @staticmethod
     def _add_paraphrases(questions: pd.DataFrame, paraphrased: pd.DataFrame) -> pd.DataFrame:
         par = paraphrased[questions.columns].copy()
+        if not par['qid'].is_unique or par['qid'].isin(questions['qid']).any():
+            raise ValueError('Paraphrase qids must be unique and distinct from originals')
+        roles = questions.set_index('qid')['role']
+        if not par['role'].eq(par['orig_qid'].map(roles)).all():
+            raise ValueError('Paraphrase role differs from its original question')
+        if par['question'].isna().any() or par['question'].str.strip().eq('').any():
+            raise ValueError('Empty paraphrase text')
         par["is_paraphrase"] = True
         pid_of = dict(zip(questions["qid"], questions["pid"]))
         if (par["orig_qid"].map(pid_of) != par["pid"]).any():
@@ -248,8 +258,11 @@ if __name__ == "__main__":
         "train": "plain_text/train-00000-of-00001.parquet",
         "valid": "plain_text/validation-00000-of-00001.parquet",
     }
-    df_train = pd.read_parquet("hf://datasets/rajpurkar/squad/" + splits["train"])
-    df_valid = pd.read_parquet("hf://datasets/rajpurkar/squad/" + splits["valid"])
-    df_paraphrased = pd.read_csv("questions_paraphrased.csv")
+    # Freeze the upstream SQuAD source; do not silently follow a moving dataset revision.
+    revision = "7b6d24c440a36b6815f21b70d25016731768db1f"
+    source = f"hf://datasets/rajpurkar/squad@{revision}/"
+    df_train = pd.read_parquet(source + splits["train"])
+    df_valid = pd.read_parquet(source + splits["valid"])
+    df_paraphrased = pd.read_csv(Path(__file__).resolve().parent / "questions_paraphrased.csv")
 
     build_and_save(df_train, df_valid, df_paraphrased, window=2, step=1)

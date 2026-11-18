@@ -1,0 +1,9 @@
+{
+  "full_corpus_rows": 82222,
+  "original_queries": 500,
+  "paraphrase_queries": 11,
+  "n_conditions": 32,
+  "device": "cpu",
+  "completed_at": "2026-11-12T23:03:06.627997",
+  "notes": "Report reflects completed CSV only; optional runs may be disabled"
+}

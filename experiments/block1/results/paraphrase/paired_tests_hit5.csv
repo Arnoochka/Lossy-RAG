@@ -1,0 +1,4 @@
+model,k,n_pairs,strict_original,strict_paraphrase,strict_delta_para_minus_orig,strict_delta_ci95_low,strict_delta_ci95_high,strict_lost_after_paraphrase,strict_gained_after_paraphrase,strict_still_correct,strict_both_incorrect,strict_retention_given_original_correct,soft_original,soft_paraphrase,soft_delta_para_minus_orig,topk_overlap_mean,mcnemar_exact_p,holm_p_strict_hit5
+bge_small,5,500,0.82,0.684,-0.1359999999999999,-0.174,-0.1,83,15,327,75,0.7975609756097561,0.826,0.686,-0.14,0.48840000000000006,1.3988186908802743e-12,4.196456072640823e-12
+bge_base,5,500,0.86,0.748,-0.11199999999999999,-0.144,-0.08,64,8,366,62,0.8511627906976744,0.866,0.75,-0.116,0.5192,5.765519304519332e-12,1.1531038609038664e-11
+bge_large,5,500,0.87,0.78,-0.08999999999999997,-0.12,-0.06,55,10,380,55,0.8735632183908046,0.874,0.782,-0.092,0.5672,1.1753602809018608e-08,1.1753602809018608e-08

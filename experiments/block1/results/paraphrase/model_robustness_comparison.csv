@@ -1,0 +1,4 @@
+model_a,model_b,n_pairs,robustness_delta_b_minus_a,ci95_low,ci95_high,paired_permutation_p,holm_p
+bge_small,bge_large,500,0.046,0.008,0.086,0.024998750062496876,0.07499625018749062
+bge_base,bge_large,500,0.022,-0.012,0.058,0.2535373231338433,0.5070746462676866
+bge_small,bge_base,500,0.024,-0.016,0.062,0.26903654817259137,0.5070746462676866

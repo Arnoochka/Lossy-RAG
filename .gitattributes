@@ -1,0 +1,10 @@
+* text=auto
+# Preserve exact release bytes (including historical CRLF tables) on Windows.
+experiments/block1/** -text whitespace=cr-at-eol
+data/*.csv -text whitespace=cr-at-eol
+*.npy binary
+*.npz binary
+*.png binary
+*.zip binary
+# Whitespace in questions is data and contributes to query fingerprints.
+experiments/block1/**/*.csv -whitespace

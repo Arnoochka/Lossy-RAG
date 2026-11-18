@@ -1,0 +1,7 @@
+{
+  "model_id": "BAAI/bge-large-en-v1.5",
+  "dimension": 1024,
+  "query_hash": "938764be053141b914b11fac711866ad2d0a51ae4e53f295726be422bdc2116a",
+  "query_prefix": "Represent this sentence for searching relevant passages: ",
+  "version": 1
+}

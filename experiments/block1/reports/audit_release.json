@@ -1,0 +1,1538 @@
+{
+  "status": "PASS",
+  "scope": "tables_code_full_dataset_BGE_Small_retrieval",
+  "checks": 376,
+  "passed": 376,
+  "details": [
+    {
+      "ok": true,
+      "test": "All Python files and notebook code cells compile",
+      "detail": {
+        "notebooks": 7
+      }
+    },
+    {
+      "ok": true,
+      "test": "Original 559 result checks pass",
+      "detail": "{\n  \"status\": \"PASS\",\n  \"checks_total\": 559,\n  \"checks_passed\": 559,\n  \"failures\": [],\n  \"completed_configurations\": 32,\n  \"main_original_questions\": 500,\n  \"main_pilot_paraphrases\": 11,\n  \"paraphrase_pairs\": 500,\n  \"scope\": \"CSV cross-checks and available paraphrase topk; does not authenticate missing document vectors or human equivalence of paraphrases\"\n}"
+    },
+    {
+      "ok": true,
+      "test": "Frozen 511-query fingerprint"
+    },
+    {
+      "ok": true,
+      "test": "Main fingerprints match the actual frozen inputs"
+    },
+    {
+      "ok": true,
+      "test": "No duplicate question/k: bge_base_full"
+    },
+    {
+      "ok": true,
+      "test": "Complete question/k grid: bge_base_full"
+    },
+    {
+      "ok": true,
+      "test": "Binary hits: bge_base_full"
+    },
+    {
+      "ok": true,
+      "test": "Per-question fingerprints: bge_base_full"
+    },
+    {
+      "ok": true,
+      "test": "Question identity and stratum: bge_base_full"
+    },
+    {
+      "ok": true,
+      "test": "Individual Hit@k monotonicity: bge_base_full"
+    },
+    {
+      "ok": true,
+      "test": "Individual summary identity: bge_base_full"
+    },
+    {
+      "ok": true,
+      "test": "Individual summary values: bge_base_full"
+    },
+    {
+      "ok": true,
+      "test": "No duplicate question/k: bge_large_full"
+    },
+    {
+      "ok": true,
+      "test": "Complete question/k grid: bge_large_full"
+    },
+    {
+      "ok": true,
+      "test": "Binary hits: bge_large_full"
+    },
+    {
+      "ok": true,
+      "test": "Per-question fingerprints: bge_large_full"
+    },
+    {
+      "ok": true,
+      "test": "Question identity and stratum: bge_large_full"
+    },
+    {
+      "ok": true,
+      "test": "Individual Hit@k monotonicity: bge_large_full"
+    },
+    {
+      "ok": true,
+      "test": "Individual summary identity: bge_large_full"
+    },
+    {
+      "ok": true,
+      "test": "Individual summary values: bge_large_full"
+    },
+    {
+      "ok": true,
+      "test": "No duplicate question/k: bge_small_full"
+    },
+    {
+      "ok": true,
+      "test": "Complete question/k grid: bge_small_full"
+    },
+    {
+      "ok": true,
+      "test": "Binary hits: bge_small_full"
+    },
+    {
+      "ok": true,
+      "test": "Per-question fingerprints: bge_small_full"
+    },
+    {
+      "ok": true,
+      "test": "Question identity and stratum: bge_small_full"
+    },
+    {
+      "ok": true,
+      "test": "Individual Hit@k monotonicity: bge_small_full"
+    },
+    {
+      "ok": true,
+      "test": "Individual summary identity: bge_small_full"
+    },
+    {
+      "ok": true,
+      "test": "Individual summary values: bge_small_full"
+    },
+    {
+      "ok": true,
+      "test": "No duplicate question/k: bge_small_pca_128_seed42"
+    },
+    {
+      "ok": true,
+      "test": "Complete question/k grid: bge_small_pca_128_seed42"
+    },
+    {
+      "ok": true,
+      "test": "Binary hits: bge_small_pca_128_seed42"
+    },
+    {
+      "ok": true,
+      "test": "Per-question fingerprints: bge_small_pca_128_seed42"
+    },
+    {
+      "ok": true,
+      "test": "Question identity and stratum: bge_small_pca_128_seed42"
+    },
+    {
+      "ok": true,
+      "test": "Individual Hit@k monotonicity: bge_small_pca_128_seed42"
+    },
+    {
+      "ok": true,
+      "test": "Individual summary identity: bge_small_pca_128_seed42"
+    },
+    {
+      "ok": true,
+      "test": "Individual summary values: bge_small_pca_128_seed42"
+    },
+    {
+      "ok": true,
+      "test": "No duplicate question/k: bge_small_pca_128_seed43"
+    },
+    {
+      "ok": true,
+      "test": "Complete question/k grid: bge_small_pca_128_seed43"
+    },
+    {
+      "ok": true,
+      "test": "Binary hits: bge_small_pca_128_seed43"
+    },
+    {
+      "ok": true,
+      "test": "Per-question fingerprints: bge_small_pca_128_seed43"
+    },
+    {
+      "ok": true,
+      "test": "Question identity and stratum: bge_small_pca_128_seed43"
+    },
+    {
+      "ok": true,
+      "test": "Individual Hit@k monotonicity: bge_small_pca_128_seed43"
+    },
+    {
+      "ok": true,
+      "test": "Individual summary identity: bge_small_pca_128_seed43"
+    },
+    {
+      "ok": true,
+      "test": "Individual summary values: bge_small_pca_128_seed43"
+    },
+    {
+      "ok": true,
+      "test": "No duplicate question/k: bge_small_pca_128_seed44"
+    },
+    {
+      "ok": true,
+      "test": "Complete question/k grid: bge_small_pca_128_seed44"
+    },
+    {
+      "ok": true,
+      "test": "Binary hits: bge_small_pca_128_seed44"
+    },
+    {
+      "ok": true,
+      "test": "Per-question fingerprints: bge_small_pca_128_seed44"
+    },
+    {
+      "ok": true,
+      "test": "Question identity and stratum: bge_small_pca_128_seed44"
+    },
+    {
+      "ok": true,
+      "test": "Individual Hit@k monotonicity: bge_small_pca_128_seed44"
+    },
+    {
+      "ok": true,
+      "test": "Individual summary identity: bge_small_pca_128_seed44"
+    },
+    {
+      "ok": true,
+      "test": "Individual summary values: bge_small_pca_128_seed44"
+    },
+    {
+      "ok": true,
+      "test": "No duplicate question/k: bge_small_pca_192_seed42"
+    },
+    {
+      "ok": true,
+      "test": "Complete question/k grid: bge_small_pca_192_seed42"
+    },
+    {
+      "ok": true,
+      "test": "Binary hits: bge_small_pca_192_seed42"
+    },
+    {
+      "ok": true,
+      "test": "Per-question fingerprints: bge_small_pca_192_seed42"
+    },
+    {
+      "ok": true,
+      "test": "Question identity and stratum: bge_small_pca_192_seed42"
+    },
+    {
+      "ok": true,
+      "test": "Individual Hit@k monotonicity: bge_small_pca_192_seed42"
+    },
+    {
+      "ok": true,
+      "test": "Individual summary identity: bge_small_pca_192_seed42"
+    },
+    {
+      "ok": true,
+      "test": "Individual summary values: bge_small_pca_192_seed42"
+    },
+    {
+      "ok": true,
+      "test": "No duplicate question/k: bge_small_pca_192_seed43"
+    },
+    {
+      "ok": true,
+      "test": "Complete question/k grid: bge_small_pca_192_seed43"
+    },
+    {
+      "ok": true,
+      "test": "Binary hits: bge_small_pca_192_seed43"
+    },
+    {
+      "ok": true,
+      "test": "Per-question fingerprints: bge_small_pca_192_seed43"
+    },
+    {
+      "ok": true,
+      "test": "Question identity and stratum: bge_small_pca_192_seed43"
+    },
+    {
+      "ok": true,
+      "test": "Individual Hit@k monotonicity: bge_small_pca_192_seed43"
+    },
+    {
+      "ok": true,
+      "test": "Individual summary identity: bge_small_pca_192_seed43"
+    },
+    {
+      "ok": true,
+      "test": "Individual summary values: bge_small_pca_192_seed43"
+    },
+    {
+      "ok": true,
+      "test": "No duplicate question/k: bge_small_pca_192_seed44"
+    },
+    {
+      "ok": true,
+      "test": "Complete question/k grid: bge_small_pca_192_seed44"
+    },
+    {
+      "ok": true,
+      "test": "Binary hits: bge_small_pca_192_seed44"
+    },
+    {
+      "ok": true,
+      "test": "Per-question fingerprints: bge_small_pca_192_seed44"
+    },
+    {
+      "ok": true,
+      "test": "Question identity and stratum: bge_small_pca_192_seed44"
+    },
+    {
+      "ok": true,
+      "test": "Individual Hit@k monotonicity: bge_small_pca_192_seed44"
+    },
+    {
+      "ok": true,
+      "test": "Individual summary identity: bge_small_pca_192_seed44"
+    },
+    {
+      "ok": true,
+      "test": "Individual summary values: bge_small_pca_192_seed44"
+    },
+    {
+      "ok": true,
+      "test": "No duplicate question/k: bge_small_pca_256_seed42"
+    },
+    {
+      "ok": true,
+      "test": "Complete question/k grid: bge_small_pca_256_seed42"
+    },
+    {
+      "ok": true,
+      "test": "Binary hits: bge_small_pca_256_seed42"
+    },
+    {
+      "ok": true,
+      "test": "Per-question fingerprints: bge_small_pca_256_seed42"
+    },
+    {
+      "ok": true,
+      "test": "Question identity and stratum: bge_small_pca_256_seed42"
+    },
+    {
+      "ok": true,
+      "test": "Individual Hit@k monotonicity: bge_small_pca_256_seed42"
+    },
+    {
+      "ok": true,
+      "test": "Individual summary identity: bge_small_pca_256_seed42"
+    },
+    {
+      "ok": true,
+      "test": "Individual summary values: bge_small_pca_256_seed42"
+    },
+    {
+      "ok": true,
+      "test": "No duplicate question/k: bge_small_pca_256_seed43"
+    },
+    {
+      "ok": true,
+      "test": "Complete question/k grid: bge_small_pca_256_seed43"
+    },
+    {
+      "ok": true,
+      "test": "Binary hits: bge_small_pca_256_seed43"
+    },
+    {
+      "ok": true,
+      "test": "Per-question fingerprints: bge_small_pca_256_seed43"
+    },
+    {
+      "ok": true,
+      "test": "Question identity and stratum: bge_small_pca_256_seed43"
+    },
+    {
+      "ok": true,
+      "test": "Individual Hit@k monotonicity: bge_small_pca_256_seed43"
+    },
+    {
+      "ok": true,
+      "test": "Individual summary identity: bge_small_pca_256_seed43"
+    },
+    {
+      "ok": true,
+      "test": "Individual summary values: bge_small_pca_256_seed43"
+    },
+    {
+      "ok": true,
+      "test": "No duplicate question/k: bge_small_pca_256_seed44"
+    },
+    {
+      "ok": true,
+      "test": "Complete question/k grid: bge_small_pca_256_seed44"
+    },
+    {
+      "ok": true,
+      "test": "Binary hits: bge_small_pca_256_seed44"
+    },
+    {
+      "ok": true,
+      "test": "Per-question fingerprints: bge_small_pca_256_seed44"
+    },
+    {
+      "ok": true,
+      "test": "Question identity and stratum: bge_small_pca_256_seed44"
+    },
+    {
+      "ok": true,
+      "test": "Individual Hit@k monotonicity: bge_small_pca_256_seed44"
+    },
+    {
+      "ok": true,
+      "test": "Individual summary identity: bge_small_pca_256_seed44"
+    },
+    {
+      "ok": true,
+      "test": "Individual summary values: bge_small_pca_256_seed44"
+    },
+    {
+      "ok": true,
+      "test": "No duplicate question/k: bge_small_pca_64_seed42"
+    },
+    {
+      "ok": true,
+      "test": "Complete question/k grid: bge_small_pca_64_seed42"
+    },
+    {
+      "ok": true,
+      "test": "Binary hits: bge_small_pca_64_seed42"
+    },
+    {
+      "ok": true,
+      "test": "Per-question fingerprints: bge_small_pca_64_seed42"
+    },
+    {
+      "ok": true,
+      "test": "Question identity and stratum: bge_small_pca_64_seed42"
+    },
+    {
+      "ok": true,
+      "test": "Individual Hit@k monotonicity: bge_small_pca_64_seed42"
+    },
+    {
+      "ok": true,
+      "test": "Individual summary identity: bge_small_pca_64_seed42"
+    },
+    {
+      "ok": true,
+      "test": "Individual summary values: bge_small_pca_64_seed42"
+    },
+    {
+      "ok": true,
+      "test": "No duplicate question/k: bge_small_pca_64_seed43"
+    },
+    {
+      "ok": true,
+      "test": "Complete question/k grid: bge_small_pca_64_seed43"
+    },
+    {
+      "ok": true,
+      "test": "Binary hits: bge_small_pca_64_seed43"
+    },
+    {
+      "ok": true,
+      "test": "Per-question fingerprints: bge_small_pca_64_seed43"
+    },
+    {
+      "ok": true,
+      "test": "Question identity and stratum: bge_small_pca_64_seed43"
+    },
+    {
+      "ok": true,
+      "test": "Individual Hit@k monotonicity: bge_small_pca_64_seed43"
+    },
+    {
+      "ok": true,
+      "test": "Individual summary identity: bge_small_pca_64_seed43"
+    },
+    {
+      "ok": true,
+      "test": "Individual summary values: bge_small_pca_64_seed43"
+    },
+    {
+      "ok": true,
+      "test": "No duplicate question/k: bge_small_pca_64_seed44"
+    },
+    {
+      "ok": true,
+      "test": "Complete question/k grid: bge_small_pca_64_seed44"
+    },
+    {
+      "ok": true,
+      "test": "Binary hits: bge_small_pca_64_seed44"
+    },
+    {
+      "ok": true,
+      "test": "Per-question fingerprints: bge_small_pca_64_seed44"
+    },
+    {
+      "ok": true,
+      "test": "Question identity and stratum: bge_small_pca_64_seed44"
+    },
+    {
+      "ok": true,
+      "test": "Individual Hit@k monotonicity: bge_small_pca_64_seed44"
+    },
+    {
+      "ok": true,
+      "test": "Individual summary identity: bge_small_pca_64_seed44"
+    },
+    {
+      "ok": true,
+      "test": "Individual summary values: bge_small_pca_64_seed44"
+    },
+    {
+      "ok": true,
+      "test": "No duplicate question/k: nomic_full"
+    },
+    {
+      "ok": true,
+      "test": "Complete question/k grid: nomic_full"
+    },
+    {
+      "ok": true,
+      "test": "Binary hits: nomic_full"
+    },
+    {
+      "ok": true,
+      "test": "Per-question fingerprints: nomic_full"
+    },
+    {
+      "ok": true,
+      "test": "Question identity and stratum: nomic_full"
+    },
+    {
+      "ok": true,
+      "test": "Individual Hit@k monotonicity: nomic_full"
+    },
+    {
+      "ok": true,
+      "test": "Individual summary identity: nomic_full"
+    },
+    {
+      "ok": true,
+      "test": "Individual summary values: nomic_full"
+    },
+    {
+      "ok": true,
+      "test": "No duplicate question/k: nomic_matryoshka_128"
+    },
+    {
+      "ok": true,
+      "test": "Complete question/k grid: nomic_matryoshka_128"
+    },
+    {
+      "ok": true,
+      "test": "Binary hits: nomic_matryoshka_128"
+    },
+    {
+      "ok": true,
+      "test": "Per-question fingerprints: nomic_matryoshka_128"
+    },
+    {
+      "ok": true,
+      "test": "Question identity and stratum: nomic_matryoshka_128"
+    },
+    {
+      "ok": true,
+      "test": "Individual Hit@k monotonicity: nomic_matryoshka_128"
+    },
+    {
+      "ok": true,
+      "test": "Individual summary identity: nomic_matryoshka_128"
+    },
+    {
+      "ok": true,
+      "test": "Individual summary values: nomic_matryoshka_128"
+    },
+    {
+      "ok": true,
+      "test": "No duplicate question/k: nomic_matryoshka_256"
+    },
+    {
+      "ok": true,
+      "test": "Complete question/k grid: nomic_matryoshka_256"
+    },
+    {
+      "ok": true,
+      "test": "Binary hits: nomic_matryoshka_256"
+    },
+    {
+      "ok": true,
+      "test": "Per-question fingerprints: nomic_matryoshka_256"
+    },
+    {
+      "ok": true,
+      "test": "Question identity and stratum: nomic_matryoshka_256"
+    },
+    {
+      "ok": true,
+      "test": "Individual Hit@k monotonicity: nomic_matryoshka_256"
+    },
+    {
+      "ok": true,
+      "test": "Individual summary identity: nomic_matryoshka_256"
+    },
+    {
+      "ok": true,
+      "test": "Individual summary values: nomic_matryoshka_256"
+    },
+    {
+      "ok": true,
+      "test": "No duplicate question/k: nomic_matryoshka_512"
+    },
+    {
+      "ok": true,
+      "test": "Complete question/k grid: nomic_matryoshka_512"
+    },
+    {
+      "ok": true,
+      "test": "Binary hits: nomic_matryoshka_512"
+    },
+    {
+      "ok": true,
+      "test": "Per-question fingerprints: nomic_matryoshka_512"
+    },
+    {
+      "ok": true,
+      "test": "Question identity and stratum: nomic_matryoshka_512"
+    },
+    {
+      "ok": true,
+      "test": "Individual Hit@k monotonicity: nomic_matryoshka_512"
+    },
+    {
+      "ok": true,
+      "test": "Individual summary identity: nomic_matryoshka_512"
+    },
+    {
+      "ok": true,
+      "test": "Individual summary values: nomic_matryoshka_512"
+    },
+    {
+      "ok": true,
+      "test": "No duplicate question/k: nomic_matryoshka_64"
+    },
+    {
+      "ok": true,
+      "test": "Complete question/k grid: nomic_matryoshka_64"
+    },
+    {
+      "ok": true,
+      "test": "Binary hits: nomic_matryoshka_64"
+    },
+    {
+      "ok": true,
+      "test": "Per-question fingerprints: nomic_matryoshka_64"
+    },
+    {
+      "ok": true,
+      "test": "Question identity and stratum: nomic_matryoshka_64"
+    },
+    {
+      "ok": true,
+      "test": "Individual Hit@k monotonicity: nomic_matryoshka_64"
+    },
+    {
+      "ok": true,
+      "test": "Individual summary identity: nomic_matryoshka_64"
+    },
+    {
+      "ok": true,
+      "test": "Individual summary values: nomic_matryoshka_64"
+    },
+    {
+      "ok": true,
+      "test": "No duplicate question/k: nomic_pca_128_seed42"
+    },
+    {
+      "ok": true,
+      "test": "Complete question/k grid: nomic_pca_128_seed42"
+    },
+    {
+      "ok": true,
+      "test": "Binary hits: nomic_pca_128_seed42"
+    },
+    {
+      "ok": true,
+      "test": "Per-question fingerprints: nomic_pca_128_seed42"
+    },
+    {
+      "ok": true,
+      "test": "Question identity and stratum: nomic_pca_128_seed42"
+    },
+    {
+      "ok": true,
+      "test": "Individual Hit@k monotonicity: nomic_pca_128_seed42"
+    },
+    {
+      "ok": true,
+      "test": "Individual summary identity: nomic_pca_128_seed42"
+    },
+    {
+      "ok": true,
+      "test": "Individual summary values: nomic_pca_128_seed42"
+    },
+    {
+      "ok": true,
+      "test": "No duplicate question/k: nomic_pca_128_seed43"
+    },
+    {
+      "ok": true,
+      "test": "Complete question/k grid: nomic_pca_128_seed43"
+    },
+    {
+      "ok": true,
+      "test": "Binary hits: nomic_pca_128_seed43"
+    },
+    {
+      "ok": true,
+      "test": "Per-question fingerprints: nomic_pca_128_seed43"
+    },
+    {
+      "ok": true,
+      "test": "Question identity and stratum: nomic_pca_128_seed43"
+    },
+    {
+      "ok": true,
+      "test": "Individual Hit@k monotonicity: nomic_pca_128_seed43"
+    },
+    {
+      "ok": true,
+      "test": "Individual summary identity: nomic_pca_128_seed43"
+    },
+    {
+      "ok": true,
+      "test": "Individual summary values: nomic_pca_128_seed43"
+    },
+    {
+      "ok": true,
+      "test": "No duplicate question/k: nomic_pca_128_seed44"
+    },
+    {
+      "ok": true,
+      "test": "Complete question/k grid: nomic_pca_128_seed44"
+    },
+    {
+      "ok": true,
+      "test": "Binary hits: nomic_pca_128_seed44"
+    },
+    {
+      "ok": true,
+      "test": "Per-question fingerprints: nomic_pca_128_seed44"
+    },
+    {
+      "ok": true,
+      "test": "Question identity and stratum: nomic_pca_128_seed44"
+    },
+    {
+      "ok": true,
+      "test": "Individual Hit@k monotonicity: nomic_pca_128_seed44"
+    },
+    {
+      "ok": true,
+      "test": "Individual summary identity: nomic_pca_128_seed44"
+    },
+    {
+      "ok": true,
+      "test": "Individual summary values: nomic_pca_128_seed44"
+    },
+    {
+      "ok": true,
+      "test": "No duplicate question/k: nomic_pca_256_seed42"
+    },
+    {
+      "ok": true,
+      "test": "Complete question/k grid: nomic_pca_256_seed42"
+    },
+    {
+      "ok": true,
+      "test": "Binary hits: nomic_pca_256_seed42"
+    },
+    {
+      "ok": true,
+      "test": "Per-question fingerprints: nomic_pca_256_seed42"
+    },
+    {
+      "ok": true,
+      "test": "Question identity and stratum: nomic_pca_256_seed42"
+    },
+    {
+      "ok": true,
+      "test": "Individual Hit@k monotonicity: nomic_pca_256_seed42"
+    },
+    {
+      "ok": true,
+      "test": "Individual summary identity: nomic_pca_256_seed42"
+    },
+    {
+      "ok": true,
+      "test": "Individual summary values: nomic_pca_256_seed42"
+    },
+    {
+      "ok": true,
+      "test": "No duplicate question/k: nomic_pca_256_seed43"
+    },
+    {
+      "ok": true,
+      "test": "Complete question/k grid: nomic_pca_256_seed43"
+    },
+    {
+      "ok": true,
+      "test": "Binary hits: nomic_pca_256_seed43"
+    },
+    {
+      "ok": true,
+      "test": "Per-question fingerprints: nomic_pca_256_seed43"
+    },
+    {
+      "ok": true,
+      "test": "Question identity and stratum: nomic_pca_256_seed43"
+    },
+    {
+      "ok": true,
+      "test": "Individual Hit@k monotonicity: nomic_pca_256_seed43"
+    },
+    {
+      "ok": true,
+      "test": "Individual summary identity: nomic_pca_256_seed43"
+    },
+    {
+      "ok": true,
+      "test": "Individual summary values: nomic_pca_256_seed43"
+    },
+    {
+      "ok": true,
+      "test": "No duplicate question/k: nomic_pca_256_seed44"
+    },
+    {
+      "ok": true,
+      "test": "Complete question/k grid: nomic_pca_256_seed44"
+    },
+    {
+      "ok": true,
+      "test": "Binary hits: nomic_pca_256_seed44"
+    },
+    {
+      "ok": true,
+      "test": "Per-question fingerprints: nomic_pca_256_seed44"
+    },
+    {
+      "ok": true,
+      "test": "Question identity and stratum: nomic_pca_256_seed44"
+    },
+    {
+      "ok": true,
+      "test": "Individual Hit@k monotonicity: nomic_pca_256_seed44"
+    },
+    {
+      "ok": true,
+      "test": "Individual summary identity: nomic_pca_256_seed44"
+    },
+    {
+      "ok": true,
+      "test": "Individual summary values: nomic_pca_256_seed44"
+    },
+    {
+      "ok": true,
+      "test": "No duplicate question/k: nomic_pca_512_seed42"
+    },
+    {
+      "ok": true,
+      "test": "Complete question/k grid: nomic_pca_512_seed42"
+    },
+    {
+      "ok": true,
+      "test": "Binary hits: nomic_pca_512_seed42"
+    },
+    {
+      "ok": true,
+      "test": "Per-question fingerprints: nomic_pca_512_seed42"
+    },
+    {
+      "ok": true,
+      "test": "Question identity and stratum: nomic_pca_512_seed42"
+    },
+    {
+      "ok": true,
+      "test": "Individual Hit@k monotonicity: nomic_pca_512_seed42"
+    },
+    {
+      "ok": true,
+      "test": "Individual summary identity: nomic_pca_512_seed42"
+    },
+    {
+      "ok": true,
+      "test": "Individual summary values: nomic_pca_512_seed42"
+    },
+    {
+      "ok": true,
+      "test": "No duplicate question/k: nomic_pca_512_seed43"
+    },
+    {
+      "ok": true,
+      "test": "Complete question/k grid: nomic_pca_512_seed43"
+    },
+    {
+      "ok": true,
+      "test": "Binary hits: nomic_pca_512_seed43"
+    },
+    {
+      "ok": true,
+      "test": "Per-question fingerprints: nomic_pca_512_seed43"
+    },
+    {
+      "ok": true,
+      "test": "Question identity and stratum: nomic_pca_512_seed43"
+    },
+    {
+      "ok": true,
+      "test": "Individual Hit@k monotonicity: nomic_pca_512_seed43"
+    },
+    {
+      "ok": true,
+      "test": "Individual summary identity: nomic_pca_512_seed43"
+    },
+    {
+      "ok": true,
+      "test": "Individual summary values: nomic_pca_512_seed43"
+    },
+    {
+      "ok": true,
+      "test": "No duplicate question/k: nomic_pca_512_seed44"
+    },
+    {
+      "ok": true,
+      "test": "Complete question/k grid: nomic_pca_512_seed44"
+    },
+    {
+      "ok": true,
+      "test": "Binary hits: nomic_pca_512_seed44"
+    },
+    {
+      "ok": true,
+      "test": "Per-question fingerprints: nomic_pca_512_seed44"
+    },
+    {
+      "ok": true,
+      "test": "Question identity and stratum: nomic_pca_512_seed44"
+    },
+    {
+      "ok": true,
+      "test": "Individual Hit@k monotonicity: nomic_pca_512_seed44"
+    },
+    {
+      "ok": true,
+      "test": "Individual summary identity: nomic_pca_512_seed44"
+    },
+    {
+      "ok": true,
+      "test": "Individual summary values: nomic_pca_512_seed44"
+    },
+    {
+      "ok": true,
+      "test": "No duplicate question/k: nomic_pca_64_seed42"
+    },
+    {
+      "ok": true,
+      "test": "Complete question/k grid: nomic_pca_64_seed42"
+    },
+    {
+      "ok": true,
+      "test": "Binary hits: nomic_pca_64_seed42"
+    },
+    {
+      "ok": true,
+      "test": "Per-question fingerprints: nomic_pca_64_seed42"
+    },
+    {
+      "ok": true,
+      "test": "Question identity and stratum: nomic_pca_64_seed42"
+    },
+    {
+      "ok": true,
+      "test": "Individual Hit@k monotonicity: nomic_pca_64_seed42"
+    },
+    {
+      "ok": true,
+      "test": "Individual summary identity: nomic_pca_64_seed42"
+    },
+    {
+      "ok": true,
+      "test": "Individual summary values: nomic_pca_64_seed42"
+    },
+    {
+      "ok": true,
+      "test": "No duplicate question/k: nomic_pca_64_seed43"
+    },
+    {
+      "ok": true,
+      "test": "Complete question/k grid: nomic_pca_64_seed43"
+    },
+    {
+      "ok": true,
+      "test": "Binary hits: nomic_pca_64_seed43"
+    },
+    {
+      "ok": true,
+      "test": "Per-question fingerprints: nomic_pca_64_seed43"
+    },
+    {
+      "ok": true,
+      "test": "Question identity and stratum: nomic_pca_64_seed43"
+    },
+    {
+      "ok": true,
+      "test": "Individual Hit@k monotonicity: nomic_pca_64_seed43"
+    },
+    {
+      "ok": true,
+      "test": "Individual summary identity: nomic_pca_64_seed43"
+    },
+    {
+      "ok": true,
+      "test": "Individual summary values: nomic_pca_64_seed43"
+    },
+    {
+      "ok": true,
+      "test": "No duplicate question/k: nomic_pca_64_seed44"
+    },
+    {
+      "ok": true,
+      "test": "Complete question/k grid: nomic_pca_64_seed44"
+    },
+    {
+      "ok": true,
+      "test": "Binary hits: nomic_pca_64_seed44"
+    },
+    {
+      "ok": true,
+      "test": "Per-question fingerprints: nomic_pca_64_seed44"
+    },
+    {
+      "ok": true,
+      "test": "Question identity and stratum: nomic_pca_64_seed44"
+    },
+    {
+      "ok": true,
+      "test": "Individual Hit@k monotonicity: nomic_pca_64_seed44"
+    },
+    {
+      "ok": true,
+      "test": "Individual summary identity: nomic_pca_64_seed44"
+    },
+    {
+      "ok": true,
+      "test": "Individual summary values: nomic_pca_64_seed44"
+    },
+    {
+      "ok": true,
+      "test": "Holm correction: paired_vs_bge_small.csv"
+    },
+    {
+      "ok": true,
+      "test": "Holm correction: paired_tests_hit5.csv"
+    },
+    {
+      "ok": true,
+      "test": "Holm correction: model_robustness_comparison.csv"
+    },
+    {
+      "ok": true,
+      "test": "Nomic: no significant comparison after Holm",
+      "detail": [
+        0.0952791714320048,
+        0.2938633215585219,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "ok": true,
+      "test": "Unique paired model/question/k"
+    },
+    {
+      "ok": true,
+      "test": "Paired run fingerprint rebuilt from texts"
+    },
+    {
+      "ok": true,
+      "test": "Paired query matrix: bge_small"
+    },
+    {
+      "ok": true,
+      "test": "Query norms: bge_small"
+    },
+    {
+      "ok": true,
+      "test": "Query row fingerprint: bge_small"
+    },
+    {
+      "ok": true,
+      "test": "Complete ranking state: bge_small"
+    },
+    {
+      "ok": true,
+      "test": "Individual pair table: bge_small"
+    },
+    {
+      "ok": true,
+      "test": "Top-k overlap: bge_small k=1"
+    },
+    {
+      "ok": true,
+      "test": "Top-k overlap: bge_small k=3"
+    },
+    {
+      "ok": true,
+      "test": "Top-k overlap: bge_small k=5"
+    },
+    {
+      "ok": true,
+      "test": "Top-k overlap: bge_small k=10"
+    },
+    {
+      "ok": true,
+      "test": "Paired query matrix: bge_base"
+    },
+    {
+      "ok": true,
+      "test": "Query norms: bge_base"
+    },
+    {
+      "ok": true,
+      "test": "Query row fingerprint: bge_base"
+    },
+    {
+      "ok": true,
+      "test": "Complete ranking state: bge_base"
+    },
+    {
+      "ok": true,
+      "test": "Individual pair table: bge_base"
+    },
+    {
+      "ok": true,
+      "test": "Top-k overlap: bge_base k=1"
+    },
+    {
+      "ok": true,
+      "test": "Top-k overlap: bge_base k=3"
+    },
+    {
+      "ok": true,
+      "test": "Top-k overlap: bge_base k=5"
+    },
+    {
+      "ok": true,
+      "test": "Top-k overlap: bge_base k=10"
+    },
+    {
+      "ok": true,
+      "test": "Paired query matrix: bge_large"
+    },
+    {
+      "ok": true,
+      "test": "Query norms: bge_large"
+    },
+    {
+      "ok": true,
+      "test": "Query row fingerprint: bge_large"
+    },
+    {
+      "ok": true,
+      "test": "Complete ranking state: bge_large"
+    },
+    {
+      "ok": true,
+      "test": "Individual pair table: bge_large"
+    },
+    {
+      "ok": true,
+      "test": "Top-k overlap: bge_large k=1"
+    },
+    {
+      "ok": true,
+      "test": "Top-k overlap: bge_large k=3"
+    },
+    {
+      "ok": true,
+      "test": "Top-k overlap: bge_large k=5"
+    },
+    {
+      "ok": true,
+      "test": "Top-k overlap: bge_large k=10"
+    },
+    {
+      "ok": true,
+      "test": "Expected dataset sizes",
+      "detail": {
+        "contexts": 20958,
+        "chunks": 82222,
+        "questions": 100666,
+        "answers": 105812,
+        "answer_chunks": 160386
+      }
+    },
+    {
+      "ok": true,
+      "test": "Unique primary keys"
+    },
+    {
+      "ok": true,
+      "test": "Unique gold rows"
+    },
+    {
+      "ok": true,
+      "test": "Rebuilt corpus equals historical document fingerprint"
+    },
+    {
+      "ok": true,
+      "test": "Canonical chunk_id row order"
+    },
+    {
+      "ok": true,
+      "test": "Document foreign keys"
+    },
+    {
+      "ok": true,
+      "test": "Question foreign keys"
+    },
+    {
+      "ok": true,
+      "test": "Train/valid roles inherited correctly"
+    },
+    {
+      "ok": true,
+      "test": "Original/paraphrase paragraph identity"
+    },
+    {
+      "ok": true,
+      "test": "Every chunk matches its paragraph span"
+    },
+    {
+      "ok": true,
+      "test": "Paragraph chunk counts"
+    },
+    {
+      "ok": true,
+      "test": "Every annotated answer matches its paragraph span"
+    },
+    {
+      "ok": true,
+      "test": "Every original has strict gold"
+    },
+    {
+      "ok": true,
+      "test": "Frozen questions match full dataset: main"
+    },
+    {
+      "ok": true,
+      "test": "Frozen questions match full dataset: pilot"
+    },
+    {
+      "ok": true,
+      "test": "500 pairs match full dataset: original_qid"
+    },
+    {
+      "ok": true,
+      "test": "500 pairs match full dataset: paraphrase_qid"
+    },
+    {
+      "ok": true,
+      "test": "Entire strict/soft gold relation regenerated",
+      "detail": {
+        "missing": 0,
+        "extra": 0
+      }
+    },
+    {
+      "ok": true,
+      "test": "All ranked IDs exist: bge_small"
+    },
+    {
+      "ok": true,
+      "test": "Gold -> ranking -> hits: bge_small original/strict@1"
+    },
+    {
+      "ok": true,
+      "test": "Gold -> ranking -> hits: bge_small original/soft@1"
+    },
+    {
+      "ok": true,
+      "test": "Gold -> ranking -> hits: bge_small paraphrase/strict@1"
+    },
+    {
+      "ok": true,
+      "test": "Gold -> ranking -> hits: bge_small paraphrase/soft@1"
+    },
+    {
+      "ok": true,
+      "test": "Gold -> ranking -> hits: bge_small original/strict@3"
+    },
+    {
+      "ok": true,
+      "test": "Gold -> ranking -> hits: bge_small original/soft@3"
+    },
+    {
+      "ok": true,
+      "test": "Gold -> ranking -> hits: bge_small paraphrase/strict@3"
+    },
+    {
+      "ok": true,
+      "test": "Gold -> ranking -> hits: bge_small paraphrase/soft@3"
+    },
+    {
+      "ok": true,
+      "test": "Gold -> ranking -> hits: bge_small original/strict@5"
+    },
+    {
+      "ok": true,
+      "test": "Gold -> ranking -> hits: bge_small original/soft@5"
+    },
+    {
+      "ok": true,
+      "test": "Gold -> ranking -> hits: bge_small paraphrase/strict@5"
+    },
+    {
+      "ok": true,
+      "test": "Gold -> ranking -> hits: bge_small paraphrase/soft@5"
+    },
+    {
+      "ok": true,
+      "test": "Gold -> ranking -> hits: bge_small original/strict@10"
+    },
+    {
+      "ok": true,
+      "test": "Gold -> ranking -> hits: bge_small original/soft@10"
+    },
+    {
+      "ok": true,
+      "test": "Gold -> ranking -> hits: bge_small paraphrase/strict@10"
+    },
+    {
+      "ok": true,
+      "test": "Gold -> ranking -> hits: bge_small paraphrase/soft@10"
+    },
+    {
+      "ok": true,
+      "test": "All ranked IDs exist: bge_base"
+    },
+    {
+      "ok": true,
+      "test": "Gold -> ranking -> hits: bge_base original/strict@1"
+    },
+    {
+      "ok": true,
+      "test": "Gold -> ranking -> hits: bge_base original/soft@1"
+    },
+    {
+      "ok": true,
+      "test": "Gold -> ranking -> hits: bge_base paraphrase/strict@1"
+    },
+    {
+      "ok": true,
+      "test": "Gold -> ranking -> hits: bge_base paraphrase/soft@1"
+    },
+    {
+      "ok": true,
+      "test": "Gold -> ranking -> hits: bge_base original/strict@3"
+    },
+    {
+      "ok": true,
+      "test": "Gold -> ranking -> hits: bge_base original/soft@3"
+    },
+    {
+      "ok": true,
+      "test": "Gold -> ranking -> hits: bge_base paraphrase/strict@3"
+    },
+    {
+      "ok": true,
+      "test": "Gold -> ranking -> hits: bge_base paraphrase/soft@3"
+    },
+    {
+      "ok": true,
+      "test": "Gold -> ranking -> hits: bge_base original/strict@5"
+    },
+    {
+      "ok": true,
+      "test": "Gold -> ranking -> hits: bge_base original/soft@5"
+    },
+    {
+      "ok": true,
+      "test": "Gold -> ranking -> hits: bge_base paraphrase/strict@5"
+    },
+    {
+      "ok": true,
+      "test": "Gold -> ranking -> hits: bge_base paraphrase/soft@5"
+    },
+    {
+      "ok": true,
+      "test": "Gold -> ranking -> hits: bge_base original/strict@10"
+    },
+    {
+      "ok": true,
+      "test": "Gold -> ranking -> hits: bge_base original/soft@10"
+    },
+    {
+      "ok": true,
+      "test": "Gold -> ranking -> hits: bge_base paraphrase/strict@10"
+    },
+    {
+      "ok": true,
+      "test": "Gold -> ranking -> hits: bge_base paraphrase/soft@10"
+    },
+    {
+      "ok": true,
+      "test": "All ranked IDs exist: bge_large"
+    },
+    {
+      "ok": true,
+      "test": "Gold -> ranking -> hits: bge_large original/strict@1"
+    },
+    {
+      "ok": true,
+      "test": "Gold -> ranking -> hits: bge_large original/soft@1"
+    },
+    {
+      "ok": true,
+      "test": "Gold -> ranking -> hits: bge_large paraphrase/strict@1"
+    },
+    {
+      "ok": true,
+      "test": "Gold -> ranking -> hits: bge_large paraphrase/soft@1"
+    },
+    {
+      "ok": true,
+      "test": "Gold -> ranking -> hits: bge_large original/strict@3"
+    },
+    {
+      "ok": true,
+      "test": "Gold -> ranking -> hits: bge_large original/soft@3"
+    },
+    {
+      "ok": true,
+      "test": "Gold -> ranking -> hits: bge_large paraphrase/strict@3"
+    },
+    {
+      "ok": true,
+      "test": "Gold -> ranking -> hits: bge_large paraphrase/soft@3"
+    },
+    {
+      "ok": true,
+      "test": "Gold -> ranking -> hits: bge_large original/strict@5"
+    },
+    {
+      "ok": true,
+      "test": "Gold -> ranking -> hits: bge_large original/soft@5"
+    },
+    {
+      "ok": true,
+      "test": "Gold -> ranking -> hits: bge_large paraphrase/strict@5"
+    },
+    {
+      "ok": true,
+      "test": "Gold -> ranking -> hits: bge_large paraphrase/soft@5"
+    },
+    {
+      "ok": true,
+      "test": "Gold -> ranking -> hits: bge_large original/strict@10"
+    },
+    {
+      "ok": true,
+      "test": "Gold -> ranking -> hits: bge_large original/soft@10"
+    },
+    {
+      "ok": true,
+      "test": "Gold -> ranking -> hits: bge_large paraphrase/strict@10"
+    },
+    {
+      "ok": true,
+      "test": "Gold -> ranking -> hits: bge_large paraphrase/soft@10"
+    },
+    {
+      "ok": true,
+      "test": "Full document matrix finite float32 82222x384"
+    },
+    {
+      "ok": true,
+      "test": "Full document matrix L2 norms"
+    },
+    {
+      "ok": true,
+      "test": "Block 2 document/query row order"
+    },
+    {
+      "ok": true,
+      "test": "Exact BGE Small replay: 500 questions, all top-10 IDs and scores"
+    },
+    {
+      "ok": true,
+      "test": "Exact BGE Small replay: all 1000 paired query top-10 IDs"
+    },
+    {
+      "ok": true,
+      "test": "Block 2 exact reference matches replay"
+    },
+    {
+      "ok": true,
+      "test": "Replayed Small matches FINAL main metrics: strict@1"
+    },
+    {
+      "ok": true,
+      "test": "Replayed Small matches FINAL main metrics: soft@1"
+    },
+    {
+      "ok": true,
+      "test": "Replayed Small matches FINAL main metrics: strict@3"
+    },
+    {
+      "ok": true,
+      "test": "Replayed Small matches FINAL main metrics: soft@3"
+    },
+    {
+      "ok": true,
+      "test": "Replayed Small matches FINAL main metrics: strict@5"
+    },
+    {
+      "ok": true,
+      "test": "Replayed Small matches FINAL main metrics: soft@5"
+    },
+    {
+      "ok": true,
+      "test": "Replayed Small matches FINAL main metrics: strict@10"
+    },
+    {
+      "ok": true,
+      "test": "Replayed Small matches FINAL main metrics: soft@10"
+    }
+  ],
+  "limitations": [
+    "No new neural model encoding; Base/Large/Nomic document matrices not supplied.",
+    "Human semantic review of paraphrases remains pending.",
+    "Historical exact software/model revisions of encoding are unknown."
+  ]
+}

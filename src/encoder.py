@@ -1,7 +1,8 @@
+from __future__ import annotations
+from typing import TYPE_CHECKING
 import numpy as np
-import torch
-import torch.nn.functional as F
-from transformers import PreTrainedModel, PreTrainedTokenizerBase
+if TYPE_CHECKING:
+    from transformers import PreTrainedModel, PreTrainedTokenizerBase
 
 
 class BaseEncoder:
@@ -21,6 +22,8 @@ class BaseEncoder:
 
     def encode(self, texts: list[str], is_query: bool = False) -> np.ndarray:
         """Возвращает float32-эмбеддинги; префикс добавляется только к вопросам."""
+        import torch
+        import torch.nn.functional as F
         device = next(self.model.parameters()).device
         prefix = self.query_instruction if is_query else ""
         embeddings = []
