@@ -25,3 +25,17 @@ env/
 Thumbs.db
 
 AGENTS.md
+
+# Block 1: working caches and generated data are delivered separately.
+/lossy_rag_final_results_safe/
+/lossy_rag_final_results/
+/lossy_rag_intermediate_results/
+/lossy_rag_paraphrase_results/
+/hf_cache/
+/.ipynb_checkpoints/
+**/.ipynb_checkpoints/
+/experiments/block1/local_checks/
+/experiments/block1/local_exports/
+/experiments/block1/cache/
+/data/dataset_manifest.json
+*.zip

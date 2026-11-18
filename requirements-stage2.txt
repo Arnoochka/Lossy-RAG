@@ -1,0 +1,6 @@
+# Cached embeddings: no torch/transformers are needed by DummyEncoder.
+-r experiments/block1/requirements-block1.txt
+scikit-learn==1.8.0
+seaborn==0.13.2
+hnswlib==0.8.0
+# hnswlib may require a C++ compiler when no wheel exists for your platform.

@@ -1,0 +1,5 @@
+dimension,k,gold,lost_after_pca,gained_after_pca,same,mean_hit_delta
+64,5,strict,107,3,390,-0.20800000000000007
+64,5,soft,105,3,392,-0.20399999999999996
+128,5,strict,59,6,435,-0.1060000000000001
+128,5,soft,60,6,434,-0.10799999999999998

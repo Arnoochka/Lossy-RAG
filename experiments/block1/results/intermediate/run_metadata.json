@@ -1,0 +1,31 @@
+{
+  "experiment": "intermediate_full_corpus_limited_train_queries",
+  "corpus": "D:\\Lossy-RAG\\data",
+  "source": "Arnoochka/Lossy-RAG (SQuAD v1.1)",
+  "num_documents": 82222,
+  "num_original_train_queries": 500,
+  "seed": 42,
+  "model_id": "BAAI/bge-small-en-v1.5",
+  "query_instruction": "Represent this sentence for searching relevant passages: ",
+  "embedding_dimension": 384,
+  "dtype": "float32, L2-normalized",
+  "method": "exact blockwise cosine top-k (no ANN)",
+  "k_values": [
+    1,
+    3,
+    5,
+    10
+  ],
+  "pca_dimensions": [
+    64,
+    128
+  ],
+  "pca_fit_sample": 4096,
+  "device": "cpu",
+  "full_document_corpus_used": true,
+  "document_file_sha256": "3b02880fae966054e9faf6edd57b6d648e6df433a6a4c966d1df8044f5a9a932",
+  "selected_question_sha256": "5f7afb266caa93dbd56b76d01b718f56423e45348ab15c932ea259d3a98d9424",
+  "vector_row_order_docs": "full_corpus_chunk_ids.csv",
+  "vector_row_order_queries": "selected_train_questions.csv",
+  "note": "Only sampled train questions; not a full-train evaluation."
+}

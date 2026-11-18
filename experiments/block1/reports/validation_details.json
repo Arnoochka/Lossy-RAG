@@ -1,0 +1,2239 @@
+[
+  {
+    "ok": true,
+    "test": "main: 500 unique train questions"
+  },
+  {
+    "ok": true,
+    "test": "main: train original questions only"
+  },
+  {
+    "ok": true,
+    "test": "main: 32 configurations",
+    "detail": 32
+  },
+  {
+    "ok": true,
+    "test": "main: 256 summary rows"
+  },
+  {
+    "ok": true,
+    "test": "main: k=1,3,5,10"
+  },
+  {
+    "ok": true,
+    "test": "main: one corpus+question fingerprint"
+  },
+  {
+    "ok": true,
+    "test": "main: 500 original and 11 pilot paraphrases"
+  },
+  {
+    "ok": true,
+    "test": "main: strict <= soft at every summary entry"
+  },
+  {
+    "ok": true,
+    "test": "main: unique condition/role/k summary"
+  },
+  {
+    "ok": true,
+    "test": "main: monotonic k bge_base_full / False"
+  },
+  {
+    "ok": true,
+    "test": "main: monotonic k bge_base_full / True"
+  },
+  {
+    "ok": true,
+    "test": "main: monotonic k bge_large_full / False"
+  },
+  {
+    "ok": true,
+    "test": "main: monotonic k bge_large_full / True"
+  },
+  {
+    "ok": true,
+    "test": "main: monotonic k bge_small_full / False"
+  },
+  {
+    "ok": true,
+    "test": "main: monotonic k bge_small_full / True"
+  },
+  {
+    "ok": true,
+    "test": "main: monotonic k bge_small_pca_128_seed42 / False"
+  },
+  {
+    "ok": true,
+    "test": "main: monotonic k bge_small_pca_128_seed42 / True"
+  },
+  {
+    "ok": true,
+    "test": "main: monotonic k bge_small_pca_128_seed43 / False"
+  },
+  {
+    "ok": true,
+    "test": "main: monotonic k bge_small_pca_128_seed43 / True"
+  },
+  {
+    "ok": true,
+    "test": "main: monotonic k bge_small_pca_128_seed44 / False"
+  },
+  {
+    "ok": true,
+    "test": "main: monotonic k bge_small_pca_128_seed44 / True"
+  },
+  {
+    "ok": true,
+    "test": "main: monotonic k bge_small_pca_192_seed42 / False"
+  },
+  {
+    "ok": true,
+    "test": "main: monotonic k bge_small_pca_192_seed42 / True"
+  },
+  {
+    "ok": true,
+    "test": "main: monotonic k bge_small_pca_192_seed43 / False"
+  },
+  {
+    "ok": true,
+    "test": "main: monotonic k bge_small_pca_192_seed43 / True"
+  },
+  {
+    "ok": true,
+    "test": "main: monotonic k bge_small_pca_192_seed44 / False"
+  },
+  {
+    "ok": true,
+    "test": "main: monotonic k bge_small_pca_192_seed44 / True"
+  },
+  {
+    "ok": true,
+    "test": "main: monotonic k bge_small_pca_256_seed42 / False"
+  },
+  {
+    "ok": true,
+    "test": "main: monotonic k bge_small_pca_256_seed42 / True"
+  },
+  {
+    "ok": true,
+    "test": "main: monotonic k bge_small_pca_256_seed43 / False"
+  },
+  {
+    "ok": true,
+    "test": "main: monotonic k bge_small_pca_256_seed43 / True"
+  },
+  {
+    "ok": true,
+    "test": "main: monotonic k bge_small_pca_256_seed44 / False"
+  },
+  {
+    "ok": true,
+    "test": "main: monotonic k bge_small_pca_256_seed44 / True"
+  },
+  {
+    "ok": true,
+    "test": "main: monotonic k bge_small_pca_64_seed42 / False"
+  },
+  {
+    "ok": true,
+    "test": "main: monotonic k bge_small_pca_64_seed42 / True"
+  },
+  {
+    "ok": true,
+    "test": "main: monotonic k bge_small_pca_64_seed43 / False"
+  },
+  {
+    "ok": true,
+    "test": "main: monotonic k bge_small_pca_64_seed43 / True"
+  },
+  {
+    "ok": true,
+    "test": "main: monotonic k bge_small_pca_64_seed44 / False"
+  },
+  {
+    "ok": true,
+    "test": "main: monotonic k bge_small_pca_64_seed44 / True"
+  },
+  {
+    "ok": true,
+    "test": "main: monotonic k nomic_full / False"
+  },
+  {
+    "ok": true,
+    "test": "main: monotonic k nomic_full / True"
+  },
+  {
+    "ok": true,
+    "test": "main: monotonic k nomic_matryoshka_128 / False"
+  },
+  {
+    "ok": true,
+    "test": "main: monotonic k nomic_matryoshka_128 / True"
+  },
+  {
+    "ok": true,
+    "test": "main: monotonic k nomic_matryoshka_256 / False"
+  },
+  {
+    "ok": true,
+    "test": "main: monotonic k nomic_matryoshka_256 / True"
+  },
+  {
+    "ok": true,
+    "test": "main: monotonic k nomic_matryoshka_512 / False"
+  },
+  {
+    "ok": true,
+    "test": "main: monotonic k nomic_matryoshka_512 / True"
+  },
+  {
+    "ok": true,
+    "test": "main: monotonic k nomic_matryoshka_64 / False"
+  },
+  {
+    "ok": true,
+    "test": "main: monotonic k nomic_matryoshka_64 / True"
+  },
+  {
+    "ok": true,
+    "test": "main: monotonic k nomic_pca_128_seed42 / False"
+  },
+  {
+    "ok": true,
+    "test": "main: monotonic k nomic_pca_128_seed42 / True"
+  },
+  {
+    "ok": true,
+    "test": "main: monotonic k nomic_pca_128_seed43 / False"
+  },
+  {
+    "ok": true,
+    "test": "main: monotonic k nomic_pca_128_seed43 / True"
+  },
+  {
+    "ok": true,
+    "test": "main: monotonic k nomic_pca_128_seed44 / False"
+  },
+  {
+    "ok": true,
+    "test": "main: monotonic k nomic_pca_128_seed44 / True"
+  },
+  {
+    "ok": true,
+    "test": "main: monotonic k nomic_pca_256_seed42 / False"
+  },
+  {
+    "ok": true,
+    "test": "main: monotonic k nomic_pca_256_seed42 / True"
+  },
+  {
+    "ok": true,
+    "test": "main: monotonic k nomic_pca_256_seed43 / False"
+  },
+  {
+    "ok": true,
+    "test": "main: monotonic k nomic_pca_256_seed43 / True"
+  },
+  {
+    "ok": true,
+    "test": "main: monotonic k nomic_pca_256_seed44 / False"
+  },
+  {
+    "ok": true,
+    "test": "main: monotonic k nomic_pca_256_seed44 / True"
+  },
+  {
+    "ok": true,
+    "test": "main: monotonic k nomic_pca_512_seed42 / False"
+  },
+  {
+    "ok": true,
+    "test": "main: monotonic k nomic_pca_512_seed42 / True"
+  },
+  {
+    "ok": true,
+    "test": "main: monotonic k nomic_pca_512_seed43 / False"
+  },
+  {
+    "ok": true,
+    "test": "main: monotonic k nomic_pca_512_seed43 / True"
+  },
+  {
+    "ok": true,
+    "test": "main: monotonic k nomic_pca_512_seed44 / False"
+  },
+  {
+    "ok": true,
+    "test": "main: monotonic k nomic_pca_512_seed44 / True"
+  },
+  {
+    "ok": true,
+    "test": "main: monotonic k nomic_pca_64_seed42 / False"
+  },
+  {
+    "ok": true,
+    "test": "main: monotonic k nomic_pca_64_seed42 / True"
+  },
+  {
+    "ok": true,
+    "test": "main: monotonic k nomic_pca_64_seed43 / False"
+  },
+  {
+    "ok": true,
+    "test": "main: monotonic k nomic_pca_64_seed43 / True"
+  },
+  {
+    "ok": true,
+    "test": "main: monotonic k nomic_pca_64_seed44 / False"
+  },
+  {
+    "ok": true,
+    "test": "main: monotonic k nomic_pca_64_seed44 / True"
+  },
+  {
+    "ok": true,
+    "test": "detail: bge_base_full has 511*4 rows"
+  },
+  {
+    "ok": true,
+    "test": "detail: bge_base_full fixed fingerprint"
+  },
+  {
+    "ok": true,
+    "test": "detail: bge_base_full strict <= soft"
+  },
+  {
+    "ok": true,
+    "test": "detail: bge_base_full 500 original qids"
+  },
+  {
+    "ok": true,
+    "test": "detail: bge_base_full same original qids"
+  },
+  {
+    "ok": true,
+    "test": "metrics: bge_base_full, para=False, k=1"
+  },
+  {
+    "ok": true,
+    "test": "metrics: bge_base_full, para=False, k=3"
+  },
+  {
+    "ok": true,
+    "test": "metrics: bge_base_full, para=False, k=5"
+  },
+  {
+    "ok": true,
+    "test": "metrics: bge_base_full, para=False, k=10"
+  },
+  {
+    "ok": true,
+    "test": "metrics: bge_base_full, para=True, k=1"
+  },
+  {
+    "ok": true,
+    "test": "metrics: bge_base_full, para=True, k=3"
+  },
+  {
+    "ok": true,
+    "test": "metrics: bge_base_full, para=True, k=5"
+  },
+  {
+    "ok": true,
+    "test": "metrics: bge_base_full, para=True, k=10"
+  },
+  {
+    "ok": true,
+    "test": "detail: bge_large_full has 511*4 rows"
+  },
+  {
+    "ok": true,
+    "test": "detail: bge_large_full fixed fingerprint"
+  },
+  {
+    "ok": true,
+    "test": "detail: bge_large_full strict <= soft"
+  },
+  {
+    "ok": true,
+    "test": "detail: bge_large_full 500 original qids"
+  },
+  {
+    "ok": true,
+    "test": "detail: bge_large_full same original qids"
+  },
+  {
+    "ok": true,
+    "test": "metrics: bge_large_full, para=False, k=1"
+  },
+  {
+    "ok": true,
+    "test": "metrics: bge_large_full, para=False, k=3"
+  },
+  {
+    "ok": true,
+    "test": "metrics: bge_large_full, para=False, k=5"
+  },
+  {
+    "ok": true,
+    "test": "metrics: bge_large_full, para=False, k=10"
+  },
+  {
+    "ok": true,
+    "test": "metrics: bge_large_full, para=True, k=1"
+  },
+  {
+    "ok": true,
+    "test": "metrics: bge_large_full, para=True, k=3"
+  },
+  {
+    "ok": true,
+    "test": "metrics: bge_large_full, para=True, k=5"
+  },
+  {
+    "ok": true,
+    "test": "metrics: bge_large_full, para=True, k=10"
+  },
+  {
+    "ok": true,
+    "test": "detail: bge_small_full has 511*4 rows"
+  },
+  {
+    "ok": true,
+    "test": "detail: bge_small_full fixed fingerprint"
+  },
+  {
+    "ok": true,
+    "test": "detail: bge_small_full strict <= soft"
+  },
+  {
+    "ok": true,
+    "test": "detail: bge_small_full 500 original qids"
+  },
+  {
+    "ok": true,
+    "test": "detail: bge_small_full same original qids"
+  },
+  {
+    "ok": true,
+    "test": "metrics: bge_small_full, para=False, k=1"
+  },
+  {
+    "ok": true,
+    "test": "metrics: bge_small_full, para=False, k=3"
+  },
+  {
+    "ok": true,
+    "test": "metrics: bge_small_full, para=False, k=5"
+  },
+  {
+    "ok": true,
+    "test": "metrics: bge_small_full, para=False, k=10"
+  },
+  {
+    "ok": true,
+    "test": "metrics: bge_small_full, para=True, k=1"
+  },
+  {
+    "ok": true,
+    "test": "metrics: bge_small_full, para=True, k=3"
+  },
+  {
+    "ok": true,
+    "test": "metrics: bge_small_full, para=True, k=5"
+  },
+  {
+    "ok": true,
+    "test": "metrics: bge_small_full, para=True, k=10"
+  },
+  {
+    "ok": true,
+    "test": "detail: bge_small_pca_128_seed42 has 511*4 rows"
+  },
+  {
+    "ok": true,
+    "test": "detail: bge_small_pca_128_seed42 fixed fingerprint"
+  },
+  {
+    "ok": true,
+    "test": "detail: bge_small_pca_128_seed42 strict <= soft"
+  },
+  {
+    "ok": true,
+    "test": "detail: bge_small_pca_128_seed42 500 original qids"
+  },
+  {
+    "ok": true,
+    "test": "detail: bge_small_pca_128_seed42 same original qids"
+  },
+  {
+    "ok": true,
+    "test": "metrics: bge_small_pca_128_seed42, para=False, k=1"
+  },
+  {
+    "ok": true,
+    "test": "metrics: bge_small_pca_128_seed42, para=False, k=3"
+  },
+  {
+    "ok": true,
+    "test": "metrics: bge_small_pca_128_seed42, para=False, k=5"
+  },
+  {
+    "ok": true,
+    "test": "metrics: bge_small_pca_128_seed42, para=False, k=10"
+  },
+  {
+    "ok": true,
+    "test": "metrics: bge_small_pca_128_seed42, para=True, k=1"
+  },
+  {
+    "ok": true,
+    "test": "metrics: bge_small_pca_128_seed42, para=True, k=3"
+  },
+  {
+    "ok": true,
+    "test": "metrics: bge_small_pca_128_seed42, para=True, k=5"
+  },
+  {
+    "ok": true,
+    "test": "metrics: bge_small_pca_128_seed42, para=True, k=10"
+  },
+  {
+    "ok": true,
+    "test": "detail: bge_small_pca_128_seed43 has 511*4 rows"
+  },
+  {
+    "ok": true,
+    "test": "detail: bge_small_pca_128_seed43 fixed fingerprint"
+  },
+  {
+    "ok": true,
+    "test": "detail: bge_small_pca_128_seed43 strict <= soft"
+  },
+  {
+    "ok": true,
+    "test": "detail: bge_small_pca_128_seed43 500 original qids"
+  },
+  {
+    "ok": true,
+    "test": "detail: bge_small_pca_128_seed43 same original qids"
+  },
+  {
+    "ok": true,
+    "test": "metrics: bge_small_pca_128_seed43, para=False, k=1"
+  },
+  {
+    "ok": true,
+    "test": "metrics: bge_small_pca_128_seed43, para=False, k=3"
+  },
+  {
+    "ok": true,
+    "test": "metrics: bge_small_pca_128_seed43, para=False, k=5"
+  },
+  {
+    "ok": true,
+    "test": "metrics: bge_small_pca_128_seed43, para=False, k=10"
+  },
+  {
+    "ok": true,
+    "test": "metrics: bge_small_pca_128_seed43, para=True, k=1"
+  },
+  {
+    "ok": true,
+    "test": "metrics: bge_small_pca_128_seed43, para=True, k=3"
+  },
+  {
+    "ok": true,
+    "test": "metrics: bge_small_pca_128_seed43, para=True, k=5"
+  },
+  {
+    "ok": true,
+    "test": "metrics: bge_small_pca_128_seed43, para=True, k=10"
+  },
+  {
+    "ok": true,
+    "test": "detail: bge_small_pca_128_seed44 has 511*4 rows"
+  },
+  {
+    "ok": true,
+    "test": "detail: bge_small_pca_128_seed44 fixed fingerprint"
+  },
+  {
+    "ok": true,
+    "test": "detail: bge_small_pca_128_seed44 strict <= soft"
+  },
+  {
+    "ok": true,
+    "test": "detail: bge_small_pca_128_seed44 500 original qids"
+  },
+  {
+    "ok": true,
+    "test": "detail: bge_small_pca_128_seed44 same original qids"
+  },
+  {
+    "ok": true,
+    "test": "metrics: bge_small_pca_128_seed44, para=False, k=1"
+  },
+  {
+    "ok": true,
+    "test": "metrics: bge_small_pca_128_seed44, para=False, k=3"
+  },
+  {
+    "ok": true,
+    "test": "metrics: bge_small_pca_128_seed44, para=False, k=5"
+  },
+  {
+    "ok": true,
+    "test": "metrics: bge_small_pca_128_seed44, para=False, k=10"
+  },
+  {
+    "ok": true,
+    "test": "metrics: bge_small_pca_128_seed44, para=True, k=1"
+  },
+  {
+    "ok": true,
+    "test": "metrics: bge_small_pca_128_seed44, para=True, k=3"
+  },
+  {
+    "ok": true,
+    "test": "metrics: bge_small_pca_128_seed44, para=True, k=5"
+  },
+  {
+    "ok": true,
+    "test": "metrics: bge_small_pca_128_seed44, para=True, k=10"
+  },
+  {
+    "ok": true,
+    "test": "detail: bge_small_pca_192_seed42 has 511*4 rows"
+  },
+  {
+    "ok": true,
+    "test": "detail: bge_small_pca_192_seed42 fixed fingerprint"
+  },
+  {
+    "ok": true,
+    "test": "detail: bge_small_pca_192_seed42 strict <= soft"
+  },
+  {
+    "ok": true,
+    "test": "detail: bge_small_pca_192_seed42 500 original qids"
+  },
+  {
+    "ok": true,
+    "test": "detail: bge_small_pca_192_seed42 same original qids"
+  },
+  {
+    "ok": true,
+    "test": "metrics: bge_small_pca_192_seed42, para=False, k=1"
+  },
+  {
+    "ok": true,
+    "test": "metrics: bge_small_pca_192_seed42, para=False, k=3"
+  },
+  {
+    "ok": true,
+    "test": "metrics: bge_small_pca_192_seed42, para=False, k=5"
+  },
+  {
+    "ok": true,
+    "test": "metrics: bge_small_pca_192_seed42, para=False, k=10"
+  },
+  {
+    "ok": true,
+    "test": "metrics: bge_small_pca_192_seed42, para=True, k=1"
+  },
+  {
+    "ok": true,
+    "test": "metrics: bge_small_pca_192_seed42, para=True, k=3"
+  },
+  {
+    "ok": true,
+    "test": "metrics: bge_small_pca_192_seed42, para=True, k=5"
+  },
+  {
+    "ok": true,
+    "test": "metrics: bge_small_pca_192_seed42, para=True, k=10"
+  },
+  {
+    "ok": true,
+    "test": "detail: bge_small_pca_192_seed43 has 511*4 rows"
+  },
+  {
+    "ok": true,
+    "test": "detail: bge_small_pca_192_seed43 fixed fingerprint"
+  },
+  {
+    "ok": true,
+    "test": "detail: bge_small_pca_192_seed43 strict <= soft"
+  },
+  {
+    "ok": true,
+    "test": "detail: bge_small_pca_192_seed43 500 original qids"
+  },
+  {
+    "ok": true,
+    "test": "detail: bge_small_pca_192_seed43 same original qids"
+  },
+  {
+    "ok": true,
+    "test": "metrics: bge_small_pca_192_seed43, para=False, k=1"
+  },
+  {
+    "ok": true,
+    "test": "metrics: bge_small_pca_192_seed43, para=False, k=3"
+  },
+  {
+    "ok": true,
+    "test": "metrics: bge_small_pca_192_seed43, para=False, k=5"
+  },
+  {
+    "ok": true,
+    "test": "metrics: bge_small_pca_192_seed43, para=False, k=10"
+  },
+  {
+    "ok": true,
+    "test": "metrics: bge_small_pca_192_seed43, para=True, k=1"
+  },
+  {
+    "ok": true,
+    "test": "metrics: bge_small_pca_192_seed43, para=True, k=3"
+  },
+  {
+    "ok": true,
+    "test": "metrics: bge_small_pca_192_seed43, para=True, k=5"
+  },
+  {
+    "ok": true,
+    "test": "metrics: bge_small_pca_192_seed43, para=True, k=10"
+  },
+  {
+    "ok": true,
+    "test": "detail: bge_small_pca_192_seed44 has 511*4 rows"
+  },
+  {
+    "ok": true,
+    "test": "detail: bge_small_pca_192_seed44 fixed fingerprint"
+  },
+  {
+    "ok": true,
+    "test": "detail: bge_small_pca_192_seed44 strict <= soft"
+  },
+  {
+    "ok": true,
+    "test": "detail: bge_small_pca_192_seed44 500 original qids"
+  },
+  {
+    "ok": true,
+    "test": "detail: bge_small_pca_192_seed44 same original qids"
+  },
+  {
+    "ok": true,
+    "test": "metrics: bge_small_pca_192_seed44, para=False, k=1"
+  },
+  {
+    "ok": true,
+    "test": "metrics: bge_small_pca_192_seed44, para=False, k=3"
+  },
+  {
+    "ok": true,
+    "test": "metrics: bge_small_pca_192_seed44, para=False, k=5"
+  },
+  {
+    "ok": true,
+    "test": "metrics: bge_small_pca_192_seed44, para=False, k=10"
+  },
+  {
+    "ok": true,
+    "test": "metrics: bge_small_pca_192_seed44, para=True, k=1"
+  },
+  {
+    "ok": true,
+    "test": "metrics: bge_small_pca_192_seed44, para=True, k=3"
+  },
+  {
+    "ok": true,
+    "test": "metrics: bge_small_pca_192_seed44, para=True, k=5"
+  },
+  {
+    "ok": true,
+    "test": "metrics: bge_small_pca_192_seed44, para=True, k=10"
+  },
+  {
+    "ok": true,
+    "test": "detail: bge_small_pca_256_seed42 has 511*4 rows"
+  },
+  {
+    "ok": true,
+    "test": "detail: bge_small_pca_256_seed42 fixed fingerprint"
+  },
+  {
+    "ok": true,
+    "test": "detail: bge_small_pca_256_seed42 strict <= soft"
+  },
+  {
+    "ok": true,
+    "test": "detail: bge_small_pca_256_seed42 500 original qids"
+  },
+  {
+    "ok": true,
+    "test": "detail: bge_small_pca_256_seed42 same original qids"
+  },
+  {
+    "ok": true,
+    "test": "metrics: bge_small_pca_256_seed42, para=False, k=1"
+  },
+  {
+    "ok": true,
+    "test": "metrics: bge_small_pca_256_seed42, para=False, k=3"
+  },
+  {
+    "ok": true,
+    "test": "metrics: bge_small_pca_256_seed42, para=False, k=5"
+  },
+  {
+    "ok": true,
+    "test": "metrics: bge_small_pca_256_seed42, para=False, k=10"
+  },
+  {
+    "ok": true,
+    "test": "metrics: bge_small_pca_256_seed42, para=True, k=1"
+  },
+  {
+    "ok": true,
+    "test": "metrics: bge_small_pca_256_seed42, para=True, k=3"
+  },
+  {
+    "ok": true,
+    "test": "metrics: bge_small_pca_256_seed42, para=True, k=5"
+  },
+  {
+    "ok": true,
+    "test": "metrics: bge_small_pca_256_seed42, para=True, k=10"
+  },
+  {
+    "ok": true,
+    "test": "detail: bge_small_pca_256_seed43 has 511*4 rows"
+  },
+  {
+    "ok": true,
+    "test": "detail: bge_small_pca_256_seed43 fixed fingerprint"
+  },
+  {
+    "ok": true,
+    "test": "detail: bge_small_pca_256_seed43 strict <= soft"
+  },
+  {
+    "ok": true,
+    "test": "detail: bge_small_pca_256_seed43 500 original qids"
+  },
+  {
+    "ok": true,
+    "test": "detail: bge_small_pca_256_seed43 same original qids"
+  },
+  {
+    "ok": true,
+    "test": "metrics: bge_small_pca_256_seed43, para=False, k=1"
+  },
+  {
+    "ok": true,
+    "test": "metrics: bge_small_pca_256_seed43, para=False, k=3"
+  },
+  {
+    "ok": true,
+    "test": "metrics: bge_small_pca_256_seed43, para=False, k=5"
+  },
+  {
+    "ok": true,
+    "test": "metrics: bge_small_pca_256_seed43, para=False, k=10"
+  },
+  {
+    "ok": true,
+    "test": "metrics: bge_small_pca_256_seed43, para=True, k=1"
+  },
+  {
+    "ok": true,
+    "test": "metrics: bge_small_pca_256_seed43, para=True, k=3"
+  },
+  {
+    "ok": true,
+    "test": "metrics: bge_small_pca_256_seed43, para=True, k=5"
+  },
+  {
+    "ok": true,
+    "test": "metrics: bge_small_pca_256_seed43, para=True, k=10"
+  },
+  {
+    "ok": true,
+    "test": "detail: bge_small_pca_256_seed44 has 511*4 rows"
+  },
+  {
+    "ok": true,
+    "test": "detail: bge_small_pca_256_seed44 fixed fingerprint"
+  },
+  {
+    "ok": true,
+    "test": "detail: bge_small_pca_256_seed44 strict <= soft"
+  },
+  {
+    "ok": true,
+    "test": "detail: bge_small_pca_256_seed44 500 original qids"
+  },
+  {
+    "ok": true,
+    "test": "detail: bge_small_pca_256_seed44 same original qids"
+  },
+  {
+    "ok": true,
+    "test": "metrics: bge_small_pca_256_seed44, para=False, k=1"
+  },
+  {
+    "ok": true,
+    "test": "metrics: bge_small_pca_256_seed44, para=False, k=3"
+  },
+  {
+    "ok": true,
+    "test": "metrics: bge_small_pca_256_seed44, para=False, k=5"
+  },
+  {
+    "ok": true,
+    "test": "metrics: bge_small_pca_256_seed44, para=False, k=10"
+  },
+  {
+    "ok": true,
+    "test": "metrics: bge_small_pca_256_seed44, para=True, k=1"
+  },
+  {
+    "ok": true,
+    "test": "metrics: bge_small_pca_256_seed44, para=True, k=3"
+  },
+  {
+    "ok": true,
+    "test": "metrics: bge_small_pca_256_seed44, para=True, k=5"
+  },
+  {
+    "ok": true,
+    "test": "metrics: bge_small_pca_256_seed44, para=True, k=10"
+  },
+  {
+    "ok": true,
+    "test": "detail: bge_small_pca_64_seed42 has 511*4 rows"
+  },
+  {
+    "ok": true,
+    "test": "detail: bge_small_pca_64_seed42 fixed fingerprint"
+  },
+  {
+    "ok": true,
+    "test": "detail: bge_small_pca_64_seed42 strict <= soft"
+  },
+  {
+    "ok": true,
+    "test": "detail: bge_small_pca_64_seed42 500 original qids"
+  },
+  {
+    "ok": true,
+    "test": "detail: bge_small_pca_64_seed42 same original qids"
+  },
+  {
+    "ok": true,
+    "test": "metrics: bge_small_pca_64_seed42, para=False, k=1"
+  },
+  {
+    "ok": true,
+    "test": "metrics: bge_small_pca_64_seed42, para=False, k=3"
+  },
+  {
+    "ok": true,
+    "test": "metrics: bge_small_pca_64_seed42, para=False, k=5"
+  },
+  {
+    "ok": true,
+    "test": "metrics: bge_small_pca_64_seed42, para=False, k=10"
+  },
+  {
+    "ok": true,
+    "test": "metrics: bge_small_pca_64_seed42, para=True, k=1"
+  },
+  {
+    "ok": true,
+    "test": "metrics: bge_small_pca_64_seed42, para=True, k=3"
+  },
+  {
+    "ok": true,
+    "test": "metrics: bge_small_pca_64_seed42, para=True, k=5"
+  },
+  {
+    "ok": true,
+    "test": "metrics: bge_small_pca_64_seed42, para=True, k=10"
+  },
+  {
+    "ok": true,
+    "test": "detail: bge_small_pca_64_seed43 has 511*4 rows"
+  },
+  {
+    "ok": true,
+    "test": "detail: bge_small_pca_64_seed43 fixed fingerprint"
+  },
+  {
+    "ok": true,
+    "test": "detail: bge_small_pca_64_seed43 strict <= soft"
+  },
+  {
+    "ok": true,
+    "test": "detail: bge_small_pca_64_seed43 500 original qids"
+  },
+  {
+    "ok": true,
+    "test": "detail: bge_small_pca_64_seed43 same original qids"
+  },
+  {
+    "ok": true,
+    "test": "metrics: bge_small_pca_64_seed43, para=False, k=1"
+  },
+  {
+    "ok": true,
+    "test": "metrics: bge_small_pca_64_seed43, para=False, k=3"
+  },
+  {
+    "ok": true,
+    "test": "metrics: bge_small_pca_64_seed43, para=False, k=5"
+  },
+  {
+    "ok": true,
+    "test": "metrics: bge_small_pca_64_seed43, para=False, k=10"
+  },
+  {
+    "ok": true,
+    "test": "metrics: bge_small_pca_64_seed43, para=True, k=1"
+  },
+  {
+    "ok": true,
+    "test": "metrics: bge_small_pca_64_seed43, para=True, k=3"
+  },
+  {
+    "ok": true,
+    "test": "metrics: bge_small_pca_64_seed43, para=True, k=5"
+  },
+  {
+    "ok": true,
+    "test": "metrics: bge_small_pca_64_seed43, para=True, k=10"
+  },
+  {
+    "ok": true,
+    "test": "detail: bge_small_pca_64_seed44 has 511*4 rows"
+  },
+  {
+    "ok": true,
+    "test": "detail: bge_small_pca_64_seed44 fixed fingerprint"
+  },
+  {
+    "ok": true,
+    "test": "detail: bge_small_pca_64_seed44 strict <= soft"
+  },
+  {
+    "ok": true,
+    "test": "detail: bge_small_pca_64_seed44 500 original qids"
+  },
+  {
+    "ok": true,
+    "test": "detail: bge_small_pca_64_seed44 same original qids"
+  },
+  {
+    "ok": true,
+    "test": "metrics: bge_small_pca_64_seed44, para=False, k=1"
+  },
+  {
+    "ok": true,
+    "test": "metrics: bge_small_pca_64_seed44, para=False, k=3"
+  },
+  {
+    "ok": true,
+    "test": "metrics: bge_small_pca_64_seed44, para=False, k=5"
+  },
+  {
+    "ok": true,
+    "test": "metrics: bge_small_pca_64_seed44, para=False, k=10"
+  },
+  {
+    "ok": true,
+    "test": "metrics: bge_small_pca_64_seed44, para=True, k=1"
+  },
+  {
+    "ok": true,
+    "test": "metrics: bge_small_pca_64_seed44, para=True, k=3"
+  },
+  {
+    "ok": true,
+    "test": "metrics: bge_small_pca_64_seed44, para=True, k=5"
+  },
+  {
+    "ok": true,
+    "test": "metrics: bge_small_pca_64_seed44, para=True, k=10"
+  },
+  {
+    "ok": true,
+    "test": "detail: nomic_full has 511*4 rows"
+  },
+  {
+    "ok": true,
+    "test": "detail: nomic_full fixed fingerprint"
+  },
+  {
+    "ok": true,
+    "test": "detail: nomic_full strict <= soft"
+  },
+  {
+    "ok": true,
+    "test": "detail: nomic_full 500 original qids"
+  },
+  {
+    "ok": true,
+    "test": "detail: nomic_full same original qids"
+  },
+  {
+    "ok": true,
+    "test": "metrics: nomic_full, para=False, k=1"
+  },
+  {
+    "ok": true,
+    "test": "metrics: nomic_full, para=False, k=3"
+  },
+  {
+    "ok": true,
+    "test": "metrics: nomic_full, para=False, k=5"
+  },
+  {
+    "ok": true,
+    "test": "metrics: nomic_full, para=False, k=10"
+  },
+  {
+    "ok": true,
+    "test": "metrics: nomic_full, para=True, k=1"
+  },
+  {
+    "ok": true,
+    "test": "metrics: nomic_full, para=True, k=3"
+  },
+  {
+    "ok": true,
+    "test": "metrics: nomic_full, para=True, k=5"
+  },
+  {
+    "ok": true,
+    "test": "metrics: nomic_full, para=True, k=10"
+  },
+  {
+    "ok": true,
+    "test": "detail: nomic_matryoshka_128 has 511*4 rows"
+  },
+  {
+    "ok": true,
+    "test": "detail: nomic_matryoshka_128 fixed fingerprint"
+  },
+  {
+    "ok": true,
+    "test": "detail: nomic_matryoshka_128 strict <= soft"
+  },
+  {
+    "ok": true,
+    "test": "detail: nomic_matryoshka_128 500 original qids"
+  },
+  {
+    "ok": true,
+    "test": "detail: nomic_matryoshka_128 same original qids"
+  },
+  {
+    "ok": true,
+    "test": "metrics: nomic_matryoshka_128, para=False, k=1"
+  },
+  {
+    "ok": true,
+    "test": "metrics: nomic_matryoshka_128, para=False, k=3"
+  },
+  {
+    "ok": true,
+    "test": "metrics: nomic_matryoshka_128, para=False, k=5"
+  },
+  {
+    "ok": true,
+    "test": "metrics: nomic_matryoshka_128, para=False, k=10"
+  },
+  {
+    "ok": true,
+    "test": "metrics: nomic_matryoshka_128, para=True, k=1"
+  },
+  {
+    "ok": true,
+    "test": "metrics: nomic_matryoshka_128, para=True, k=3"
+  },
+  {
+    "ok": true,
+    "test": "metrics: nomic_matryoshka_128, para=True, k=5"
+  },
+  {
+    "ok": true,
+    "test": "metrics: nomic_matryoshka_128, para=True, k=10"
+  },
+  {
+    "ok": true,
+    "test": "detail: nomic_matryoshka_256 has 511*4 rows"
+  },
+  {
+    "ok": true,
+    "test": "detail: nomic_matryoshka_256 fixed fingerprint"
+  },
+  {
+    "ok": true,
+    "test": "detail: nomic_matryoshka_256 strict <= soft"
+  },
+  {
+    "ok": true,
+    "test": "detail: nomic_matryoshka_256 500 original qids"
+  },
+  {
+    "ok": true,
+    "test": "detail: nomic_matryoshka_256 same original qids"
+  },
+  {
+    "ok": true,
+    "test": "metrics: nomic_matryoshka_256, para=False, k=1"
+  },
+  {
+    "ok": true,
+    "test": "metrics: nomic_matryoshka_256, para=False, k=3"
+  },
+  {
+    "ok": true,
+    "test": "metrics: nomic_matryoshka_256, para=False, k=5"
+  },
+  {
+    "ok": true,
+    "test": "metrics: nomic_matryoshka_256, para=False, k=10"
+  },
+  {
+    "ok": true,
+    "test": "metrics: nomic_matryoshka_256, para=True, k=1"
+  },
+  {
+    "ok": true,
+    "test": "metrics: nomic_matryoshka_256, para=True, k=3"
+  },
+  {
+    "ok": true,
+    "test": "metrics: nomic_matryoshka_256, para=True, k=5"
+  },
+  {
+    "ok": true,
+    "test": "metrics: nomic_matryoshka_256, para=True, k=10"
+  },
+  {
+    "ok": true,
+    "test": "detail: nomic_matryoshka_512 has 511*4 rows"
+  },
+  {
+    "ok": true,
+    "test": "detail: nomic_matryoshka_512 fixed fingerprint"
+  },
+  {
+    "ok": true,
+    "test": "detail: nomic_matryoshka_512 strict <= soft"
+  },
+  {
+    "ok": true,
+    "test": "detail: nomic_matryoshka_512 500 original qids"
+  },
+  {
+    "ok": true,
+    "test": "detail: nomic_matryoshka_512 same original qids"
+  },
+  {
+    "ok": true,
+    "test": "metrics: nomic_matryoshka_512, para=False, k=1"
+  },
+  {
+    "ok": true,
+    "test": "metrics: nomic_matryoshka_512, para=False, k=3"
+  },
+  {
+    "ok": true,
+    "test": "metrics: nomic_matryoshka_512, para=False, k=5"
+  },
+  {
+    "ok": true,
+    "test": "metrics: nomic_matryoshka_512, para=False, k=10"
+  },
+  {
+    "ok": true,
+    "test": "metrics: nomic_matryoshka_512, para=True, k=1"
+  },
+  {
+    "ok": true,
+    "test": "metrics: nomic_matryoshka_512, para=True, k=3"
+  },
+  {
+    "ok": true,
+    "test": "metrics: nomic_matryoshka_512, para=True, k=5"
+  },
+  {
+    "ok": true,
+    "test": "metrics: nomic_matryoshka_512, para=True, k=10"
+  },
+  {
+    "ok": true,
+    "test": "detail: nomic_matryoshka_64 has 511*4 rows"
+  },
+  {
+    "ok": true,
+    "test": "detail: nomic_matryoshka_64 fixed fingerprint"
+  },
+  {
+    "ok": true,
+    "test": "detail: nomic_matryoshka_64 strict <= soft"
+  },
+  {
+    "ok": true,
+    "test": "detail: nomic_matryoshka_64 500 original qids"
+  },
+  {
+    "ok": true,
+    "test": "detail: nomic_matryoshka_64 same original qids"
+  },
+  {
+    "ok": true,
+    "test": "metrics: nomic_matryoshka_64, para=False, k=1"
+  },
+  {
+    "ok": true,
+    "test": "metrics: nomic_matryoshka_64, para=False, k=3"
+  },
+  {
+    "ok": true,
+    "test": "metrics: nomic_matryoshka_64, para=False, k=5"
+  },
+  {
+    "ok": true,
+    "test": "metrics: nomic_matryoshka_64, para=False, k=10"
+  },
+  {
+    "ok": true,
+    "test": "metrics: nomic_matryoshka_64, para=True, k=1"
+  },
+  {
+    "ok": true,
+    "test": "metrics: nomic_matryoshka_64, para=True, k=3"
+  },
+  {
+    "ok": true,
+    "test": "metrics: nomic_matryoshka_64, para=True, k=5"
+  },
+  {
+    "ok": true,
+    "test": "metrics: nomic_matryoshka_64, para=True, k=10"
+  },
+  {
+    "ok": true,
+    "test": "detail: nomic_pca_128_seed42 has 511*4 rows"
+  },
+  {
+    "ok": true,
+    "test": "detail: nomic_pca_128_seed42 fixed fingerprint"
+  },
+  {
+    "ok": true,
+    "test": "detail: nomic_pca_128_seed42 strict <= soft"
+  },
+  {
+    "ok": true,
+    "test": "detail: nomic_pca_128_seed42 500 original qids"
+  },
+  {
+    "ok": true,
+    "test": "detail: nomic_pca_128_seed42 same original qids"
+  },
+  {
+    "ok": true,
+    "test": "metrics: nomic_pca_128_seed42, para=False, k=1"
+  },
+  {
+    "ok": true,
+    "test": "metrics: nomic_pca_128_seed42, para=False, k=3"
+  },
+  {
+    "ok": true,
+    "test": "metrics: nomic_pca_128_seed42, para=False, k=5"
+  },
+  {
+    "ok": true,
+    "test": "metrics: nomic_pca_128_seed42, para=False, k=10"
+  },
+  {
+    "ok": true,
+    "test": "metrics: nomic_pca_128_seed42, para=True, k=1"
+  },
+  {
+    "ok": true,
+    "test": "metrics: nomic_pca_128_seed42, para=True, k=3"
+  },
+  {
+    "ok": true,
+    "test": "metrics: nomic_pca_128_seed42, para=True, k=5"
+  },
+  {
+    "ok": true,
+    "test": "metrics: nomic_pca_128_seed42, para=True, k=10"
+  },
+  {
+    "ok": true,
+    "test": "detail: nomic_pca_128_seed43 has 511*4 rows"
+  },
+  {
+    "ok": true,
+    "test": "detail: nomic_pca_128_seed43 fixed fingerprint"
+  },
+  {
+    "ok": true,
+    "test": "detail: nomic_pca_128_seed43 strict <= soft"
+  },
+  {
+    "ok": true,
+    "test": "detail: nomic_pca_128_seed43 500 original qids"
+  },
+  {
+    "ok": true,
+    "test": "detail: nomic_pca_128_seed43 same original qids"
+  },
+  {
+    "ok": true,
+    "test": "metrics: nomic_pca_128_seed43, para=False, k=1"
+  },
+  {
+    "ok": true,
+    "test": "metrics: nomic_pca_128_seed43, para=False, k=3"
+  },
+  {
+    "ok": true,
+    "test": "metrics: nomic_pca_128_seed43, para=False, k=5"
+  },
+  {
+    "ok": true,
+    "test": "metrics: nomic_pca_128_seed43, para=False, k=10"
+  },
+  {
+    "ok": true,
+    "test": "metrics: nomic_pca_128_seed43, para=True, k=1"
+  },
+  {
+    "ok": true,
+    "test": "metrics: nomic_pca_128_seed43, para=True, k=3"
+  },
+  {
+    "ok": true,
+    "test": "metrics: nomic_pca_128_seed43, para=True, k=5"
+  },
+  {
+    "ok": true,
+    "test": "metrics: nomic_pca_128_seed43, para=True, k=10"
+  },
+  {
+    "ok": true,
+    "test": "detail: nomic_pca_128_seed44 has 511*4 rows"
+  },
+  {
+    "ok": true,
+    "test": "detail: nomic_pca_128_seed44 fixed fingerprint"
+  },
+  {
+    "ok": true,
+    "test": "detail: nomic_pca_128_seed44 strict <= soft"
+  },
+  {
+    "ok": true,
+    "test": "detail: nomic_pca_128_seed44 500 original qids"
+  },
+  {
+    "ok": true,
+    "test": "detail: nomic_pca_128_seed44 same original qids"
+  },
+  {
+    "ok": true,
+    "test": "metrics: nomic_pca_128_seed44, para=False, k=1"
+  },
+  {
+    "ok": true,
+    "test": "metrics: nomic_pca_128_seed44, para=False, k=3"
+  },
+  {
+    "ok": true,
+    "test": "metrics: nomic_pca_128_seed44, para=False, k=5"
+  },
+  {
+    "ok": true,
+    "test": "metrics: nomic_pca_128_seed44, para=False, k=10"
+  },
+  {
+    "ok": true,
+    "test": "metrics: nomic_pca_128_seed44, para=True, k=1"
+  },
+  {
+    "ok": true,
+    "test": "metrics: nomic_pca_128_seed44, para=True, k=3"
+  },
+  {
+    "ok": true,
+    "test": "metrics: nomic_pca_128_seed44, para=True, k=5"
+  },
+  {
+    "ok": true,
+    "test": "metrics: nomic_pca_128_seed44, para=True, k=10"
+  },
+  {
+    "ok": true,
+    "test": "detail: nomic_pca_256_seed42 has 511*4 rows"
+  },
+  {
+    "ok": true,
+    "test": "detail: nomic_pca_256_seed42 fixed fingerprint"
+  },
+  {
+    "ok": true,
+    "test": "detail: nomic_pca_256_seed42 strict <= soft"
+  },
+  {
+    "ok": true,
+    "test": "detail: nomic_pca_256_seed42 500 original qids"
+  },
+  {
+    "ok": true,
+    "test": "detail: nomic_pca_256_seed42 same original qids"
+  },
+  {
+    "ok": true,
+    "test": "metrics: nomic_pca_256_seed42, para=False, k=1"
+  },
+  {
+    "ok": true,
+    "test": "metrics: nomic_pca_256_seed42, para=False, k=3"
+  },
+  {
+    "ok": true,
+    "test": "metrics: nomic_pca_256_seed42, para=False, k=5"
+  },
+  {
+    "ok": true,
+    "test": "metrics: nomic_pca_256_seed42, para=False, k=10"
+  },
+  {
+    "ok": true,
+    "test": "metrics: nomic_pca_256_seed42, para=True, k=1"
+  },
+  {
+    "ok": true,
+    "test": "metrics: nomic_pca_256_seed42, para=True, k=3"
+  },
+  {
+    "ok": true,
+    "test": "metrics: nomic_pca_256_seed42, para=True, k=5"
+  },
+  {
+    "ok": true,
+    "test": "metrics: nomic_pca_256_seed42, para=True, k=10"
+  },
+  {
+    "ok": true,
+    "test": "detail: nomic_pca_256_seed43 has 511*4 rows"
+  },
+  {
+    "ok": true,
+    "test": "detail: nomic_pca_256_seed43 fixed fingerprint"
+  },
+  {
+    "ok": true,
+    "test": "detail: nomic_pca_256_seed43 strict <= soft"
+  },
+  {
+    "ok": true,
+    "test": "detail: nomic_pca_256_seed43 500 original qids"
+  },
+  {
+    "ok": true,
+    "test": "detail: nomic_pca_256_seed43 same original qids"
+  },
+  {
+    "ok": true,
+    "test": "metrics: nomic_pca_256_seed43, para=False, k=1"
+  },
+  {
+    "ok": true,
+    "test": "metrics: nomic_pca_256_seed43, para=False, k=3"
+  },
+  {
+    "ok": true,
+    "test": "metrics: nomic_pca_256_seed43, para=False, k=5"
+  },
+  {
+    "ok": true,
+    "test": "metrics: nomic_pca_256_seed43, para=False, k=10"
+  },
+  {
+    "ok": true,
+    "test": "metrics: nomic_pca_256_seed43, para=True, k=1"
+  },
+  {
+    "ok": true,
+    "test": "metrics: nomic_pca_256_seed43, para=True, k=3"
+  },
+  {
+    "ok": true,
+    "test": "metrics: nomic_pca_256_seed43, para=True, k=5"
+  },
+  {
+    "ok": true,
+    "test": "metrics: nomic_pca_256_seed43, para=True, k=10"
+  },
+  {
+    "ok": true,
+    "test": "detail: nomic_pca_256_seed44 has 511*4 rows"
+  },
+  {
+    "ok": true,
+    "test": "detail: nomic_pca_256_seed44 fixed fingerprint"
+  },
+  {
+    "ok": true,
+    "test": "detail: nomic_pca_256_seed44 strict <= soft"
+  },
+  {
+    "ok": true,
+    "test": "detail: nomic_pca_256_seed44 500 original qids"
+  },
+  {
+    "ok": true,
+    "test": "detail: nomic_pca_256_seed44 same original qids"
+  },
+  {
+    "ok": true,
+    "test": "metrics: nomic_pca_256_seed44, para=False, k=1"
+  },
+  {
+    "ok": true,
+    "test": "metrics: nomic_pca_256_seed44, para=False, k=3"
+  },
+  {
+    "ok": true,
+    "test": "metrics: nomic_pca_256_seed44, para=False, k=5"
+  },
+  {
+    "ok": true,
+    "test": "metrics: nomic_pca_256_seed44, para=False, k=10"
+  },
+  {
+    "ok": true,
+    "test": "metrics: nomic_pca_256_seed44, para=True, k=1"
+  },
+  {
+    "ok": true,
+    "test": "metrics: nomic_pca_256_seed44, para=True, k=3"
+  },
+  {
+    "ok": true,
+    "test": "metrics: nomic_pca_256_seed44, para=True, k=5"
+  },
+  {
+    "ok": true,
+    "test": "metrics: nomic_pca_256_seed44, para=True, k=10"
+  },
+  {
+    "ok": true,
+    "test": "detail: nomic_pca_512_seed42 has 511*4 rows"
+  },
+  {
+    "ok": true,
+    "test": "detail: nomic_pca_512_seed42 fixed fingerprint"
+  },
+  {
+    "ok": true,
+    "test": "detail: nomic_pca_512_seed42 strict <= soft"
+  },
+  {
+    "ok": true,
+    "test": "detail: nomic_pca_512_seed42 500 original qids"
+  },
+  {
+    "ok": true,
+    "test": "detail: nomic_pca_512_seed42 same original qids"
+  },
+  {
+    "ok": true,
+    "test": "metrics: nomic_pca_512_seed42, para=False, k=1"
+  },
+  {
+    "ok": true,
+    "test": "metrics: nomic_pca_512_seed42, para=False, k=3"
+  },
+  {
+    "ok": true,
+    "test": "metrics: nomic_pca_512_seed42, para=False, k=5"
+  },
+  {
+    "ok": true,
+    "test": "metrics: nomic_pca_512_seed42, para=False, k=10"
+  },
+  {
+    "ok": true,
+    "test": "metrics: nomic_pca_512_seed42, para=True, k=1"
+  },
+  {
+    "ok": true,
+    "test": "metrics: nomic_pca_512_seed42, para=True, k=3"
+  },
+  {
+    "ok": true,
+    "test": "metrics: nomic_pca_512_seed42, para=True, k=5"
+  },
+  {
+    "ok": true,
+    "test": "metrics: nomic_pca_512_seed42, para=True, k=10"
+  },
+  {
+    "ok": true,
+    "test": "detail: nomic_pca_512_seed43 has 511*4 rows"
+  },
+  {
+    "ok": true,
+    "test": "detail: nomic_pca_512_seed43 fixed fingerprint"
+  },
+  {
+    "ok": true,
+    "test": "detail: nomic_pca_512_seed43 strict <= soft"
+  },
+  {
+    "ok": true,
+    "test": "detail: nomic_pca_512_seed43 500 original qids"
+  },
+  {
+    "ok": true,
+    "test": "detail: nomic_pca_512_seed43 same original qids"
+  },
+  {
+    "ok": true,
+    "test": "metrics: nomic_pca_512_seed43, para=False, k=1"
+  },
+  {
+    "ok": true,
+    "test": "metrics: nomic_pca_512_seed43, para=False, k=3"
+  },
+  {
+    "ok": true,
+    "test": "metrics: nomic_pca_512_seed43, para=False, k=5"
+  },
+  {
+    "ok": true,
+    "test": "metrics: nomic_pca_512_seed43, para=False, k=10"
+  },
+  {
+    "ok": true,
+    "test": "metrics: nomic_pca_512_seed43, para=True, k=1"
+  },
+  {
+    "ok": true,
+    "test": "metrics: nomic_pca_512_seed43, para=True, k=3"
+  },
+  {
+    "ok": true,
+    "test": "metrics: nomic_pca_512_seed43, para=True, k=5"
+  },
+  {
+    "ok": true,
+    "test": "metrics: nomic_pca_512_seed43, para=True, k=10"
+  },
+  {
+    "ok": true,
+    "test": "detail: nomic_pca_512_seed44 has 511*4 rows"
+  },
+  {
+    "ok": true,
+    "test": "detail: nomic_pca_512_seed44 fixed fingerprint"
+  },
+  {
+    "ok": true,
+    "test": "detail: nomic_pca_512_seed44 strict <= soft"
+  },
+  {
+    "ok": true,
+    "test": "detail: nomic_pca_512_seed44 500 original qids"
+  },
+  {
+    "ok": true,
+    "test": "detail: nomic_pca_512_seed44 same original qids"
+  },
+  {
+    "ok": true,
+    "test": "metrics: nomic_pca_512_seed44, para=False, k=1"
+  },
+  {
+    "ok": true,
+    "test": "metrics: nomic_pca_512_seed44, para=False, k=3"
+  },
+  {
+    "ok": true,
+    "test": "metrics: nomic_pca_512_seed44, para=False, k=5"
+  },
+  {
+    "ok": true,
+    "test": "metrics: nomic_pca_512_seed44, para=False, k=10"
+  },
+  {
+    "ok": true,
+    "test": "metrics: nomic_pca_512_seed44, para=True, k=1"
+  },
+  {
+    "ok": true,
+    "test": "metrics: nomic_pca_512_seed44, para=True, k=3"
+  },
+  {
+    "ok": true,
+    "test": "metrics: nomic_pca_512_seed44, para=True, k=5"
+  },
+  {
+    "ok": true,
+    "test": "metrics: nomic_pca_512_seed44, para=True, k=10"
+  },
+  {
+    "ok": true,
+    "test": "detail: nomic_pca_64_seed42 has 511*4 rows"
+  },
+  {
+    "ok": true,
+    "test": "detail: nomic_pca_64_seed42 fixed fingerprint"
+  },
+  {
+    "ok": true,
+    "test": "detail: nomic_pca_64_seed42 strict <= soft"
+  },
+  {
+    "ok": true,
+    "test": "detail: nomic_pca_64_seed42 500 original qids"
+  },
+  {
+    "ok": true,
+    "test": "detail: nomic_pca_64_seed42 same original qids"
+  },
+  {
+    "ok": true,
+    "test": "metrics: nomic_pca_64_seed42, para=False, k=1"
+  },
+  {
+    "ok": true,
+    "test": "metrics: nomic_pca_64_seed42, para=False, k=3"
+  },
+  {
+    "ok": true,
+    "test": "metrics: nomic_pca_64_seed42, para=False, k=5"
+  },
+  {
+    "ok": true,
+    "test": "metrics: nomic_pca_64_seed42, para=False, k=10"
+  },
+  {
+    "ok": true,
+    "test": "metrics: nomic_pca_64_seed42, para=True, k=1"
+  },
+  {
+    "ok": true,
+    "test": "metrics: nomic_pca_64_seed42, para=True, k=3"
+  },
+  {
+    "ok": true,
+    "test": "metrics: nomic_pca_64_seed42, para=True, k=5"
+  },
+  {
+    "ok": true,
+    "test": "metrics: nomic_pca_64_seed42, para=True, k=10"
+  },
+  {
+    "ok": true,
+    "test": "detail: nomic_pca_64_seed43 has 511*4 rows"
+  },
+  {
+    "ok": true,
+    "test": "detail: nomic_pca_64_seed43 fixed fingerprint"
+  },
+  {
+    "ok": true,
+    "test": "detail: nomic_pca_64_seed43 strict <= soft"
+  },
+  {
+    "ok": true,
+    "test": "detail: nomic_pca_64_seed43 500 original qids"
+  },
+  {
+    "ok": true,
+    "test": "detail: nomic_pca_64_seed43 same original qids"
+  },
+  {
+    "ok": true,
+    "test": "metrics: nomic_pca_64_seed43, para=False, k=1"
+  },
+  {
+    "ok": true,
+    "test": "metrics: nomic_pca_64_seed43, para=False, k=3"
+  },
+  {
+    "ok": true,
+    "test": "metrics: nomic_pca_64_seed43, para=False, k=5"
+  },
+  {
+    "ok": true,
+    "test": "metrics: nomic_pca_64_seed43, para=False, k=10"
+  },
+  {
+    "ok": true,
+    "test": "metrics: nomic_pca_64_seed43, para=True, k=1"
+  },
+  {
+    "ok": true,
+    "test": "metrics: nomic_pca_64_seed43, para=True, k=3"
+  },
+  {
+    "ok": true,
+    "test": "metrics: nomic_pca_64_seed43, para=True, k=5"
+  },
+  {
+    "ok": true,
+    "test": "metrics: nomic_pca_64_seed43, para=True, k=10"
+  },
+  {
+    "ok": true,
+    "test": "detail: nomic_pca_64_seed44 has 511*4 rows"
+  },
+  {
+    "ok": true,
+    "test": "detail: nomic_pca_64_seed44 fixed fingerprint"
+  },
+  {
+    "ok": true,
+    "test": "detail: nomic_pca_64_seed44 strict <= soft"
+  },
+  {
+    "ok": true,
+    "test": "detail: nomic_pca_64_seed44 500 original qids"
+  },
+  {
+    "ok": true,
+    "test": "detail: nomic_pca_64_seed44 same original qids"
+  },
+  {
+    "ok": true,
+    "test": "metrics: nomic_pca_64_seed44, para=False, k=1"
+  },
+  {
+    "ok": true,
+    "test": "metrics: nomic_pca_64_seed44, para=False, k=3"
+  },
+  {
+    "ok": true,
+    "test": "metrics: nomic_pca_64_seed44, para=False, k=5"
+  },
+  {
+    "ok": true,
+    "test": "metrics: nomic_pca_64_seed44, para=False, k=10"
+  },
+  {
+    "ok": true,
+    "test": "metrics: nomic_pca_64_seed44, para=True, k=1"
+  },
+  {
+    "ok": true,
+    "test": "metrics: nomic_pca_64_seed44, para=True, k=3"
+  },
+  {
+    "ok": true,
+    "test": "metrics: nomic_pca_64_seed44, para=True, k=5"
+  },
+  {
+    "ok": true,
+    "test": "metrics: nomic_pca_64_seed44, para=True, k=10"
+  },
+  {
+    "ok": true,
+    "test": "nomic: paired ids dim=64"
+  },
+  {
+    "ok": true,
+    "test": "nomic: MRL/PCA dim=64 independently matches"
+  },
+  {
+    "ok": true,
+    "test": "nomic: paired ids dim=128"
+  },
+  {
+    "ok": true,
+    "test": "nomic: MRL/PCA dim=128 independently matches"
+  },
+  {
+    "ok": true,
+    "test": "nomic: paired ids dim=256"
+  },
+  {
+    "ok": true,
+    "test": "nomic: MRL/PCA dim=256 independently matches"
+  },
+  {
+    "ok": true,
+    "test": "nomic: paired ids dim=512"
+  },
+  {
+    "ok": true,
+    "test": "nomic: MRL/PCA dim=512 independently matches"
+  },
+  {
+    "ok": true,
+    "test": "paired vs Small: bge_small_pca_64_seed43"
+  },
+  {
+    "ok": true,
+    "test": "paired vs Small: bge_small_pca_64_seed42"
+  },
+  {
+    "ok": true,
+    "test": "paired vs Small: bge_small_pca_64_seed44"
+  },
+  {
+    "ok": true,
+    "test": "paired vs Small: nomic_pca_64_seed44"
+  },
+  {
+    "ok": true,
+    "test": "paired vs Small: nomic_pca_64_seed43"
+  },
+  {
+    "ok": true,
+    "test": "paired vs Small: nomic_pca_64_seed42"
+  },
+  {
+    "ok": true,
+    "test": "paired vs Small: nomic_matryoshka_64"
+  },
+  {
+    "ok": true,
+    "test": "paired vs Small: bge_small_pca_128_seed43"
+  },
+  {
+    "ok": true,
+    "test": "paired vs Small: bge_small_pca_128_seed44"
+  },
+  {
+    "ok": true,
+    "test": "paired vs Small: bge_small_pca_128_seed42"
+  },
+  {
+    "ok": true,
+    "test": "paired vs Small: bge_small_pca_192_seed44"
+  },
+  {
+    "ok": true,
+    "test": "paired vs Small: bge_small_pca_192_seed43"
+  },
+  {
+    "ok": true,
+    "test": "paired vs Small: nomic_pca_128_seed44"
+  },
+  {
+    "ok": true,
+    "test": "paired vs Small: bge_small_pca_192_seed42"
+  },
+  {
+    "ok": true,
+    "test": "paired vs Small: nomic_pca_128_seed43"
+  },
+  {
+    "ok": true,
+    "test": "paired vs Small: nomic_pca_128_seed42"
+  },
+  {
+    "ok": true,
+    "test": "paired vs Small: bge_small_pca_256_seed44"
+  },
+  {
+    "ok": true,
+    "test": "paired vs Small: bge_small_pca_256_seed42"
+  },
+  {
+    "ok": true,
+    "test": "paired vs Small: bge_small_pca_256_seed43"
+  },
+  {
+    "ok": true,
+    "test": "paired vs Small: nomic_matryoshka_128"
+  },
+  {
+    "ok": true,
+    "test": "paired vs Small: bge_base_full"
+  },
+  {
+    "ok": true,
+    "test": "paired vs Small: bge_large_full"
+  },
+  {
+    "ok": true,
+    "test": "paired vs Small: nomic_full"
+  },
+  {
+    "ok": true,
+    "test": "paired vs Small: nomic_pca_256_seed44"
+  },
+  {
+    "ok": true,
+    "test": "paired vs Small: nomic_pca_256_seed42"
+  },
+  {
+    "ok": true,
+    "test": "paired vs Small: nomic_matryoshka_512"
+  },
+  {
+    "ok": true,
+    "test": "paired vs Small: nomic_pca_512_seed44"
+  },
+  {
+    "ok": true,
+    "test": "paired vs Small: nomic_pca_512_seed43"
+  },
+  {
+    "ok": true,
+    "test": "paired vs Small: nomic_pca_512_seed42"
+  },
+  {
+    "ok": true,
+    "test": "paired vs Small: nomic_matryoshka_256"
+  },
+  {
+    "ok": true,
+    "test": "paired vs Small: nomic_pca_256_seed43"
+  },
+  {
+    "ok": true,
+    "test": "paraphrase: 500 distinct original and paraphrased question IDs"
+  },
+  {
+    "ok": true,
+    "test": "paraphrase: source and rewritten text differ"
+  },
+  {
+    "ok": true,
+    "test": "paraphrase: 6000 per-pair per-k evaluations"
+  },
+  {
+    "ok": true,
+    "test": "paraphrase: all 3 BGE models"
+  },
+  {
+    "ok": true,
+    "test": "paraphrase: k=1,3,5,10"
+  },
+  {
+    "ok": true,
+    "test": "paraphrase: common run fingerprint"
+  },
+  {
+    "ok": true,
+    "test": "paraphrase: same 500 original ids in details"
+  },
+  {
+    "ok": true,
+    "test": "paraphrase: strict <= soft"
+  },
+  {
+    "ok": true,
+    "test": "paraphrase: bge_base k=1 agrees with details"
+  },
+  {
+    "ok": true,
+    "test": "paraphrase: bge_base k=3 agrees with details"
+  },
+  {
+    "ok": true,
+    "test": "paraphrase: bge_base k=5 agrees with details"
+  },
+  {
+    "ok": true,
+    "test": "paraphrase: bge_base k=10 agrees with details"
+  },
+  {
+    "ok": true,
+    "test": "paraphrase: bge_large k=1 agrees with details"
+  },
+  {
+    "ok": true,
+    "test": "paraphrase: bge_large k=3 agrees with details"
+  },
+  {
+    "ok": true,
+    "test": "paraphrase: bge_large k=5 agrees with details"
+  },
+  {
+    "ok": true,
+    "test": "paraphrase: bge_large k=10 agrees with details"
+  },
+  {
+    "ok": true,
+    "test": "paraphrase: bge_small k=1 agrees with details"
+  },
+  {
+    "ok": true,
+    "test": "paraphrase: bge_small k=3 agrees with details"
+  },
+  {
+    "ok": true,
+    "test": "paraphrase: bge_small k=5 agrees with details"
+  },
+  {
+    "ok": true,
+    "test": "paraphrase: bge_small k=10 agrees with details"
+  },
+  {
+    "ok": true,
+    "test": "paraphrase: all 500 qids exist in repository snapshot"
+  },
+  {
+    "ok": true,
+    "test": "paraphrase: qid/orig_qid/text match repository snapshot"
+  },
+  {
+    "ok": true,
+    "test": "paraphrase: bge_small topk shape 1000x10"
+  },
+  {
+    "ok": true,
+    "test": "paraphrase: bge_small nonnegative chunk ids"
+  },
+  {
+    "ok": true,
+    "test": "paraphrase: bge_small no duplicate chunks in top10"
+  },
+  {
+    "ok": true,
+    "test": "paraphrase: bge_base topk shape 1000x10"
+  },
+  {
+    "ok": true,
+    "test": "paraphrase: bge_base nonnegative chunk ids"
+  },
+  {
+    "ok": true,
+    "test": "paraphrase: bge_base no duplicate chunks in top10"
+  },
+  {
+    "ok": true,
+    "test": "paraphrase: bge_large topk shape 1000x10"
+  },
+  {
+    "ok": true,
+    "test": "paraphrase: bge_large nonnegative chunk ids"
+  },
+  {
+    "ok": true,
+    "test": "paraphrase: bge_large no duplicate chunks in top10"
+  }
+]

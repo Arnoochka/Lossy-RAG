@@ -1,0 +1,64 @@
+{
+  "dataset": "rajpurkar/squad",
+  "revision": "7b6d24c440a36b6815f21b70d25016731768db1f",
+  "spacy": "3.8.18",
+  "en_core_web_sm": "3.8.0",
+  "files": {
+    "contexts.csv": {
+      "rows": 20958,
+      "sha256": "9a330317ab85b04857d13efddd174d7d3fe3d24b300dbdbd5502de3ad50f1a91"
+    },
+    "chunks.csv": {
+      "rows": 82222,
+      "sha256": "12962f8d7d786e1924c71468fa23f56a837a26dddeb3f4db7a971d9cb2438209"
+    },
+    "questions.csv": {
+      "rows": 100666,
+      "sha256": "5b65dc2bba6bac1469f01afda3afdba2e90deea7c8ab3c22e8c16d2f470b779e"
+    },
+    "answers.csv": {
+      "rows": 105812,
+      "sha256": "1f35a8b7438a49ac33742f2c7603a7ae735601a067d4733319d79b96035a9ef0"
+    },
+    "answer_chunks.csv": {
+      "rows": 160386,
+      "sha256": "4411b9724264b27ab10290a0ea831a34765e08d7bc1bcdea6f4d3e3c00c6f374"
+    }
+  },
+  "source_parquets": {
+    "train": "ea7f52bac024f6b1bdc7aaa2a4ee302cba8c2fdc8d4a235cf18a9a5196b6175b",
+    "valid": "8c6646d36bd5a95061e076788cf3161d11f6f3e7d625dac7a83bbed0a49f69f7"
+  },
+  "position_mismatches": 0,
+  "excluded": [
+    {
+      "qid": 14102,
+      "squad_id": "56e033fc7aa994140058e361",
+      "orig_qid": 14102,
+      "role": "train",
+      "is_paraphrase": false,
+      "pid": 3057,
+      "question": "What publication is Schodt responsible for?"
+    },
+    {
+      "qid": 34645,
+      "squad_id": "571006d0b654c5140001f751",
+      "orig_qid": 34645,
+      "role": "train",
+      "is_paraphrase": false,
+      "pid": 7640,
+      "question": "What can possibly predict the future orientation a persons sexual idenity?"
+    },
+    {
+      "qid": 68931,
+      "squad_id": "572ac154be1ee31400cb8215",
+      "orig_qid": 68931,
+      "role": "train",
+      "is_paraphrase": false,
+      "pid": 15017,
+      "question": "What was Kerry supposed to say when he 'botched a joke'?"
+    }
+  ],
+  "doc_hash": "15704f7b9c5a2a21f5484613e837786e00afc7d596014eb82832dfb0732fb4af",
+  "seconds": 199.1114718914032
+}

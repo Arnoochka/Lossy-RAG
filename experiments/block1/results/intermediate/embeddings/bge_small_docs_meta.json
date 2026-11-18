@@ -1,0 +1,7 @@
+{
+  "model_id": "BAAI/bge-small-en-v1.5",
+  "signature": "3b02880fae966054e9faf6edd57b6d648e6df433a6a4c966d1df8044f5a9a932",
+  "n_rows": 82222,
+  "dimension": 384,
+  "preprocessing": "L2-normalized float32; docs without instruction"
+}

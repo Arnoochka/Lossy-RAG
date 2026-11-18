@@ -1,0 +1,501 @@
+qid,orig_qid,pid,role,question
+278,278,55,train,What was the name of Beyonce's first solo album?
+373,373,63,train,"""Charlie's Angels"" featured which single from the band members?"
+491,491,72,train,In what year did Beyonce have her hiatus?
+1152,1152,159,train,When was the first constitutional convention held in Montana?
+1246,1246,177,train,The two writers suggested that academics adjusted what in their different definitions to assist them in interpreting events? 
+1402,1402,199,train,Whhat does intestinal flora reduce?
+1413,1413,200,train,What belief should bever be mixed widespread?
+1430,1430,203,train,What is an example of bad treatment causing resistance?
+1452,1452,209,train,What type of organism has been reported to have worked on infections?
+1480,1480,216,train,What could help to spur pharmaceuticals to make new antibiotics?
+1747,1747,237,train,What was Frédéric's favorite environment to perform in?
+1815,1815,243,train,During Sands and Chopin's visit to Majorca who were they fleeing?
+1994,1994,264,train,Where did his friends found Chopin an apartment in 1849?
+2054,2054,274,train,How many polonaises were published while Chopin lived?
+2086,2086,278,train,What was the name under scholarly publications of Chopin's work form 1937 to 1966?
+2351,2351,343,train,When was the edict written?
+2513,2513,377,train,What was the name of the font used prior to the release of the iPod Mini?
+3136,3136,479,train,Who served as production designer for Spectre?
+3615,3615,552,train,How many helicopters were deployed?
+3711,3711,564,train,What blocked many of the area's rivers?
+3714,3714,564,train,What had to be evacuated due to potential flooding?
+3715,3715,565,train,Where was the most precarious quake lake located?
+3789,3789,577,train,What about pay TV channels?
+3803,3803,582,train,Who is still looking for compensation and justice?
+3821,3821,584,train,What is the population of New York City as of 2014?
+4162,4162,641,train,How many immigrants arrived at Ellis Island from 1892 to 1924?
+4193,4193,646,train,"Out of all nations in Central America, which provided the most legal immigrants in 2013?"
+4413,4413,685,train,"In 2012-3, what number of people saw a show on Broadway?"
+4635,4635,733,train,Who gathered impressions of To Kill a Mockingbird from other authors and famous people?
+4685,4685,742,train,Who rescued Scout and Jem?
+4881,4881,797,train,Which renewable energies do not acquire their energy from the sun?
+4940,4940,807,train,What is the typical temperature range for a box cooker?
+5040,5040,827,train,Where do off-grid PV systems store excess electricity?
+5069,5069,834,train,What was the total worldwide energy consumption in 2012?
+5442,5442,914,train,Why can one find thousands of anthropological references to the topics?
+5449,5449,916,train,What type of briefings are forbidden for members of certain anthropologist bodies to give?
+5677,5677,964,train,How many personnel does the Navy have?
+5779,5779,988,train,In what type of network are most scientific research studies conducted in Portugal?
+5981,5981,1031,train,What man was almost ready to give Kanye a record deal?
+6166,6166,1061,train,What was the goal of Kanye's new creative company DONDA?
+6188,6188,1064,train,What year did the foundation stop operating? 
+6382,6382,1102,train,"Of the Ten Meritorious Deeds, giving charity reduces what?"
+6398,6398,1104,train,"Who believes ""the outline of the life must be true"" in reference to Buddha?"
+6451,6451,1109,train,When he was 35 Gautama sat in meditation under what tree?
+6729,6729,1169,train,Distinctive Vinaya and ethics are contained within what sutra?
+6790,6790,1188,train,Bronkhurst says that Buddha had a view of 'what' much different then current day?
+6924,6924,1238,train,Much of the material in the Canon is not specifically what?
+6933,6933,1241,train,What sutras could have been preserved in non-human worlds?
+7431,7431,1319,train,Which season 11 contestant had to go to the hospital before the Top 13 Results?
+7696,7696,1364,train,When did Coca-Cola stop being a sponsor of American Idol? 
+7730,7730,1370,train,In what year did The Walt Disney Company open The American Idol Experience? 
+7781,7781,1380,train,A male canine is called a dog while a female canine is called a what in reference to breeding?
+7995,7995,1418,train,"When a person shapes a dog to conform to his expectations of behavior, it is called what?"
+8093,8093,1436,train,People with Alzheimer's smile and laugh more with what kind of therapy?
+8189,8189,1456,train,How much rainfall in inches per hour can the torch stay lit under?
+8344,8344,1477,train,Where did the torch route start in Buenos Aires?
+8375,8375,1480,train,What country paid for the stadium through aid money?
+8815,8815,1547,train,What did Whitehead believe in so profusely that it was difficult to write a biography on him?
+9060,9060,1590,train,What economies led global economic growth prior to the financial crisis?
+9129,9129,1604,train,How much debt did the top five U.S. investment banks report in fiscal year 2007?
+9214,9214,1621,train,What are risks called that generate severe adverse consequences with small probability but generous compensation the rest of the time?
+9368,9368,1653,train,What organization did St. Barts become a part of in 2012?
+9598,9598,1715,train,Which comprehensive school openend in coventry?
+9660,9660,1732,train,Soldiers from which country were brought to the Congo?
+9812,9812,1778,train,Whose consent is not required for the Taiwanese premier to take office?
+10331,10331,1968,train,What determines who is the Commander-in-Chief of the Armed forces?
+10403,10403,1986,train,What can be worn in cold winter weather?
+10570,10570,2048,train,"Bactrian, Sogdian, and Saka are examples of what type of Iranian language?"
+10676,10676,2085,train,What is typically used to measure light?
+10717,10717,2103,train,What can be used by military for targeting?
+10720,10720,2105,train,What does the IESNA stand for? 
+10992,10992,2171,train,What were the architectural phenomenologists hoping to expand?
+11006,11006,2174,train,What older architectural movements do the newer movements not go along with?
+11189,11189,2234,train,When were both audio and video first broadcasted at the same time?
+11193,11193,2235,train,Where was the BBC's second studio located?
+11650,11650,2379,train,On what date was the publication of the Plan for Plymouth?
+11823,11823,2416,train,Where in Plymouth is the Royal National Lifeboat Institution based?
+11834,11834,2418,train,When did Ford Park Cemetery first operate?
+11887,11887,2433,train,What term is used to describe an individual in the early Church that introduced discord?
+11967,11967,2456,train,What two examples of ideas from Immanuel Velikovsky are stated as to have gained some acceptance?
+12082,12082,2507,train,Who was the first person in space?
+12106,12106,2513,train,What professor began working on solid-fuel rockets since 1914?
+12256,12256,2572,train,ASTP stands for what?
+12282,12282,2580,train,Name one way  regulars choose their Pubs?
+12368,12368,2597,train,In what century did public drinking regulations first exist in England?
+12510,12510,2637,train,"The pub ""The Bag o'Nails"" was a corruption of what word?"
+12608,12608,2659,train,In what year did Joseph Stalin visit London?
+12635,12635,2666,train,"In what decade did ""bar"" become the popular term for a drinking establishment in English-speaking Canada?"
+12640,12640,2667,train,Whose life do Christians learn from?
+12717,12717,2690,train,More people belong to what religion than any other in the Western world?
+12994,12994,2809,train,How many groups of modern hunter-gatherers are there?
+13002,13002,2810,train,What type of area did early humans avoid?
+13098,13098,2833,train,What can be learned from the study of modern hunter-gatherers?
+13122,13122,2839,train,What basic trait do all hunter-gatherers share?
+13579,13579,2932,train,What was the budget of the film Love Actually?
+13609,13609,2939,train,What is Bell's full name?
+13756,13756,2972,train,Who declared himself an alcoholic?
+13868,13868,2998,train,Which branch of the military was Lieutenant Thomas Selfridge in?
+13915,13915,3009,train,What disease contributed greatly to Bell's death?
+14110,14110,3059,train,What is the definitive factor of bandes dessinées?
+14216,14216,3085,train,Where did Saint Helena's coffee get popular after Napoleon's death?
+14378,14378,3127,train,What is the only method of travel currently available to Saint Helena?
+14409,14409,3135,train,Which newspaper is the sister company of Saint FM radio?
+14453,14453,3147,train,Who provides programs to students with special needs?
+14545,14545,3181,train,"Rather than /tʰ/, what did the Doric dialect have in place during the Classical period?"
+14698,14698,3235,train,Where else is H2 applied?
+14732,14732,3246,train,What does URL mean?
+14806,14806,3270,train,How many square miles is Boston?
+15120,15120,3339,train,WBUR and WGBH are exaples of what type of radio station?
+15279,15279,3374,train,Who reported the complete decoding of the “I” signals components?
+15352,15352,3392,train,What does J.C.B. stand for?
+15579,15579,3442,train,When did the Catalan rulers take over Valencia and the Balearic Islands?
+15672,15672,3463,train,What language loanwords are found in both Spanish and Catalan?
+15682,15682,3465,train,What status does Catalan Countries have?
+15716,15716,3473,train,What two dialects does Western Catalan include?
+15737,15737,3476,train,/u/ remaining distinct is like what form of Catalan?
+15836,15836,3500,train,What has Central Catalan mostly abandoned?
+16262,16262,3602,train,What was the name of the Los Angeles-based team added in 2013?
+16381,16381,3628,train,"Along with harmonies, what aspect of music is emphasized in adult contemporary?"
+16518,16518,3663,train,"Along with MOR, easy listening and soft rock, what format is soft adult contemporary a successor to?"
+16755,16755,3713,train,Where is the memorial chapel of the airmen of the RAF?
+16818,16818,3731,train,k
+17151,17151,3799,train,In what year was Bern ranked as one of the 10 best cities for their quality of life?
+17169,17169,3802,train,Where did the Zahringer ruling family rise to power?
+17360,17360,3859,train,What did George Hudson spend time collecting when he wasn't working?
+17729,17729,3945,train,What branch of the US government established the National Archives?
+17769,17769,3955,train,"After staying at the WNRC, where are records transferred to?"
+17789,17789,3960,train,Abraham Lincoln's Presidential Library and Museum is operated by what type of entity?
+17861,17861,3983,train,What is the tallest point in Lawrence?
+17953,17953,4004,train,What was the edict approved by the Board of Regents that provided for the fixed tuition program?
+18042,18042,4022,train,Bribery is an example of corruption that involves what type of gain?
+18103,18103,4041,train,In some countries there is no formal deal but what that makes prosecuting bribes difficult?
+18276,18276,4093,train,When is the term 'German dialects' used in regard to the German language?
+18576,18576,4162,train,Basso continuo and complex tonal counterpoint characterize what type of music? 
+18814,18814,4216,train,When were pagan Slavic populations Christianized?
+18851,18851,4226,train,Who searched for specifically Slavic sub-group of R1a1a [M17]?
+19316,19316,4330,train,What form of public transport do most people in Southampton use now?
+19374,19374,4341,train,The treaty between Switzerland and the European Union is an example of what kind of treaty?
+19718,19718,4411,train,In what year did the crisis nearly escalate into armed conflict?
+20017,20017,4464,train,"What did Miguel López de Legazpi call the island discovered on January 9, 1530?"
+20053,20053,4469,train,What document was signed in 1899?
+20069,20069,4473,train,About how many Japanese emigrated to the Marshalls when it was a Japanese colony?
+20077,20077,4474,train,"Along with Protestants, missionaries from what denomination were allowed to operate in the Marshalls?"
+20229,20229,4511,train,What is the polish name for knight?
+20386,20386,4547,train,WHat happened to the nobilities feudal power?
+20565,20565,4588,train,During which time period did Virgil's reputation inspire legends associating him with magic and prophecy?
+20587,20587,4594,train,What affects the climate in Europe? 
+20624,20624,4604,train,How tall is the peak at Mont Blanc? 
+20681,20681,4618,train,When was the first female ascent on Mont Blanc?
+20750,20750,4634,train,Where does the montane zone extend from?
+20921,20921,4677,train,How long is the tunnel connecting Lotschberg and Gotthard planned to be? 
+20960,20960,4686,train,What two scientists published a model of the double stranded DNA molecule?
+21142,21142,4722,train,What does the directional selection of beneficial mutations lead to?
+21850,21850,4888,train,Until what century was brain studying mostly anatomical?
+22034,22034,4936,train,The great whites were appearing as late as what time?
+22101,22101,4955,train,When did James Bennett Pritchard write his textbook?
+22190,22190,4974,train,When was the Cultural Revolution?
+22262,22262,4988,train,More than how many thousand folk religious organisations were registered in Zhejiang in 2015?
+22315,22315,4999,train,Who created the position of Minister for Coordination of Defence?
+23235,23235,5205,train,"Along with the early modern and ancient, during what period did Somali architecture exist?"
+23354,23354,5230,train,What Islamic dynasty followed the Umayyad?
+23975,23975,5384,train,What is the typical range of registers for a CPU?
+24164,24164,5436,train,Who offered many Africans a chance to study in their country?
+24387,24387,5484,train,"In 1979, which corporation was struggling to run The Times?"
+24939,24939,5607,train,What are waders called in North America?
+25384,25384,5702,train,What medical scientist first proposed the clonal selection theory of immunology?
+26069,26069,5849,train,Which president was forced to flee?
+26078,26078,5851,train,"Who remained in the capital until August 5, 1865?"
+26131,26131,5863,train,The steppe reaches temperatures above what in the winter?
+26244,26244,5887,train,The main cause of degradation has been what?
+26317,26317,5905,train,In what year did England and Scotland play the world's first international football match?
+26392,26392,5916,train,How tall is the JP Morgan Chase Tower?
+26665,26665,5964,train,What has pure copper been replaced with in the building of ships?
+26870,26870,6008,train,In what tradition is Erikson's work to track identity formation throughout a lifetime?
+27054,27054,6047,train,What shape do grapes usually resemble?
+27287,27287,6096,train,Orthodox Jews subsciribing to modern orthodoxy tend to be what political alignment typically?
+27289,27289,6096,train,What political party is mostly supported by orthodox jews?
+27363,27363,6113,train,Triploblastic worms were comparable in size to what other creatures?
+27390,27390,6119,train,Why are the Mollusca and Annelida considered to be close relatives?
+27906,27906,6220,train,How many subjects were judged to be the best in terms of internationally recognised research quality?
+28048,28048,6248,train,What year did FIG reconginze Trampoline and Acrobatic Gymnastics?
+28140,28140,6267,train,What is another name for the top football division?
+28712,28712,6384,train,Where do the Everton Tigers play their home games?
+28959,28959,6436,train,What feature was pioneered on the HMS Hermes in 1923?
+28996,28996,6443,train,What is unique about Tbilisi?
+29274,29274,6501,train,What is a video-conference also known as?
+29335,29335,6513,train,When did the SSA open its largest videoconferencing-only center?
+29396,29396,6526,train,What calendar did Turkey use before 1917 for general purposes?
+29415,29415,6530,train,Who awarded the rights to publish the calendar?
+29689,29689,6585,train,The War On Terrorism was caused by what event?
+29706,29706,6589,train,Where was the Barbary Coast?
+29777,29777,6603,train,"Prior to the Persian Gulf War, where and when was the last major American military conflict?"
+29834,29834,6615,train,"Who recorded ""You Really Got Me""?"
+30093,30093,6674,train,"What describes habitat destruction, overkill, introduced species, and secondary extinctions?"
+30415,30415,6746,train,What percentage of COINTELPRO resources were targeted at FBI labeled subversive groups?
+30456,30456,6754,train,What two agencies had a lack of co-operation?
+30507,30507,6765,train,How many years was Hoover the FBI director?
+30560,30560,6776,train,What party was Pedro Albizu Campos part of?
+30632,30632,6789,train,Are adolescents or children more bound to concrete events?
+30729,30729,6811,train,What are factors causing a hightened suicide rate amongst LGBT adolescents?
+30775,30775,6823,train,"Which motivation for drinking alcohol results in low conscientiousness, lowered inhibition, and greater tendency towards aggression?"
+30940,30940,6863,train,During what eras was the Antarctic Peninsula formed?
+30999,30999,6873,train,What does the treaty set Antarctica aside as?
+31139,31139,6902,train,What type of fungi help shape rock formations in Antarctica?
+31210,31210,6917,train,Who wrote polemics regarding Roman Catholic beliefs about Mary?
+31244,31244,6924,train,What is the mother church of the Angican Communion?
+31497,31497,6972,train,"Which type of weather fronts are responsible for severe weather such as gales, thunderstorms, hail, and heavy rain in Melbourne?"
+31547,31547,6984,train,How many people are employed by the ICT industry in Melbourne?
+31837,31837,7063,train,Where were Monastic communities allowed to celebrate Mass in private?
+31851,31851,7067,train,What period in the 19th century were historians more inclined to draw on the judgements of the chroniclers?
+31946,31946,7092,train,What is the standard amount of RAM shipped with most Mac models?
+31983,31983,7099,train,How many expansion slots did the Macintosh IIsi have?
+32140,32140,7131,train,At what speed do programs such as VirtualBox allow Microsoft Windows to run on Macs?
+32177,32177,7138,train,What two things figured the fuse length?
+32259,32259,7155,train,How many rounds did this cannon fire per second?
+32311,32311,7166,train,What was built around naval installations?
+32319,32319,7168,train,What helped with better fuse setting?
+32573,32573,7214,train,How long has IAST been the standard system used for transliteration of Sanskrit?
+32705,32705,7241,train,Who designed the City of Arts and Sciences?
+32907,32907,7282,train,How high have the levels of PCBs in the sediments behind Woods Pond dam been measured at?
+33224,33224,7351,train,In which type of warfare did the French best utilize the Chassepot?
+33286,33286,7364,train,Which empire was overthrown by a popular uprising in Paris?
+33775,33775,7465,train,What was the emblem?
+33969,33969,7507,train,During which movement were the first scientific and literary journals established?
+34781,34781,7671,train,What does this theory entail?
+34811,34811,7677,train,What did research in 2015 suggest was an alternate label for gaydar?
+34915,34915,7700,train,What was the name of Dell's change campaign?
+35139,35139,7750,train,In what state is armed robbery a capital crime?
+35705,35705,7877,train,What was  Athanasius doing when he was arrested?
+36003,36003,7938,train,What is Seattle's festival for the Polish community?
+36308,36308,7992,train,Approximentally how many Americans identified themselves as multiracial in the 2010 US census?
+36516,36516,8032,train,What compound was discovered to induce sleep?
+36663,36663,8048,train,What is excessive drug regulation said to suppress?
+36837,36837,8070,train,What type of application is filed after completing three phases of human trials?
+36860,36860,8077,train,When did the caliphate of Uthman Ibn Affan end?
+36999,36999,8109,train,On what type of boat was asphalt used to seal planks?
+37528,37528,8163,train,What happened to the assets of the British East India Company after it was removed from power?
+37644,37644,8171,train,What replaced Russell's administration?
+37883,37883,8189,train,When was the dawn of the Grand Lodge era?
+38045,38045,8207,train,What lodge has the single largest single jurisdiction of Freemasonry?
+38231,38231,8260,train,Who visited the Temple Mount?
+38363,38363,8304,train,How much is Israel's water technology industry worth?
+38589,38589,8351,train,When did Ptolemy declare himself King Ptolemy I?
+38875,38875,8413,train,The discovery of what tombs raised the profile of Hellenistic art?
+39145,39145,8463,train,"In the Treaty of Schönbrunn, who received the Salzburg area of the Tyrol?"
+39380,39380,8514,train,What does data collected by unicef and Who show
+39940,39940,8642,train,Where is the Museo de Guacho y de la Moneda located?
+39946,39946,8643,train,Where is Arcadia located?
+40028,40028,8665,train,How has breeding helped in the pultry industry?
+40332,40332,8728,train,What would someone in Belgium call the variation of Dutch spoken in Flanders?
+40515,40515,8765,train,"Which language, in addition to German, did Stroop use to compare Dutch with when stating that the diphthongs ""should"" have lowered?"
+40618,40618,8782,train,In what year was the leasehold of the Mulberry site due to expire?
+40623,40623,8782,train,Who bought Buckingham House in 1761?
+40815,40815,8804,train,What did Ray Holmes think the German pilot was going to bomb?
+41074,41074,8857,train,What about the origin of clothing remains unanswered?
+41533,41533,8969,train,Who did the Soviets not want to engage in conflict?
+41917,41917,9050,train,Shell was accused of participating in the execution of which southern Nigerian tribal leader?
+42157,42157,9101,train,The war from 431-404 BC is known as what? 
+42208,42208,9112,train,Who published Greek documents that espoused Greek independence?
+42515,42515,9186,train,How much debt to creditors was Greece suppose to reduce?
+42610,42610,9211,train,What is the marketed name given in the meat industry when you involve a european or indian domestic cattle mixed with an American bison?
+42806,42806,9246,train,What nationality were the traders that came to archipelago?
+42822,42822,9248,train,Name an Indonesian Islamic scholar who lived from 1908-1981?
+42833,42833,9251,train,Geologically what is Indonesia's region most active for?
+42963,42963,9283,train,What are two things that can be done with tagging?
+43020,43020,9298,train,What is the point of a match?
+43078,43078,9313,train,What happened when a tag was made? 
+43182,43182,9336,train,When were the last ISO standards adopted? 
+43664,43664,9442,train,What is one way the city tried to combat crime?
+43678,43678,9444,train,Through what act would Roman and German customs become intertwine? 
+43795,43795,9457,train,What are people called who have left Germany but still speak German?
+43844,43844,9468,train,How many members are in the German Football Federation?
+44060,44060,9493,train,"Though the Green is the popular center of the city, there is another district, what's the name?"
+44476,44476,9541,train,What is BYU's ranking among private universities?
+44748,44748,9589,train,Where was The Grands Magasins Dufayel built? 
+44925,44925,9629,train,What is caused by using or selling a patented invention without permission?
+45407,45407,9739,train,Which group did Presbyterian churches union with?
+45789,45789,9823,train,What defense does a zebra have against predators?
+45869,45869,9841,train,To whom was Marvel sold in 1968?
+45968,45968,9861,train,When did John Hawkins and Francis Drake attack Spanish and Portuguese slave ships?
+46173,46173,9903,train,What race was the majority in Palestine in the 1940s?
+46366,46366,9945,train,In what year was this genome sequenced?
+46395,46395,9951,train,Are all species of algae similar?
+46556,46556,9985,train,"In the film Dick Tracy, who did Madonna starred as?"
+47625,47625,10197,train,Why are groups hesitant to work with government officials ?
+47646,47646,10202,train,What is the difficulty with expanding the gem business in Burma ?
+47801,47801,10238,train,What are the Hebrew scriptures called?
+48087,48087,10308,train,What is a sequence that can be edited?
+48668,48668,10425,train,Why are hydrocarbon pesticides not excreted?
+49125,49125,10527,train,What geopolitical entity emerged from the Late Middle Ages?
+49256,49256,10554,train,Which morality play depicted mankind's progress from birth to death?
+49313,49313,10567,train,What is the landscape of Ann Arbor like?
+49369,49369,10584,train,In recent years what has Ann Arbor become?
+49544,49544,10623,train,What is the distinguishing design element in German Gothic cathedrals?
+49545,49545,10623,train,What are hall churches in German cathedrals known as?
+49601,49601,10635,train,Which offshoot of cubism was influenced by Picasso? 
+49708,49708,10669,train,What was the essential piece Cubist architects explained in their theoretical rules? 
+49736,49736,10676,train,What is an example of a code of law in ancient India?
+50166,50166,10773,train,What was Francis Basset's political party?
+50173,50173,10774,train,What did Burke support Britain fighting against?
+50522,50522,10845,train,From whom is married love generated?
+50562,50562,10853,train,Who was president of the World Council of Churches during the 450th anniversary of the Reformation?
+50647,50647,10870,train,Which society was Albert the president of?
+50795,50795,10905,train,What type of motor was used in trailway traction applications?
+50840,50840,10915,train,What is one of the independent multiphase winding sets configured for?
+50925,50925,10935,train,Where did the English adjective Swiss originate from?
+51087,51087,10969,train,What accounts for 34% of Switzerland's exported goods?
+51759,51759,11109,train,"Other than rice, what would be another example of an incomplete protein source?"
+51827,51827,11123,train,What is the abbreviation for licensed dietitians in the US?
+51839,51839,11125,train,The Blue Cross and Blue Shield of Louisiana Foundation joined together with which University to help develop Smart Bodies?
+51920,51920,11142,train,What vitamin is removed during the polishing of rice?
+52031,52031,11165,train,Who wanted the Russian forces to leave the principalities?
+52587,52587,11297,train,What is a commonly seen example?
+52916,52916,11373,train,Who were the major slave traders through Nigeria from the southwest?
+52938,52938,11378,train,Which group led the first 1966 coup?
+52953,52953,11381,train,Who led a military coup against Shagari?
+53039,53039,11400,train,Who manufactured Nigeria's second satellite?
+53249,53249,11449,train,What were Von Neuman's contributions to the field of computing?
+53584,53584,11548,train,How many Soviet military members died within the first six months of the war between the two countries?
+53667,53667,11566,train,"When the ratios of plate length and width to separation distance are large, what size is the parasitic capacitance?"
+53816,53816,11597,train,"Which civilization advanced in astronomy, mathematics, and medicine?"
+54076,54076,11651,train,What new technology could be created as a result of studying cognitive science?
+54203,54203,11677,train,"How does one say the word ""music"" in Czech?"
+54441,54441,11726,train,What are chatter marks?
+54484,54484,11733,train,What does the Planck Constant refer to?
+54624,54624,11751,train,"How do conversion factors compare in ""low-field"" and ""high-field"" methods of measuring the gyromagnetic ratio?"
+54696,54696,11766,train,What sports network was Comcast a founding investor of?
+54733,54733,11773,train,What other cable company was reputed to have an interest in NBCUniversal?
+54757,54757,11779,train,Comcast's purchase of Spectator gave them what sports teams in Philadelphia?
+54946,54946,11818,train,What position of power did Harold L. Ickes hold?
+55412,55412,11922,train,Who believed Christ's atonement only extended to the elect?
+55426,55426,11926,train,Historians trace the earliest Baptist church back to when?
+55458,55458,11932,train,Where was the first Baptist church located in Canada?
+55637,55637,11976,train,When did the Geneva Declaration of the Right of Children Act pass?
+55964,55964,12050,train,Duke University and Shaw University are examples of what type of colleges that are in North Carolina?
+56031,56031,12064,train,What year was RJ Reynolds Tobacco Company founded?
+56033,56033,12064,train,What was one of the first growing industries to develope after the civil war?
+56192,56192,12101,train,How many pages had Darwin's sketch grown to in 1844?
+56325,56325,12132,train,What is Darwin's belief about the accumulation of adaptive variations?
+56353,56353,12139,train,"While evolutionary ideas were accepted by German biologists, what was not?"
+56643,56643,12204,train,Where was the UAOC protest held?
+56935,56935,12262,train,How many millimeters of rain fall on Miami annually?
+57059,57059,12289,train,In what year did All Aboard Florida begin?
+57600,57600,12405,train,What is a cause of once per revolution pitch variation?
+58293,58293,12557,train,Albert magnus' writings contributed greatly to what?
+58477,58477,12600,train,Who is the current Precentor?
+58575,58575,12624,train,What are the main attractions in Cork?
+58986,58986,12726,train,What was the name of the law that enacted this?
+59118,59118,12766,train,USB connections come in what?
+59279,59279,12809,train,When did the GSM Association follow suit?
+59300,59300,12815,train,What can skew due to hubs add?
+59452,59452,12853,train,What language do the Yi people speak?
+59653,59653,12903,train,Who did Detroit argue with when trying to plane a regional transit system?
+59657,59657,12905,train,What group of buildings opened in 1977?
+59991,59991,12989,train,How many ways did Raimon Panikkar believed cultural change can be based on?
+60122,60122,13023,train,What happens to those that do not follow to the rule of law?
+60184,60184,13037,train,What language is spoken in most rule of law countries?
+60639,60639,13140,train,How much of Oklahoma is covered in forests?
+61263,61263,13265,train,How many people migrated between the newly created countries of India and Pakistan?
+61451,61451,13305,train,What city did Nasser want to keep the French and British out of?
+61585,61585,13334,train,Who was Nassir's vice president?
+61707,61707,13363,train,When did the pope die?
+61779,61779,13379,train,When did John XXIII receive the Balzan Prize?
+61961,61961,13420,train,What should all assets offered up as collateral be?
+62276,62276,13490,train,Is Photo Gallery automatically or separately installed?
+62340,62340,13504,train,What was PlayStation 3's toughest competitor in the video game market?
+62383,62383,13512,train,"What website said the PlayStation 3 ""lives up to the hype""? "
+62632,62632,13569,train,What groups can be combined to describe every group?
+63501,63501,13755,train,How did the first Gulf War end?
+63997,63997,13873,train,Did South Slav languages develop coherently or independently?
+64149,64149,13913,train,Which area in Alaska is the nation's second highest-yielding oil field?
+64338,64338,13961,train,Whose theory of truth did Popper read with intense interest in 1935?
+64462,64462,13989,train,What were formed worldwide that incorporated the mandolin famiy of instruments and other instruments as well?
+64627,64627,14023,train,What REM song uses simple mandolin licks?
+65129,65129,14115,train,Risch feels any category someone comes up with will be what?
+65827,65827,14281,train,Who was accused of matricide?
+65945,65945,14310,train,The stategy that Bush used against Kerry was compared to what other similar strategy in the past?
+66736,66736,14496,train,"How tall are new wind turbines that are being built in Indiana, Michigan and Ohio?"
+67459,67459,14680,train,How many died trying to defend the province in Kaliningrad?
+67507,67507,14695,train,"Of the population in East Prussia, what percentage of those were German?"
+67934,67934,14786,train,What follows a geodesic of space-time?
+68438,68438,14904,train,Who awarded a teaching license in European schools?
+68610,68610,14943,train,Name a type of row house in the city?
+68916,68916,15013,train,What government agencies worked with North?
+68958,68958,15023,train,Who did Kerry criticize during the 2004 campaign?
+69133,69133,15059,train,What is is Kota known as within India?
+69177,69177,15070,train,When did Captain Damian de Esplana arrive?
+69236,69236,15086,train,Which three major companies do not consider Guam as domestic when shipping is involved?
+69295,69295,15102,train,When did Ibn Tufail live?
+69583,69583,15169,train,Which type of schooling can be most expensive?
+69656,69656,15190,train,"What tourist attraction is located in Pigeon Forge, Tennessee?"
+69803,69803,15222,train,"In 2014, which three Tennessee counties took in the most money from tourism?"
+69927,69927,15242,train,What did many entrepreneurs interested in their local punk-influenced music scenes found?
+70032,70032,15253,train,What country had a post-punk scene after a generation of rock?
+70078,70078,15257,train,What was the earliest sign of the post-punk revival?
+70377,70377,15319,train,What was the unexpected action by Peter III that helped Frederick?
+70491,70491,15342,train,"As a grade school child he created an electronic device while his parents were away, what was it?"
+70578,70578,15361,train,The diagrams have been made from lines into what 3 dimensional shape?
+70671,70671,15374,train,How did his upbringing impact his later life preferences?
+70829,70829,15388,train,How did Libya's gross domestic product increase from 1969 to 1979?
+70988,70988,15420,train,How many people not on Pan Am Flight 103 were killed by its destruction?
+71090,71090,15442,train,What is Halyna Kolotnytska's nationality?
+71098,71098,15444,train,What did Reagan call Gaddafi?
+71411,71411,15511,train,"How did Sidney Sheinberg feel about the film ""Amblin'"""
+71695,71695,15565,train,Maintaining that the ropes all have equal tension may reduce what?
+71854,71854,15601,train,During what hours is the lower deck turned off?
+72617,72617,15758,train,Who painted their mansions red during the Song and Tang dynasties?
+72775,72775,15790,train,The French Revolution resulted in the fall of which monarch?
+72837,72837,15804,train,Who did Hitler have a conflict over running the air force?
+72845,72845,15805,train,In what city did Goring display the advance equipment?
+72852,72852,15807,train,Why did the Luftwaffe bomb the RAF Fighter Command?
+72928,72928,15824,train,What percent of Briton's expected to lose the war?
+72978,72978,15836,train,The Bean Approach Training Development Unit were fitted with what kind of transmitter to search for the Knickebein? 
+73025,73025,15846,train,What was the Luftwaffe's second primary policy?
+73250,73250,15895,train,What did Congress do to the Executive Order that would have included financial considerations as a factor for a species to be listed?
+73270,73270,15901,train,What is the primary consideration for determining if projects may be carried out in areas with endangered species?
+73766,73766,16009,train,What object was assumed to block sunlight during a lunar eclipse?
+73942,73942,16045,train,This language is the official dialect of worship for the traditional sect for church worshipers of Greece ?
+74116,74116,16086,train,Who was an important esoteric interpreter of the Quran in the 11th century?
+74170,74170,16098,train,What can interpretation find that lies the behind the apparent events referred to in a Quranic story?
+74317,74317,16130,train,What are the tallest trees in the world?
+74334,74334,16135,train,Which areas have arid regions?
+74385,74385,16144,train,To what does the compact disc owe its prosperity?
+74515,74515,16172,train,How many transistors make up a logic gate?
+74591,74591,16188,train,What is the common application of GaAs?
+74940,74940,16255,train,Where did Soviets under the rule of the  Bolshevik first assume power during the Russian Civil War?
+75384,75384,16359,train,Most rooftop antenna's are polarized in which direction?
+75425,75425,16369,train,"Is the ground has a great conductor, how much of the wave will be reflected?"
+75460,75460,16378,train,What is another name for classical television transmissions?
+75823,75823,16452,train,What type of medicine is taught at The Government Nizamia Tibbi College?
+75873,75873,16462,train,What role did the fishing village play in Santa Monica?
+75893,75893,16466,train,What year did the mall reopen?
+76075,76075,16504,train,Where do students in the Washington University School of Law place among test takers on average?
+76261,76261,16544,train,What perspective towards pain are some people with perfectly normal nerves born with?
+76466,76466,16591,train,"While working, does DBMS store information in one place?"
+76693,76693,16619,train,Rita Ranch also has a planned development called what?
+76715,76715,16621,train,What is Tucson's climate type?
+76929,76929,16665,train,What is the estimated sum of people who died during the Armenian Genocide?
+77050,77050,16693,train,Who founded the Armenian Medical school in Cilician Armenia?
+77223,77223,16734,train,What can help to indentify specific bacteria?
+77341,77341,16762,train,"In the additive method, which parts of the laminate are plated with copper?"
+77556,77556,16800,train,Were talks held with the Football Association to see if they were okay with this plan?
+77915,77915,16847,train,What request of Rome was ignored by Philip V that quickly led to the start of the Second Macedonian War?
+77970,77970,16858,train,What military leader was Julius Caesar a contemporary of?
+78609,78609,16982,train,How did the Japanese refer to the atomic bombings and the Soviet invasion?
+78678,78678,16990,train,Who drafted the Virginia Statute for Religious Freedom?
+78745,78745,17003,train,What name is given to the part of Richmond located to the south of the James?
+78756,78756,17005,train,How many times does Richmond receive 7.6 centimeters or more of snow in a 24 hour period annually?
+78896,78896,17035,train,How many people buy the Richmond Times-Dispatch on Sunday?
+79080,79080,17072,train,What percentage of the population in 2011 were millenials?
+79123,79123,17081,train,"Despite being a sanctuary city, what program does San Diego county participate in?"
+79361,79361,17131,train,"Who lead the Persians into a coalition with the Medes, Babylon, Scythians, and Cimmerians to fight against the Assyrians?"
+79411,79411,17142,train,Nader Shah expanded Iranian power to its highest peak since what Empire?
+79414,79414,17142,train,In what year were the Pashtuns defeated and driven out of Iran?
+79591,79591,17180,train,How many agricultural products in 2012 was Iran a top 5 producer in the world? Answer: 12
+79617,79617,17186,train,What is one of the earliest surviving records that mention the name British Isles?
+79917,79917,17252,train,What tax was in force throughout the United Kingdom during this time?
+80367,80367,17353,train,How many Jewish families are there in Swaziland?
+80369,80369,17354,train,What does UNAIDS consider universal access to HIV/AIDS treatment?
+80435,80435,17367,train,Who remarked about Alexander Pope playing Homer on a flageolet?
+80446,80446,17370,train,When did Europeans begin more intense studying of Arabic translations of classical works?
+80474,80474,17375,train,What had been thought for a while to be an independent ancient Greek precursor to Twain's story?
+80555,80555,17393,train,What does ATC stand for?
+80556,80556,17393,train,What do airports use to assure smooth traffic flow between departing and arriving aircraft?
+80759,80759,17449,train,From what did this new princedom emerge from?
+80925,80925,17486,train,What was the most urbanized city in the world at the time?
+81016,81016,17504,train,What kind of appearance did Sumerian houses have?
+81218,81218,17546,train,What type of structure is the falekaupule?
+81876,81876,17689,train,What Secretary of the Air Force resigned in 2008?
+82399,82399,17813,train,Which chicks leave the nest the night after they hatch?
+82670,82670,17882,train,"Who controlled the ""Inner Court""?"
+82692,82692,17888,train,What were provinces broken up into?
+82726,82726,17896,train,When was the Second Opium War?
+82774,82774,17908,train,How do the indigenous peoples explain how they came to live in the Americas?
+82800,82800,17914,train,What does the data indicate about the population the individual was from?
+82900,82900,17934,train,"Pottery, weavings and carvings are just some of the contributions to art by which peoples? "
+82905,82905,17935,train,How many Mapuche were there in Argentina in 2005?
+82921,82921,17938,train,What was Bolivia the first country in the history of South America to do?
+83156,83156,17988,train,What percent of votes did el-Sisi get? 
+83213,83213,18004,train,How much had FDI increased to in 2006?
+83687,83687,18107,train,"Besides students, what is the source of funds of private universities?"
+83801,83801,18131,train,What traditions did the seasonal festivals incorporate?
+83837,83837,18138,train,What was the point of public procession to the god's temples?
+83950,83950,18161,train,What did St Augustine believe that funeral feasts gave an opportunity for?
+84291,84291,18230,train,How many thumbs down votes did youtube's official statement about the new commenting system get within two days?
+84341,84341,18241,train,What did Jefferson encourage the separate sects at the University of Virginia to have of their own?
+85420,85420,18471,train,Jehovah Witnesses' literature puts emphasis on the obedience to not only Jehovah but also to his what?
+85450,85450,18477,train,Who needs to attack Jehovah Witnesses for God to begin the war of Armageddon?
+85529,85529,18494,train,"What did Jehovah's Witnesses persistent legal challenges result in, in the United States?"
+85544,85544,18497,train,What profession did Rodney Stark grow up to become?
+85718,85718,18532,train,What Soviet military leader was a counterpart of Eisenhower?
+85835,85835,18557,train,What CIA operation toppled the Guatemalan government?
+85973,85973,18586,train,What was Eisenhower's date of death?
+86215,86215,18637,train,When was Heine born?
+86297,86297,18655,train,What was the main difference between humanism and the religions of the time?
+87181,87181,18819,train,What does varmint hunting achieve? 
+87411,87411,18851,train,When did construction on the Tribhuvan Highway begin?
+87454,87454,18861,train,What is Durga called in Nepali?
+87537,87537,18878,train,What people are particularly known for eating buff?
+87541,87541,18879,train,What chain restaurants are present in Kathmandu?

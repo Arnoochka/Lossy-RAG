@@ -1,0 +1,11 @@
+{
+  "config": {
+    "model": "bge_large",
+    "run_hash": "1f6ec8b12b8d5140af7f9ba744d3532f9d065ecccfd9ae88f9d612307e2aad76",
+    "n_query": 1000,
+    "n_doc": 82222,
+    "dim": 1024,
+    "top_k": 10
+  },
+  "completed": 1000
+}

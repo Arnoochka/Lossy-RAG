@@ -1,0 +1,12 @@
+qid,squad_id,orig_qid,role,is_paraphrase,pid,question
+98276,,50562,train,True,10853,Who headed the World Council of Churches at the Reformation's 450th jubilee?
+98433,,32319,train,True,7168,What allowed more accurate timing of shell detonators?
+98730,,30507,train,True,6765,For how long did Hoover lead the FBI?
+98847,,26244,train,True,5887,What has chiefly led to the land deteriorating?
+99051,,45968,train,True,9861,When did John Hawkins and Francis Drake raid Spanish and Portuguese vessels carrying captives?
+99185,,10676,train,True,2085,Which instruments usually quantify brightness?
+99263,,41917,train,True,9050,Shell faced allegations of complicity in putting to death which tribal chief from Nigeria's south?
+99343,,53816,train,True,11597,"Which ancient culture made progress in stargazing, math and healing?"
+99652,,18276,train,True,4093,What does the label 'German dialects' properly refer to?
+99671,,22315,train,True,4999,Who established the post of Minister for Coordination of Defence?
+100050,,82726,train,True,17896,When did the Second Opium War take place?

@@ -1,0 +1,5 @@
+method,dimension,k,strict_hit,soft_hit,n_questions
+BGE_Small_full,384,1,0.594,0.604,500
+BGE_Small_full,384,3,0.754,0.758,500
+BGE_Small_full,384,5,0.812,0.818,500
+BGE_Small_full,384,10,0.87,0.878,500

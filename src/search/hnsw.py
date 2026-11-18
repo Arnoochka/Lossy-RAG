@@ -1,4 +1,3 @@
-import hnswlib
 import numpy as np
 from .base import BaseSearch
 from src.encoder import BaseEncoder
@@ -23,6 +22,7 @@ class HnswSearch(BaseSearch):
 
     def _add(self, chunk_embeddings: np.ndarray, chunk_ids: np.ndarray) -> "HnswSearch":
         
+        import hnswlib
         super()._add(chunk_embeddings, chunk_ids)
         self.index = hnswlib.Index(space="ip", dim=chunk_embeddings.shape[1])
         self.index.init_index(

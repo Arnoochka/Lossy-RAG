@@ -1,0 +1,39 @@
+{
+  "model_id": "BAAI/bge-small-en-v1.5",
+  "dimension": 384,
+  "dtype": "float32",
+  "normalization": "L2",
+  "query_instruction": "Represent this sentence for searching relevant passages: ",
+  "doc_instruction": "",
+  "query_scope": "main; TRAIN only",
+  "n_documents": 82222,
+  "n_queries": 500,
+  "doc_fingerprint": "15704f7b9c5a2a21f5484613e837786e00afc7d596014eb82832dfb0732fb4af",
+  "origin": "Supplied intermediate document and query vectors; exact replay and final main metric equality checked on 2026-11-18",
+  "files": {
+    "exact_top10_scores.npy": {
+      "bytes": 20128,
+      "sha256": "dafc1c636b41203e11d890e4a93d3298c5801a6faf9e1a1d14bb64eacefa75ef"
+    },
+    "exact_top10_chunk_ids.npy": {
+      "bytes": 40128,
+      "sha256": "785686ce4f8b5004136fb6a299a9b4e87d6b07c2a9f74d5ef27082ac4c3a9a51"
+    },
+    "chunk_ids.npy": {
+      "bytes": 657904,
+      "sha256": "8be4641ba9eaa918ab53e154e7337b532d49dae842574dfbf4bc0ce0393548f9"
+    },
+    "query_embeddings.npy": {
+      "bytes": 768128,
+      "sha256": "4ea7fbd088997849a755a6e43b5b83110222594740c3d1d4eed6b317b280c22c"
+    },
+    "chunk_embeddings.npy": {
+      "bytes": 126293120,
+      "sha256": "27f5f50010d8b2fe080612e760575591435d5980f9af5ca4e15fd65db793c250"
+    },
+    "query_ids.npy": {
+      "bytes": 4128,
+      "sha256": "d94d0b6978840acc22464dfd425776fcebf8e79d598a77090aa3063b1131b5ae"
+    }
+  }
+}

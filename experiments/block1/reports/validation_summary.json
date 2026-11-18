@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "checks_total": 559,
+  "checks_passed": 559,
+  "failures": [],
+  "completed_configurations": 32,
+  "main_original_questions": 500,
+  "main_pilot_paraphrases": 11,
+  "paraphrase_pairs": 500,
+  "scope": "CSV cross-checks and available paraphrase topk; does not authenticate missing document vectors or human equivalence of paraphrases"
+}

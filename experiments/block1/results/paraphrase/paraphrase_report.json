@@ -1,0 +1,28 @@
+{
+  "purpose": "Paired paraphrase robustness for BGE small/base/large",
+  "source": "Lossy-RAG SQuAD v1.1 train and repository paraphrases",
+  "n_chunks": 82222,
+  "n_pairs": 500,
+  "doc_fingerprint": "15704f7b9c5a2a21f5484613e837786e00afc7d596014eb82832dfb0732fb4af",
+  "question_fingerprint": "938764be053141b914b11fac711866ad2d0a51ae4e53f295726be422bdc2116a",
+  "seed": 42,
+  "k_values": [
+    1,
+    3,
+    5,
+    10
+  ],
+  "models": [
+    "bge_small",
+    "bge_base",
+    "bge_large"
+  ],
+  "search": "exact cosine similarity on cached float32 document embeddings",
+  "gold": {
+    "strict": "is_annotated=true",
+    "soft": "all answer_chunks"
+  },
+  "test": "paired exact McNemar; Holm correction across 3 primary strict Hit@5 comparisons",
+  "caveat": "Paraphrases are taken from the project's dataset. Their semantic equivalence is assumed, not independently human-validated.",
+  "completed_at": "2026-11-17T13:22:46.294536"
+}
