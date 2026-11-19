@@ -100,7 +100,7 @@ def run_squad(
     generate_fn: Callable[..., str],
     df: pd.DataFrame,
     judge_fn: Callable[..., str] | None = None,
-    use_context: bool = False,
+    context_column: str | None = None,
     responses_path: str | Path = "log/squad.jsonl",
     workers: int = 8,
     limit: int | None = None,
@@ -121,7 +121,7 @@ def run_squad(
         tqdm(total=len(rows), desc=responses_path.stem, unit="req") as bar,
     ):
         futures = [
-            pool.submit(_solve, generate_fn, judge_fn, row, row["context"] if use_context else None)
+            pool.submit(_solve, generate_fn, judge_fn, row, row[context_column] if context_column else None)
             for row in rows
         ]
         for future in as_completed(futures):
