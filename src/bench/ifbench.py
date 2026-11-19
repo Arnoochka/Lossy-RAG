@@ -36,7 +36,7 @@ def run_ifbench(
     ifbench_dir: str | Path = "IFBench",
     data: str | Path = "IFBench/data/IFBench_test.jsonl",
     responses_path: str | Path = "src/bench/log/ifbench.jsonl",
-    workers: int = 8,
+    workers: int = 1,
     strict: bool = False,
     limit: int | None = 50,
 ) -> tuple[float, float]:

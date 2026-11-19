@@ -7,12 +7,25 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 from pathlib import Path
 
 import pandas as pd
-from tqdm.notebook import tqdm
+from tqdm.auto import tqdm
+from IPython.display import display
+from ipywidgets import Output
+from contextlib import nullcontext
 
 THINK_RE = re.compile(r"<think>.*?</think>", re.DOTALL)
 VERDICT_RE = re.compile(r"(?i)correct\s*:\s*(yes|no)\b")
 
 PROMPT = (
+    "Your response should be in the following format:\n"
+    "Explanation: {{your explanation for your answer choice}}\n"
+    "Answer: {{your chosen answer}}\n"
+    "Confidence: {{your confidence score between 0% and 100% for your answer}}\n\n"
+    "{question}"
+)
+
+PROMPT_WITH_CONTEXT = (
+    "Use the following context to answer the question.\n\n"
+    "Context:\n{context}\n\n"
     "Your response should be in the following format:\n"
     "Explanation: {{your explanation for your answer choice}}\n"
     "Answer: {{your chosen answer}}\n"
@@ -46,9 +59,18 @@ def _generate(generate_fn: Callable[..., str], prompt: str, retries: int = 3) ->
     return ""
 
 
-def _solve(generate_fn: Callable[..., str], judge_fn: Callable[..., str], row: dict) -> dict:
+def _solve(
+    generate_fn: Callable[..., str],
+    judge_fn: Callable[..., str],
+    row: dict,
+    context: str | None = None,
+) -> dict:
     answer = " OR ".join(dict.fromkeys(row["answer_text"]))
-    response = _generate(generate_fn, PROMPT.format(question=row["question"]))
+    if context is None:
+        prompt = PROMPT.format(question=row["question"])
+    else:
+        prompt = PROMPT_WITH_CONTEXT.format(context=context, question=row["question"])
+    response = _generate(generate_fn, prompt)
     judgement = ""
     if response:
         judgement = _generate(
@@ -61,20 +83,28 @@ def _solve(generate_fn: Callable[..., str], judge_fn: Callable[..., str], row: d
         "orig_qid": row["orig_qid"],
         "is_paraphrase": row["is_paraphrase"],
         "question": row["question"],
+        "context": context,
         "target": answer,
         "correct": bool(verdicts) and verdicts[-1].lower() == "yes",
         "response": response,
         "judgement": judgement,
     }
 
-
+def print_record(record: dict) -> None:
+    print("─" * 80)
+    for key, value in record.items():
+        text = str(value).replace("\n", "\n" + " " * 16)
+        print(f"{key:>14}: {text}")
+        
 def run_squad(
     generate_fn: Callable[..., str],
     df: pd.DataFrame,
     judge_fn: Callable[..., str] | None = None,
+    use_context: bool = False,
     responses_path: str | Path = "log/squad.jsonl",
     workers: int = 8,
     limit: int | None = None,
+    log=None,
 ) -> tuple[float, float]:
     responses_path = Path(responses_path)
     judge_fn = judge_fn or generate_fn
@@ -90,9 +120,14 @@ def run_squad(
         ThreadPoolExecutor(workers) as pool,
         tqdm(total=len(rows), desc=responses_path.stem, unit="req") as bar,
     ):
-        futures = [pool.submit(_solve, generate_fn, judge_fn, row) for row in rows]
+        futures = [
+            pool.submit(_solve, generate_fn, judge_fn, row, row["context"] if use_context else None)
+            for row in rows
+        ]
         for future in as_completed(futures):
             record = future.result()
+            with log or nullcontext():
+                print_record(record)
             correct += record["correct"]
             f.write(json.dumps(record, ensure_ascii=False) + "\n")
             f.flush()

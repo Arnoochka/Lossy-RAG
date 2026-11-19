@@ -81,7 +81,7 @@ def run_hle(
     generate_fn: Callable[..., str],
     judge_fn: Callable[..., str] | None = None,
     responses_path: str | Path = "src/bench/log/hle.jsonl",
-    workers: int = 8,
+    workers: int = 1,
     limit: int | None = 50,
 ) -> tuple[float, float]:
     """Возвращает (accuracy в %, время в секундах).
