@@ -67,7 +67,7 @@ def run_gpqa_diamond(
     generate_fn: Callable[..., str],
     data: str | Path | None = None,
     responses_path: str | Path = "src/bench/log/gpqa_diamond.jsonl",
-    workers: int = 8,
+    workers: int = 1,
     seed: int = 0,
     limit: int | None = 50,
 ) -> tuple[float, float]:

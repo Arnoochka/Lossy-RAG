@@ -55,7 +55,7 @@ def run_aime(
     generate_fn: Callable[..., str],
     dataset: str = "MathArena/aime_2026",
     responses_path: str | Path = "src/bench/log/aime_2026_responses.jsonl",
-    workers: int = 8,
+    workers: int = 1,
     repeats: int = 4,
     limit: int | None = None,
 ) -> tuple[float, float]:

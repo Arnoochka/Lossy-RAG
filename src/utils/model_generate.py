@@ -67,21 +67,25 @@ def opeanai_model_generate_single_answer(
     do_sample: bool = True,
     temperature: float = 1,
     top_p: float = 0.95,
+    top_k: int = 20,
 ):
     client = OpenAI(base_url=base_url, api_key="none")
 
     sampling = {"temperature": temperature, "top_p": top_p} if do_sample else {"temperature": 0.0}
 
+    extra_body = {"top_k": top_k} if do_sample else {}
+    if reasoning_budget_tokens is not None:
+        extra_body["reasoning_budget_tokens"] = reasoning_budget_tokens
+
     response = client.chat.completions.create(
         model=model_name,
         messages=[{"role": "user", "content": prompt}],
         max_tokens=max_new_tokens,
-        extra_body= {} if reasoning_budget_tokens is None else {"reasoning_budget_tokens": reasoning_budget_tokens},
+        extra_body=extra_body,
         **sampling,
     )
 
     return response.choices[0].message.content
-
 if __name__ == "__main__":
     answer = opeanai_model_generate_single_answer()
     print(answer)
