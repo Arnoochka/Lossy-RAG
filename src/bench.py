@@ -24,6 +24,7 @@ from pathlib import Path
 # $strata launch --family qwen --model IQ2_XS --port 8081 --parallel 8 --context 5k
 
 # $llama.cpp/build/bin/llama-server -m models/Qwen3.8-27B-UD-Q3_K_XL.gguf --port 8081 -np 1 -c 5120 -ngl all -fa on --reasoning-budget 3072
+# transformers serve Qwen/Qwen3.5-4B --host 127.0.0.1 --port 8081 --device cuda --dtype bfloat16 --reasoning on
 
 # reasoning_budget_tokens = 3072 (in llama.cpp or include the function opeanai_model_generate_single_answer)
 # max_new_tokens = reasoning_budget_tokens + 1024 = 4096
@@ -32,13 +33,13 @@ from pathlib import Path
 # -c for llama.cpp = workers * max_context_window = 1 * 5120 = 5120
 # strata context is for each worker only => 5120 = 5k
 
-model_name = "Qwen3.8-27B-UD-Q3_K_XL"
+model_name = "Qwen/Qwen3.5-4B"
 
 generate = partial(
     model_generate.opeanai_model_generate_single_answer,
     model_name=model_name,
     max_new_tokens=4096,
-    reasoning_budget_tokens=3072,
+    reasoning_budget_tokens=None,#3072
     do_sample=True,
     temperature=1,
     top_p=0.95,

@@ -86,6 +86,7 @@ def opeanai_model_generate_single_answer(
     )
 
     return response.choices[0].message.content
+
 if __name__ == "__main__":
     answer = opeanai_model_generate_single_answer()
     print(answer)

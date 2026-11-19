@@ -123,19 +123,26 @@ def _is_time_spend(line: str) -> bool:
     return isinstance(rec, dict) and rec.keys() == {"time_spend"}
 
 # Категориальная палитра с проверкой на дальтонизм; цвет закреплён за моделью, а не за рангом.
-PALETTE = ("#2a78d6", "#eb6834", "#1baf7a", "#eda100", "#e87ba4", "#008300", "#6250d6", "#e34948")
-SURFACE, INK, INK_2, GRID = "#fcfcfb", "#1f1f1e", "#5f5e5a", "#e6e5e0"
-
+PALETTE = ("tab:blue","tab:orange", "tab:green", "tab:brown", "#e87ba4", "#008300", "#6250d6", "#e34948")
+SURFACE, INK, INK_2, GRID = "#fcfcfb", "black", "black", "#e6e5e0"
 
 def plot(rows: list[dict]) -> None:
+    time_spend = {(r["bench"], r["model"]): r["time"] for r in rows}
     # Безвредный шум Qt под Wayland при закрытии окна; задаётся до импорта Qt
     os.environ.setdefault("QT_LOGGING_RULES", "qt.qpa.wayland.textinput=false")
     import matplotlib.pyplot as plt
-
+    plt.rcParams.update({
+        "font.size": 14,
+        "axes.titlesize": 20,
+        "axes.labelsize": 16,
+        "xtick.labelsize": 14,
+        "ytick.labelsize": 14,
+        "legend.fontsize": 14,
+    })
     benches = sorted({r["bench"] for r in rows})
     models = sorted({r["model"] for r in rows}, key=str.lower)
     score = {(r["bench"], r["model"]): r["score"] for r in rows}
-    plt.rcParams.update({"font.size": 10, "axes.edgecolor": GRID, "axes.labelcolor": INK_2,
+    plt.rcParams.update({"axes.edgecolor": GRID, "axes.labelcolor": INK_2,
                          "xtick.color": INK_2, "ytick.color": INK_2, "text.color": INK})
 
     def style(ax):
@@ -153,7 +160,7 @@ def plot(rows: list[dict]) -> None:
             vals = [score.get((bn, m)) for bn in benches]
             bars = ax.bar([x for x, v in zip(xs, vals) if v is not None], [v for v in vals if v is not None],
                           width=w, color=color, edgecolor=SURFACE, linewidth=2, label=m)
-            ax.bar_label(bars, fmt="%.1f", padding=3, fontsize=8, color=INK_2)
+            ax.bar_label(bars, fmt="%.1f", padding=3, fontsize=14, color=INK_2)
         ax.set_xticks(range(len(benches)), benches)
         ax.tick_params(axis="x", length=0, labelsize=11, labelcolor=INK)
         ax.yaxis.grid(color=GRID, linewidth=0.8)
@@ -161,7 +168,41 @@ def plot(rows: list[dict]) -> None:
         ax.set_ylabel("Результат из 100")
         if len(models) > 1:
             ax.legend(frameon=False, loc="upper center", bbox_to_anchor=(0.5, -0.08),
-                      ncol=min(len(models), 3), fontsize=9)
+                      ncol=min(len(models), 3), fontsize=10)
+        fig_time, ax_time = plt.subplots(
+        figsize=(max(7, 1.1 * len(benches) * len(models) + 2), 5.2),
+        facecolor=SURFACE,
+    )
+        style(ax_time)
+
+        w = 0.8 / len(models)
+
+        for i, (m, color) in enumerate(zip(models, PALETTE)):
+            xs = [
+                b + (i - (len(models) - 1) / 2) * w
+                for b in range(len(benches))
+            ]
+            vals = [time_spend.get((bn, m)) for bn in benches]
+            bars = ax_time.bar(
+                [x for x, v in zip(xs, vals) if v is not None],
+                [v for v in vals if v is not None],
+                width=w,
+                color=color,
+                edgecolor=SURFACE,
+                linewidth=2,
+                label=m,
+            )
+            ax_time.bar_label(bars, fmt="%.1f", padding=3, fontsize=14, color=INK_2)
+
+        ax_time.set_xticks(range(len(benches)), benches)
+        ax_time.tick_params(axis="x", length=0, labelsize=11, labelcolor=INK)
+        ax_time.yaxis.grid(color=GRID, linewidth=0.8)
+        ax_time.set_ylabel("Время выполнения (сек)")
+
+        if len(models) > 1:
+            ax_time.legend(frameon=False, loc="upper center", bbox_to_anchor=(0.5, -0.08), ncol=min(len(models),3), fontsize=10)
+
+        fig_time.tight_layout()
     else:
         # >8 моделей: цветом их не различить — отдельная панель на бенчмарк, имена на оси
         fig, axes = plt.subplots(1, len(benches), sharex=True, facecolor=SURFACE,
@@ -179,14 +220,12 @@ def plot(rows: list[dict]) -> None:
             ax.set_xlim(0, 110)
             ax.set_title(bn, loc="left", fontsize=11, color=INK)
 
-    title = "Результаты бенчмарков" + (f" — {models[0]}" if len(models) == 1 else "")
-    fig.suptitle(title, x=0.01, ha="left", fontsize=13, color=INK)
     fig.tight_layout()
     plt.show()
 
 
 def summary(
-    log_dir: str | Path = "src/bench/log",
+    log_dir: str | Path = "log/model_answers",
     ifbench_repo: str | Path = "IFBench",
     ifbench_mode: IFBenchMode = "loose",  # loose — основная метрика в статье IFBench
     show_table: bool = True,
@@ -194,7 +233,12 @@ def summary(
 ) -> list[dict]:
     """Собирает результаты из log_dir/*.jsonl; возвращает строки {bench, model, score, n, time}."""
     log_dir = Path(log_dir)
-    rows = [parse(p, ifbench_repo, ifbench_mode) for p in sorted(log_dir.glob("*.jsonl"))]
+    files = [
+        p for p in sorted(log_dir.glob("*.jsonl"))
+        if not p.name.startswith("squad_")
+    ]
+
+    rows = [parse(p, ifbench_repo, ifbench_mode) for p in files]
     if not rows:
         raise FileNotFoundError(f"нет *.jsonl в {log_dir}")
 
