@@ -127,7 +127,7 @@ def run_squad(
         for future in as_completed(futures):
             record = future.result()
             with log or nullcontext():
-                print_record(record)
+                #print_record(record)
             correct += record["correct"]
             f.write(json.dumps(record, ensure_ascii=False) + "\n")
             f.flush()
