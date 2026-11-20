@@ -3,12 +3,16 @@
 main: published 500 original train questions (default in the supplied data pack).
 paraphrase: all 500 originals, followed by their 500 paraphrases. No valid queries.
 """
-import argparse,json,hashlib
+import argparse
+import hashlib
+import json
 from pathlib import Path
+
 import numpy as np
 import pandas as pd
-from retrieval import signature,exact_topk
+from retrieval import exact_topk, signature
 from threadpoolctl import threadpool_limits
+
 ROOT=Path(__file__).resolve().parents[3];BLOCK=ROOT/'experiments/block1'
 def sha(p):
     h=hashlib.sha256()

@@ -1,11 +1,15 @@
-import numpy as np
 from heapq import heappush, heapreplace
+
+import numpy as np
 from sklearn.cluster import MiniBatchKMeans
 from sklearn.metrics import pairwise_distances_argmin
-from .base import BaseSearch
+
 from src.encoder import BaseEncoder
 from src.quant.base import BaseQuant
 from src.quant.bq import RaBitqQuant
+
+from .base import BaseSearch
+
 
 class IvfSearch(BaseSearch):
     def __init__(

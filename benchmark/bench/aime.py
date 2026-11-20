@@ -56,7 +56,7 @@ def run_aime(
     dataset: str = "MathArena/aime_2026",
     responses_path: str | Path = "src/bench/log/aime_2026_responses.jsonl",
     workers: int = 1,
-    repeats: int = 4,
+    repeats: int = 1,
     limit: int | None = None,
 ) -> tuple[float, float]:
     """Возвращает (accuracy в %, время в секундах). generate_fn вызывается как generate_fn(prompt=...).

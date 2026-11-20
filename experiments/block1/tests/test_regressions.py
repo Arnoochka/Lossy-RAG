@@ -1,10 +1,19 @@
-import ast, hashlib, importlib.util, json, sys, tempfile, unittest
+import ast
+import hashlib
+import importlib.util
+import json
+import sys
+import tempfile
+import unittest
 from pathlib import Path
+
 import numpy as np
 from threadpoolctl import threadpool_limits
+
 BLOCK=Path(__file__).resolve().parents[1];ROOT=BLOCK.parents[1]
 sys.path.insert(0,str(BLOCK/'scripts'));sys.path.insert(0,str(ROOT))
-from retrieval import exact_topk,stable_topk_positions,array_hash
+from retrieval import array_hash, exact_topk, stable_topk_positions
+
 
 def function_from_notebook(name,function,ns):
     nb=json.loads((BLOCK/'notebooks'/name).read_text())
@@ -54,6 +63,7 @@ class SearchTests(unittest.TestCase):
                 x=np.ones((4,3),np.float32);x[3,2]=np.nan;np.save(p,x);self.assertIsNone(fn(p,4,3))
     def test_pca_cache_uses_actual_source_vectors(self):
         import time
+
         from sklearn.decomposition import PCA
         for name in ['01_BGE_и_PCA.ipynb','02_Nomic_Matryoshka_PCA.ipynb']:
             with self.subTest(name=name),tempfile.TemporaryDirectory() as tmp:
@@ -87,8 +97,8 @@ class UpstreamIntegration(unittest.TestCase):
     def test_stage2_without_model_libraries(self):
         # These imports previously required torch even for cached embeddings.
         from src.encoder import DummyEncoder
-        from src.quant import BaseQuant,SqQuant,BqQuant,PqQuant
-        from src.search import BaseSearch,IvfSearch,HnswSearch,Bm25Search
+        from src.quant import BaseQuant, BqQuant, PqQuant, SqQuant
+        from src.search import BaseSearch, Bm25Search, HnswSearch, IvfSearch
         rng=np.random.default_rng(42);docs=rng.normal(size=(100,8)).astype(np.float32);docs/=np.linalg.norm(docs,axis=1,keepdims=True)
         texts=[f'item {i} token{i}' for i in range(len(docs))];queries=['query0','query1'];q=docs[:2]
         enc=DummyEncoder(texts,docs,queries,q);ids=np.arange(len(docs))*2+10

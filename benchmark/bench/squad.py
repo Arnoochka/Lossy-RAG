@@ -1,16 +1,16 @@
+"""Прогон модели на датасете squad"""
+
 import json
 import re
 import sys
 import time
 from collections.abc import Callable
 from concurrent.futures import ThreadPoolExecutor, as_completed
+from contextlib import nullcontext
 from pathlib import Path
 
 import pandas as pd
 from tqdm.auto import tqdm
-from IPython.display import display
-from ipywidgets import Output
-from contextlib import nullcontext
 
 THINK_RE = re.compile(r"<think>.*?</think>", re.DOTALL)
 VERDICT_RE = re.compile(r"(?i)correct\s*:\s*(yes|no)\b")
@@ -102,7 +102,7 @@ def run_squad(
     judge_fn: Callable[..., str] | None = None,
     context_column: str | None = None,
     responses_path: str | Path = "log/squad.jsonl",
-    workers: int = 8,
+    workers: int = 1,
     limit: int | None = None,
     log=None,
 ) -> tuple[float, float]:
@@ -127,11 +127,10 @@ def run_squad(
         for future in as_completed(futures):
             record = future.result()
             with log or nullcontext():
-                #print_record(record)
-            correct += record["correct"]
-            f.write(json.dumps(record, ensure_ascii=False) + "\n")
-            f.flush()
-            bar.update()
+                correct += record["correct"]
+                f.write(json.dumps(record, ensure_ascii=False) + "\n")
+                f.flush()
+                bar.update()
 
     score = 100 * correct / len(rows)
     elapsed = time.perf_counter() - start

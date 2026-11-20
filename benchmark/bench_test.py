@@ -1,30 +1,22 @@
-"""Запуск моделей на бенчмарках: HLE, GPQA Diamond, Aime, IFBench."""
+"""Запуск моделей на бенчмарках: HLE, GPQA Diamond, Aime, IFBench. (Squad запускается тут jupyter/stage3_squad_bench.ipynb)"""
 
 from functools import partial
 
 import bench
-from utils import model_generate
-import json
-from pathlib import Path
 
-#hf_transformers
-#meta-llama/Llama-3.2-3B-Instruct ~ 6.5 Gb
-#google/gemma-3-4b-pt ~ 8.6 Gb
-#Qwen/Qwen3.5-4B ~ 8.4Gb
-#HuggingFaceTB/SmolLM3-3B ~ 6.2Gb
-
+#NOTE: Cписок моделей
 #strata
 #Swift-1.5-Qwen3.8-Flash-Next-GSQ-RCO-IQ2_XS
 #Qwen3.8-Flash-Next-GSQ-RCO-IQ2_XS
-
 #llama.cpp
 #Qwen3.8-27B-UD-Q3_K_XL.gguf
 
+#NOTE: Соответствующие функции запуска
 # $strata launch --family swift --model IQ2_XS --port 8081 --parallel 8 --context 5k
 # $strata launch --family qwen --model IQ2_XS --port 8081 --parallel 8 --context 5k
-
 # $llama.cpp/build/bin/llama-server -m models/Qwen3.8-27B-UD-Q3_K_XL.gguf --port 8081 -np 1 -c 5120 -ngl all -fa on --reasoning-budget 3072
 
+# Пример вычисления параметров
 # reasoning_budget_tokens = 3072 (in llama.cpp or include the function opeanai_model_generate_single_answer)
 # max_new_tokens = reasoning_budget_tokens + 1024 = 4096
 # prompt_tokens = 1024
@@ -32,10 +24,11 @@ from pathlib import Path
 # -c for llama.cpp = workers * max_context_window = 1 * 5120 = 5120
 # strata context is for each worker only => 5120 = 5k
 
-model_name = "Qwen3.8-27B-UD-Q3_K_XL"
+#NOTE: Тут важно поменять модель
+model_name = "Swift-1.5-Qwen3.8-Flash-Next-GSQ-RCO-IQ2_XS"
 
 generate = partial(
-    model_generate.opeanai_model_generate_single_answer,
+    bench.opeanai_model_generate_single_answer,
     model_name=model_name,
     max_new_tokens=4096,
     reasoning_budget_tokens=3072,
@@ -44,6 +37,7 @@ generate = partial(
     top_p=0.95,
 )
 
+#NOTE: Логи запуска хранятся в log/model_answers
 if __name__ == "__main__":
     runs = (
         (bench.run_ifbench, f"log/model_answers/ifbench_{model_name}.jsonl"),
@@ -55,4 +49,5 @@ if __name__ == "__main__":
         bench.append_time_spend(path, 1)
         print(f"[INFO] | {model_name} | {score:.1f} | {elapsed:.0f} sec")
     
-    #bench.summary(log_dir="log/model_answers") # return summary with bar graph
+    #bench.bench_summary(log_dir="log/model_answers") # Для создания графиков GPQA Diamond, Aime, IFBench.
+    #bench.squad_summary(log_dir="log/model_answers") # Для создания графиков squad.

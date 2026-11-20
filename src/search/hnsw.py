@@ -1,7 +1,9 @@
 import numpy as np
-from .base import BaseSearch
+
 from src.encoder import BaseEncoder
 from src.quant.base import BaseQuant
+
+from .base import BaseSearch
 
 
 class HnswSearch(BaseSearch):

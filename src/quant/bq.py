@@ -1,5 +1,7 @@
 import numpy as np
+
 from .base import BaseQuant
+
 
 class BqQuant(BaseQuant):
     """Бинарная квантизация по знаку координат, один бит на координату."""

@@ -1,7 +1,9 @@
 import numpy as np
 from sklearn.cluster import MiniBatchKMeans
 from sklearn.metrics import pairwise_distances_argmin
+
 from .base import BaseQuant
+
 
 class AqQuant(BaseQuant):
     

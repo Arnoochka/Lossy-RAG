@@ -1,5 +1,7 @@
 import numpy as np
+
 from .base import BaseQuant
+
 
 class SqQuant(BaseQuant):
     def __init__(self, num_bits: int) -> None:

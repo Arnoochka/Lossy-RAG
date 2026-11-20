@@ -1,4 +1,4 @@
 from .base import BaseSearch
-from .ivf import IvfSearch, IvfRaBitqSearch
-from .hnsw import HnswSearch
 from .bm25 import Bm25Search, HybridBm25Search
+from .hnsw import HnswSearch
+from .ivf import IvfRaBitqSearch, IvfSearch
