@@ -3,13 +3,18 @@
 Default: full audit. --tables-only: no dataset/model/vector download required.
 Outputs go to ignored local_checks/; archived reports and results stay immutable.
 """
-from pathlib import Path
-import argparse, ast, hashlib, json, subprocess, sys, re
+import argparse
+import hashlib
+import json
+import re
+import subprocess
+import sys
 from collections import defaultdict
+from pathlib import Path
+
 import numpy as np
 import pandas as pd
-from scipy.stats import binomtest
-from retrieval import signature, exact_topk
+from retrieval import exact_topk, signature
 
 BLOCK = Path(__file__).resolve().parents[1]
 ROOT = BLOCK.parents[1]
@@ -55,7 +60,7 @@ def code_and_tables():
             if cell.cell_type != 'code': continue
             # Upstream cells can have IPython magics; validate these with IPython.
             src = cell.source
-            if re.search(r'^\s*[%!]',src,re.M):
+            if re.search(r'^\s*[%!]',src,re.MULTILINE):
                 from IPython.core.inputtransformer2 import TransformerManager
                 src = TransformerManager().transform_cell(src)
             compile(src,f'{p.name}:cell{i}','exec')

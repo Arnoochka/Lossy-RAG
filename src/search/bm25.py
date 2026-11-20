@@ -1,9 +1,10 @@
 import numpy as np
 from sklearn.feature_extraction.text import CountVectorizer
 
-from .base import BaseSearch
 from src.encoder import BaseEncoder
 from src.quant.base import BaseQuant
+
+from .base import BaseSearch
 
 
 class Bm25Search(BaseSearch):

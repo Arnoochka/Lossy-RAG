@@ -1,2 +1,1 @@
-from . import quant
-from . import search
+from . import quant, search

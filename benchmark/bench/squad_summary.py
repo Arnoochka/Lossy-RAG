@@ -1,4 +1,4 @@
-
+"""Сводка результатов бенчмарков из src/bench/log/*.jsonl. с препиской squad, для создания графиков Figure_3, Figure_4"""
 import json
 import re
 import sys
@@ -111,6 +111,7 @@ def parse_file(path):
 
 
 def collect_results(log_dir=LOG_DIR):
+    log_dir = Path(log_dir)
     files = sorted(log_dir.glob("*.jsonl"))
 
     if not files:
@@ -321,7 +322,7 @@ def plot(results):
     plt.show()
 
 
-def summary(log_dir=LOG_DIR, show_table=True, show_plot=True):
+def squad_summary(log_dir=LOG_DIR, show_table=True, show_plot=True):
     results = collect_results(log_dir)
 
     if show_table:
@@ -334,4 +335,4 @@ def summary(log_dir=LOG_DIR, show_table=True, show_plot=True):
 
 
 if __name__ == "__main__":
-    summary()
+    squad_summary()

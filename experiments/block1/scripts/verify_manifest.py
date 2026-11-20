@@ -1,7 +1,10 @@
 #!/usr/bin/env python3
 """Verify the immutable Block 1 release files, from any current directory."""
+import hashlib
+import json
+import sys
 from pathlib import Path
-import hashlib,json,sys
+
 ROOT=Path(__file__).resolve().parents[1]
 entries=json.loads((ROOT/'file_manifest.json').read_text(encoding='utf-8'))['files']
 failed=[]

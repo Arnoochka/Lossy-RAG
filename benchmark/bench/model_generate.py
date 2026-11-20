@@ -1,3 +1,4 @@
+"""Функции для отправки запросов на модели"""
 
 import torch
 from openai import OpenAI

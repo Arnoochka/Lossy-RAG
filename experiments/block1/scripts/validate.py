@@ -2,11 +2,14 @@
 """Validate all published Block-1 CSV outputs independently of models and caches.
 Run from any cwd: python experiments/block1/scripts/validate.py
 """
+import json
+import sys
 from pathlib import Path
-import sys, json, math, hashlib
+
 import numpy as np
 import pandas as pd
 from scipy.stats import binomtest
+
 HERE=Path(__file__).resolve().parents[1]
 MAIN=HERE/'results/main'
 PARA=HERE/'results/paraphrase'
@@ -122,7 +125,7 @@ try:
     stab=pca.groupby(['model','dimension'],as_index=False).agg(hit5_mean=('strict_hit','mean'),hit5_min=('strict_hit','min'),hit5_max=('strict_hit','max'),n_seeds=('strict_hit','size'))
     stab.to_csv(OUT / 'pca_stability_hit5.csv',index=False)
     status='PASS' if not failures else 'FAIL'
-except Exception as exc:
+except Exception:
     import traceback
     check(False,'Unexpected validation exception',traceback.format_exc())
     status='FAIL'

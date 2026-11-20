@@ -1,8 +1,8 @@
-"""Сводка результатов бенчмарков из src/bench/log/*.jsonl."""
-import os
+"""Сводка результатов бенчмарков из src/bench/log/*.jsonl. с графиками Figure_1, Figure_2 для бенчмарков "aime", "gpqa_diamond", "ifbench"""
 import dataclasses
 import functools
 import json
+import os
 import sys
 from collections.abc import Callable
 from pathlib import Path
@@ -224,7 +224,7 @@ def plot(rows: list[dict]) -> None:
     plt.show()
 
 
-def summary(
+def bench_summary(
     log_dir: str | Path = "log/model_answers",
     ifbench_repo: str | Path = "IFBench",
     ifbench_mode: IFBenchMode = "loose",  # loose — основная метрика в статье IFBench
@@ -251,4 +251,4 @@ def summary(
 
 
 if __name__ == "__main__":
-    summary()
+    bench_summary()

@@ -1,16 +1,16 @@
+"""Прогон модели на датасете squad"""
+
 import json
 import re
 import sys
 import time
 from collections.abc import Callable
 from concurrent.futures import ThreadPoolExecutor, as_completed
+from contextlib import nullcontext
 from pathlib import Path
 
 import pandas as pd
 from tqdm.auto import tqdm
-from IPython.display import display
-from ipywidgets import Output
-from contextlib import nullcontext
 
 THINK_RE = re.compile(r"<think>.*?</think>", re.DOTALL)
 VERDICT_RE = re.compile(r"(?i)correct\s*:\s*(yes|no)\b")

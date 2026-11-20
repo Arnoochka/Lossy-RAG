@@ -3,11 +3,17 @@
 Default uses the supplied BGE Small vectors. --include-vectors all also requires
 Base/Large/Nomic final caches on the original experiment computer.
 """
-import argparse, hashlib, json, shutil, tempfile
+import argparse
+import hashlib
+import json
+import shutil
+import tempfile
 from pathlib import Path
+
 import numpy as np
 import pandas as pd
 from retrieval import signature
+
 
 def sha(path):
     h=hashlib.sha256()

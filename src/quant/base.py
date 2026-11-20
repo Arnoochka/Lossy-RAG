@@ -1,5 +1,6 @@
 import numpy as np
 
+
 class BaseQuant:
     def fit(self, X: np.ndarray) -> "BaseQuant":
         return self

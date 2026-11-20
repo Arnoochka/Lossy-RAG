@@ -1,15 +1,19 @@
 #!/usr/bin/env python3
 """Recreate Block-1 research figures from exported tables (no model downloads)."""
 from pathlib import Path
-import pandas as pd
-import numpy as np
+
 import matplotlib
+import numpy as np
+import pandas as pd
+
 matplotlib.use('Agg')
 import matplotlib.pyplot as plt
+
 ROOT=Path(__file__).resolve().parents[1]
 MAIN=pd.read_csv(ROOT/'results/main/all_methods_summary.csv')
 PARA=pd.read_csv(ROOT/'results/paraphrase/paraphrase_summary.csv')
 import argparse
+
 parser=argparse.ArgumentParser(description=__doc__)
 parser.add_argument('--out',type=Path,default=ROOT/'local_checks/figures')
 OUT=parser.parse_args().out

@@ -1,5 +1,6 @@
 """Exact float32 dot-product search; ties use ascending chunk_id, including at k."""
 import hashlib
+
 import numpy as np
 
 
