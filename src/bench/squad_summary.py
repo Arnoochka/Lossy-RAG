@@ -179,21 +179,23 @@ def print_table(results):
 
 
 
+
+
+
 def plot(results):
+    from matplotlib.patches import Patch
+
     plt.rcParams.update({
         "font.size": 14,
         "axes.titlesize": 20,
         "axes.labelsize": 16,
         "xtick.labelsize": 14,
         "ytick.labelsize": 14,
-        "legend.fontsize": 18,
+        "legend.fontsize": 12,
     })
-    benches = sorted({r["bench"] for r in results})
 
-    question_types = (
-        "original",
-        "paraphrase",
-    )
+    benches = sorted({r["bench"] for r in results})
+    question_types = ("original", "paraphrase")
 
     for bench in benches:
         for question_type in question_types:
@@ -211,69 +213,74 @@ def plot(results):
                 key=str.lower,
             )
 
+            contexts = list(CONTEXT_TYPES)
+
             scores = {
-                (r["model"], r["context"]): r["score"]
+                (r["context"], r["model"]): r["score"]
                 for r in subset
             }
 
             fig, ax = plt.subplots(
-                figsize=(max(9, len(models) * 2.2), 6),
+                figsize=(max(10, len(models) * 2.5), 5.5),
                 facecolor="#fcfcfb",
             )
 
             ax.set_facecolor("#fcfcfb")
 
-            x = np.arange(len(models))
-            width = 0.24
+            x = np.arange(len(contexts))
+            group_width = 0.8
+            width = group_width / len(models)
 
-            for i, context in enumerate(CONTEXT_TYPES):
-                positions = x + (i - 1) * width
+            
+            model_colors = ["tab:blue", "tab:orange", "tab:green"]
+
+            for ci, context in enumerate(contexts):
+                positions = (
+                    x[ci] + (
+                        np.arange(len(models)) - (len(models) - 1) / 2
+                    ) * width
+                )
 
                 values = [
-                    scores.get((model, context))
+                    scores.get((context, model))
                     for model in models
                 ]
 
                 valid = [
-                    (position, value)
-                    for position, value in zip(positions, values)
+                    (position, value, mi)
+                    for mi, (position, value) in enumerate(zip(positions, values))
                     if value is not None
                 ]
 
                 if not valid:
                     continue
 
-                bars = ax.bar(
-                    [p for p, _ in valid],
-                    [v for _, v in valid],
-                    width=width,
-                    color=PALETTE[context],
-                    label=CONTEXT_TYPES[context],
-                    edgecolor="#fcfcfb",
-                    linewidth=1.5,
-                )
+                for position, value, mi in valid:
+                    bars = ax.bar(
+                        position,
+                        value,
+                        width=width * 0.9,
+                        color=model_colors[mi % len(model_colors)],
+                        edgecolor="#fcfcfb",
+                        linewidth=1,
+                    )
 
-                ax.bar_label(
-                    bars,
-                    fmt="%.1f",
-                    padding=3,
-                    fontsize=14,
-                )
+                    ax.bar_label(
+                        bars,
+                        fmt="%.1f",
+                        padding=3,
+                        fontsize=10,
+                    )
+
 
             ax.set_xticks(x)
             ax.set_xticklabels(
-                models,
-                rotation=0,
-                ha="center",
+                [CONTEXT_TYPES[c] for c in contexts],
                 fontweight="bold",
-                fontsize=11,
             )
 
             ax.set_ylim(0, 110)
             ax.set_ylabel("Точность (%)")
-
-            title_type = QUESTION_TYPES[question_type]
-
 
             ax.yaxis.grid(
                 color="#e6e5e0",
@@ -288,24 +295,30 @@ def plot(results):
             ax.tick_params(axis="x", length=0)
             ax.tick_params(axis="y", length=0)
 
+
+            legend_colors = ["tab:blue", "tab:orange", "tab:green"]
+
+            legend_handles = [
+                Patch(
+                    facecolor=legend_colors[i % len(legend_colors)],
+                    edgecolor="none",
+                    label=model,
+                )
+                for i, model in enumerate(models)
+            ]
+
             ax.legend(
+                handles=legend_handles,
                 frameon=False,
                 loc="upper center",
-                bbox_to_anchor=(0.5, -0.08),
-                ncol=3,
+                bbox_to_anchor=(0.5, -0.12),
+                ncol=min(len(models), 4),
             )
 
-            for i in range(len(models) - 1):
-                ax.axvline(
-                    i + 0.5,
-                    color="#e6e5e0",
-                    linewidth=0.8,
-                    linestyle="--",
-                )
 
             fig.tight_layout()
-            plt.show()
 
+    plt.show()
 
 
 def summary(log_dir=LOG_DIR, show_table=True, show_plot=True):
