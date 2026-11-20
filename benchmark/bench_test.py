@@ -46,7 +46,6 @@ if __name__ == "__main__":
     )
     for run, path in runs:
         score, elapsed = run(generate, responses_path=path, workers=1)
-        bench.append_time_spend(path, 1)
         print(f"[INFO] | {model_name} | {score:.1f} | {elapsed:.0f} sec")
     
     #bench.bench_summary(log_dir="log/model_answers") # Для создания графиков GPQA Diamond, Aime, IFBench.
